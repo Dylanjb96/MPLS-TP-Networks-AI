@@ -1,0 +1,34 @@
+{
+  "document_status": "Proposed research decisions for supervisor review, not implemented Phase 3 features",
+  "current_phase2_graph": {
+    "representation": "Undirected NetworkX Graph with physical connectivity; edges do not simulate packets, tunnels or switching",
+    "resource_bookkeeping": "one_physical_edge_per_link_id",
+    "ring_membership": "One physical link can belong to two rings; capacity is stored once",
+    "shared_main_sub_link_capacity": "Existing main-ring link keeps 10,000 Mb/s if it is also used by a sub-ring",
+    "capacity_unit": "Mb/s",
+    "distance_unit": "km",
+    "illustrative_link_length_km": 2.0,
+    "initial_reservations": "0 Mb/s on every edge; Phase 2 never admits service requests",
+    "gateway_model": "Single/dual node shared membership and adjacent physical link; not evidence of a specific operator installation",
+    "failure_testing": "Exhaustive deletion of each one physical edge or one physical node, with graph-connectedness recomputed"
+  },
+  "phase3_proposed_capacity_semantics": {
+    "mode": "independent_per_direction",
+    "rationale": "Define one direction-specific capacity ledger per physical full-duplex link. Keep one physical link id, with separate u->v and v->u counters. Must be approved before implementing admission.",
+    "headroom_fractions": [0.0, 0.1, 0.2],
+    "shared_physical_link": "One physical resource with independent direction ledgers; a multi-ring edge is not counted twice due to ring labels",
+    "symmetric_service_reservation": "Undecided: decide if each service reserves equal rates in both directions or an explicitly asymmetric demand vector",
+    "failure_state_budget": "Explicit post-fault forwarding must be defined before adding loads, with all selected single-link failures tested"
+  },
+  "phase3_protection_decision_needed": {
+    "choice_A": "Implement and validate explicit RFC 8227/ITU G.8132 shared-ring tunnel and selected protection-switching semantics (complex).",
+    "choice_B": "Implement a simplified precomputed link-fault reroute abstraction using ordered ring arcs; label only as a surrogate, not as MSRP-compliant switching.",
+    "suggested_first_step": "Document a single deterministic switching rule for ring segments and gateway stitching, or select the simplified surrogate with explicit limitations. Supervisor review is required.",
+    "never_claim": ["sub-50ms protection switching", "railway safety compliance", "operational network equivalence", "guaranteed protected service admission from graph connectivity"]
+  },
+  "ethics_and_scope": {
+    "data_provenance": "synthetic only",
+    "industry_evidence": "Do not infer vendor features or actual deployment shape from this model",
+    "record_before_submission": ["source code commit hash", "configurations", "software versions", "train validation test seeds", "figure/csv evidence", "supervisor modelling decisions"]
+  }
+}
