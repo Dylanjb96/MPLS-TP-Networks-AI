@@ -1,0 +1,5 @@
+case_nodes,gateway_mode,node_count,physical_link_count,shared_physical_edges,articulation_point_count,articulation_nodes,node_failures_causing_disconnection,gateway_failures_causing_disconnection,node_failure_disconnection_pct,max_disconnected_endpoint_pairs_on_node_failure,global_edge_connectivity
+12,single,12,13,0,1,5,1,1,8.33,30,2
+12,dual,12,13,1,0,,0,0,0.0,0,2
+60,single,60,64,0,4,0;2;4;10,4,4,6.67,564,2
+60,dual,60,64,4,0,,0,0,0.0,0,2

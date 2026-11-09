@@ -1,0 +1,10 @@
+scenario,split,request_count,total_offered_request_bandwidth_mbps,mean_requested_bandwidth_mbps,critical_requests,operational_requests,noncritical_requests,category_main-to-main,category_within-subring,category_main-to-subring,category_subring-to-subring,unique_source_destination_pairs
+balanced,test,500,65010,130.02,106,246,148,125,125,125,125,333
+balanced,train,500,68480,136.96,98,242,160,125,125,125,125,337
+balanced,validation,500,64480,128.96,95,256,149,125,125,125,125,341
+interring_heavy,test,500,63490,126.98,97,257,146,50,50,175,225,378
+interring_heavy,train,500,65950,131.9,83,256,161,50,50,175,225,390
+interring_heavy,validation,500,66270,132.54,111,238,151,50,50,175,225,388
+uniform_endpoints,test,500,66930,133.86,101,247,152,21,72,169,238,468
+uniform_endpoints,train,500,67860,135.72,104,242,154,15,82,164,239,476
+uniform_endpoints,validation,500,64770,129.54,98,258,144,15,66,159,260,465

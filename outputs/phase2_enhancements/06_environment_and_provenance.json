@@ -1,0 +1,11 @@
+{
+  "audit_scope": "Original 5 topology manifest files and associated sha256 outputs only",
+  "git_commit": "Record separately from your local git repository before final submission",
+  "important_limitation": "Graph topology and synthetic request inventory ONLY; not service protection feasibility",
+  "matplotlib": "3.11.2",
+  "networkx": "3.6.1",
+  "phase2_project_root_relative": ".",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.11.9",
+  "supervisor_approval": "not claimed; obtain outside this script"
+}

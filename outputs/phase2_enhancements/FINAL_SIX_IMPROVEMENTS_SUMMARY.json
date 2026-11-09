@@ -1,0 +1,13 @@
+{
+  "demand_datasets": 9,
+  "gateway_architectures_compared": 4,
+  "original_manifest_audits": 5,
+  "original_manifest_integrity_passes": 5,
+  "output_directory": "outputs\\phase2_enhancements",
+  "report_file": "PHASE2_SIX_IMPROVEMENTS_EVIDENCE_REPORT.md",
+  "requests_per_dataset": 500,
+  "route_categories_sampled": 4,
+  "scope": "Synthetic physical-graph topology and unadmitted demand; NOT protocol or service survivability.",
+  "topology_sweep_cycle_and_link_checks_passed": 15,
+  "topology_sweep_runs": 15
+}

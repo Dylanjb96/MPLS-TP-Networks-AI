@@ -1,0 +1,4 @@
+shape,runs,distinct_labelled_graphs,all_link_scenarios_passed,all_cycles_passed,mean_link_count
+primary,5,5,True,True,64
+fewer_rings,5,5,True,True,63
+wider_main,5,5,True,True,64
