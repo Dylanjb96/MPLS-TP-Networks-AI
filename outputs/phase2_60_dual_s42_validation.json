@@ -1,0 +1,45 @@
+{
+  "IMPORTANT": "Graph-only tests. NO MPLS-TP protection switching, service continuity, bandwidth assurance, or railway-safety result.",
+  "all_rings_valid_cycles": true,
+  "all_single_link_removals_preserve_graph_connectivity": true,
+  "all_single_node_removals_preserve_graph_connectivity_DIAGNOSTIC": true,
+  "bridge_count": 0,
+  "capacity_units": "Mb/s",
+  "connected": true,
+  "gateway_counts_valid": true,
+  "gateway_node_pairs": {
+    "sub_1": [
+      10,
+      11
+    ],
+    "sub_2": [
+      0,
+      1
+    ],
+    "sub_3": [
+      2,
+      3
+    ],
+    "sub_4": [
+      4,
+      5
+    ]
+  },
+  "link_count": 64,
+  "node_count": 60,
+  "node_failures_checked_DIAGNOSTIC": 60,
+  "node_ring_membership_consistent": true,
+  "physical_link_failures_checked": 64,
+  "positive_capacity_and_zero_initial_reservations": true,
+  "ring_count": 5,
+  "ring_validity": {
+    "main": true,
+    "sub_1": true,
+    "sub_2": true,
+    "sub_3": true,
+    "sub_4": true
+  },
+  "shared_physical_link_count": 4,
+  "subring_count": 4,
+  "unique_physical_link_ids": true
+}

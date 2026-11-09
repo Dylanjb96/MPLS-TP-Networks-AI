@@ -1,0 +1,317 @@
+{
+  "links": [
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E000_001",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 0,
+      "status": "active",
+      "synthetic": true,
+      "target": 1
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E000_005",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 0,
+      "status": "active",
+      "synthetic": true,
+      "target": 5
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E001_002",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 1,
+      "status": "active",
+      "synthetic": true,
+      "target": 2
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E002_003",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 2,
+      "status": "active",
+      "synthetic": true,
+      "target": 3
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E003_004",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 3,
+      "status": "active",
+      "synthetic": true,
+      "target": 4
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E004_005",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 4,
+      "status": "active",
+      "synthetic": true,
+      "target": 5
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E005_006",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 5,
+      "status": "active",
+      "synthetic": true,
+      "target": 6
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E005_011",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 5,
+      "status": "active",
+      "synthetic": true,
+      "target": 11
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E006_007",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 6,
+      "status": "active",
+      "synthetic": true,
+      "target": 7
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E007_008",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 7,
+      "status": "active",
+      "synthetic": true,
+      "target": 8
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E008_009",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 8,
+      "status": "active",
+      "synthetic": true,
+      "target": 9
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E009_010",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 9,
+      "status": "active",
+      "synthetic": true,
+      "target": 10
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E010_011",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 10,
+      "status": "active",
+      "synthetic": true,
+      "target": 11
+    }
+  ],
+  "metadata": {
+    "gateway_mode": "single",
+    "main_nodes": 6,
+    "model": "Phase 2 physical graph, NOT MSRP",
+    "physical_resource_policy": "shared physical edge stored once",
+    "requested_nodes": 12,
+    "seed": 42,
+    "subring_count": 1,
+    "synthetic": true,
+    "units": {
+      "capacity": "Mb/s",
+      "length": "km"
+    }
+  },
+  "nodes": [
+    {
+      "gateway": false,
+      "id": 0,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 1,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 2,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 3,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 4,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 5,
+      "rings": [
+        "main",
+        "sub_1"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 6,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 7,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 8,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 9,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 10,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 11,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    }
+  ],
+  "rings": {
+    "main": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "sub_1": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  }
+}

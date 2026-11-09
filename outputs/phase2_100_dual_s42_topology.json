@@ -1,0 +1,2444 @@
+{
+  "links": [
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E000_001",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 0,
+      "status": "active",
+      "synthetic": true,
+      "target": 1
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E000_019",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 0,
+      "status": "active",
+      "synthetic": true,
+      "target": 19
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E001_002",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 1,
+      "status": "active",
+      "synthetic": true,
+      "target": 2
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E002_003",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 2,
+      "status": "active",
+      "synthetic": true,
+      "target": 3
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E003_004",
+      "reserved_mbps": 0,
+      "rings": [
+        "main",
+        "sub_1"
+      ],
+      "source": 3,
+      "status": "active",
+      "synthetic": true,
+      "target": 4
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E003_020",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 3,
+      "status": "active",
+      "synthetic": true,
+      "target": 20
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E004_005",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 4,
+      "status": "active",
+      "synthetic": true,
+      "target": 5
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E004_033",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 4,
+      "status": "active",
+      "synthetic": true,
+      "target": 33
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E005_006",
+      "reserved_mbps": 0,
+      "rings": [
+        "main",
+        "sub_2"
+      ],
+      "source": 5,
+      "status": "active",
+      "synthetic": true,
+      "target": 6
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E005_034",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 5,
+      "status": "active",
+      "synthetic": true,
+      "target": 34
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E006_007",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 6,
+      "status": "active",
+      "synthetic": true,
+      "target": 7
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E006_047",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 6,
+      "status": "active",
+      "synthetic": true,
+      "target": 47
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E007_008",
+      "reserved_mbps": 0,
+      "rings": [
+        "main",
+        "sub_3"
+      ],
+      "source": 7,
+      "status": "active",
+      "synthetic": true,
+      "target": 8
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E007_048",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 7,
+      "status": "active",
+      "synthetic": true,
+      "target": 48
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E008_009",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 8,
+      "status": "active",
+      "synthetic": true,
+      "target": 9
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E008_060",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 8,
+      "status": "active",
+      "synthetic": true,
+      "target": 60
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E009_010",
+      "reserved_mbps": 0,
+      "rings": [
+        "main",
+        "sub_4"
+      ],
+      "source": 9,
+      "status": "active",
+      "synthetic": true,
+      "target": 10
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E009_061",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 9,
+      "status": "active",
+      "synthetic": true,
+      "target": 61
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E010_011",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 10,
+      "status": "active",
+      "synthetic": true,
+      "target": 11
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E010_073",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 10,
+      "status": "active",
+      "synthetic": true,
+      "target": 73
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E011_012",
+      "reserved_mbps": 0,
+      "rings": [
+        "main",
+        "sub_5"
+      ],
+      "source": 11,
+      "status": "active",
+      "synthetic": true,
+      "target": 12
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E011_074",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 11,
+      "status": "active",
+      "synthetic": true,
+      "target": 74
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E012_013",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 12,
+      "status": "active",
+      "synthetic": true,
+      "target": 13
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E012_086",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 12,
+      "status": "active",
+      "synthetic": true,
+      "target": 86
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E013_014",
+      "reserved_mbps": 0,
+      "rings": [
+        "main",
+        "sub_6"
+      ],
+      "source": 13,
+      "status": "active",
+      "synthetic": true,
+      "target": 14
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E013_087",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 13,
+      "status": "active",
+      "synthetic": true,
+      "target": 87
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E014_015",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 14,
+      "status": "active",
+      "synthetic": true,
+      "target": 15
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E014_099",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 14,
+      "status": "active",
+      "synthetic": true,
+      "target": 99
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E015_016",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 15,
+      "status": "active",
+      "synthetic": true,
+      "target": 16
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E016_017",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 16,
+      "status": "active",
+      "synthetic": true,
+      "target": 17
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E017_018",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 17,
+      "status": "active",
+      "synthetic": true,
+      "target": 18
+    },
+    {
+      "capacity_mbps": 10000,
+      "length_km": 2.0,
+      "physical_link_id": "E018_019",
+      "reserved_mbps": 0,
+      "rings": [
+        "main"
+      ],
+      "source": 18,
+      "status": "active",
+      "synthetic": true,
+      "target": 19
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E020_021",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 20,
+      "status": "active",
+      "synthetic": true,
+      "target": 21
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E021_022",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 21,
+      "status": "active",
+      "synthetic": true,
+      "target": 22
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E022_023",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 22,
+      "status": "active",
+      "synthetic": true,
+      "target": 23
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E023_024",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 23,
+      "status": "active",
+      "synthetic": true,
+      "target": 24
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E024_025",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 24,
+      "status": "active",
+      "synthetic": true,
+      "target": 25
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E025_026",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 25,
+      "status": "active",
+      "synthetic": true,
+      "target": 26
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E026_027",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 26,
+      "status": "active",
+      "synthetic": true,
+      "target": 27
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E027_028",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 27,
+      "status": "active",
+      "synthetic": true,
+      "target": 28
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E028_029",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 28,
+      "status": "active",
+      "synthetic": true,
+      "target": 29
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E029_030",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 29,
+      "status": "active",
+      "synthetic": true,
+      "target": 30
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E030_031",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 30,
+      "status": "active",
+      "synthetic": true,
+      "target": 31
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E031_032",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 31,
+      "status": "active",
+      "synthetic": true,
+      "target": 32
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E032_033",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_1"
+      ],
+      "source": 32,
+      "status": "active",
+      "synthetic": true,
+      "target": 33
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E034_035",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 34,
+      "status": "active",
+      "synthetic": true,
+      "target": 35
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E035_036",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 35,
+      "status": "active",
+      "synthetic": true,
+      "target": 36
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E036_037",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 36,
+      "status": "active",
+      "synthetic": true,
+      "target": 37
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E037_038",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 37,
+      "status": "active",
+      "synthetic": true,
+      "target": 38
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E038_039",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 38,
+      "status": "active",
+      "synthetic": true,
+      "target": 39
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E039_040",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 39,
+      "status": "active",
+      "synthetic": true,
+      "target": 40
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E040_041",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 40,
+      "status": "active",
+      "synthetic": true,
+      "target": 41
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E041_042",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 41,
+      "status": "active",
+      "synthetic": true,
+      "target": 42
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E042_043",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 42,
+      "status": "active",
+      "synthetic": true,
+      "target": 43
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E043_044",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 43,
+      "status": "active",
+      "synthetic": true,
+      "target": 44
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E044_045",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 44,
+      "status": "active",
+      "synthetic": true,
+      "target": 45
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E045_046",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 45,
+      "status": "active",
+      "synthetic": true,
+      "target": 46
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E046_047",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_2"
+      ],
+      "source": 46,
+      "status": "active",
+      "synthetic": true,
+      "target": 47
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E048_049",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 48,
+      "status": "active",
+      "synthetic": true,
+      "target": 49
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E049_050",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 49,
+      "status": "active",
+      "synthetic": true,
+      "target": 50
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E050_051",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 50,
+      "status": "active",
+      "synthetic": true,
+      "target": 51
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E051_052",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 51,
+      "status": "active",
+      "synthetic": true,
+      "target": 52
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E052_053",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 52,
+      "status": "active",
+      "synthetic": true,
+      "target": 53
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E053_054",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 53,
+      "status": "active",
+      "synthetic": true,
+      "target": 54
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E054_055",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 54,
+      "status": "active",
+      "synthetic": true,
+      "target": 55
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E055_056",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 55,
+      "status": "active",
+      "synthetic": true,
+      "target": 56
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E056_057",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 56,
+      "status": "active",
+      "synthetic": true,
+      "target": 57
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E057_058",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 57,
+      "status": "active",
+      "synthetic": true,
+      "target": 58
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E058_059",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 58,
+      "status": "active",
+      "synthetic": true,
+      "target": 59
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E059_060",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_3"
+      ],
+      "source": 59,
+      "status": "active",
+      "synthetic": true,
+      "target": 60
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E061_062",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 61,
+      "status": "active",
+      "synthetic": true,
+      "target": 62
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E062_063",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 62,
+      "status": "active",
+      "synthetic": true,
+      "target": 63
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E063_064",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 63,
+      "status": "active",
+      "synthetic": true,
+      "target": 64
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E064_065",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 64,
+      "status": "active",
+      "synthetic": true,
+      "target": 65
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E065_066",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 65,
+      "status": "active",
+      "synthetic": true,
+      "target": 66
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E066_067",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 66,
+      "status": "active",
+      "synthetic": true,
+      "target": 67
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E067_068",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 67,
+      "status": "active",
+      "synthetic": true,
+      "target": 68
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E068_069",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 68,
+      "status": "active",
+      "synthetic": true,
+      "target": 69
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E069_070",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 69,
+      "status": "active",
+      "synthetic": true,
+      "target": 70
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E070_071",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 70,
+      "status": "active",
+      "synthetic": true,
+      "target": 71
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E071_072",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 71,
+      "status": "active",
+      "synthetic": true,
+      "target": 72
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E072_073",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_4"
+      ],
+      "source": 72,
+      "status": "active",
+      "synthetic": true,
+      "target": 73
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E074_075",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 74,
+      "status": "active",
+      "synthetic": true,
+      "target": 75
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E075_076",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 75,
+      "status": "active",
+      "synthetic": true,
+      "target": 76
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E076_077",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 76,
+      "status": "active",
+      "synthetic": true,
+      "target": 77
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E077_078",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 77,
+      "status": "active",
+      "synthetic": true,
+      "target": 78
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E078_079",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 78,
+      "status": "active",
+      "synthetic": true,
+      "target": 79
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E079_080",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 79,
+      "status": "active",
+      "synthetic": true,
+      "target": 80
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E080_081",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 80,
+      "status": "active",
+      "synthetic": true,
+      "target": 81
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E081_082",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 81,
+      "status": "active",
+      "synthetic": true,
+      "target": 82
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E082_083",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 82,
+      "status": "active",
+      "synthetic": true,
+      "target": 83
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E083_084",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 83,
+      "status": "active",
+      "synthetic": true,
+      "target": 84
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E084_085",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 84,
+      "status": "active",
+      "synthetic": true,
+      "target": 85
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E085_086",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_5"
+      ],
+      "source": 85,
+      "status": "active",
+      "synthetic": true,
+      "target": 86
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E087_088",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 87,
+      "status": "active",
+      "synthetic": true,
+      "target": 88
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E088_089",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 88,
+      "status": "active",
+      "synthetic": true,
+      "target": 89
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E089_090",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 89,
+      "status": "active",
+      "synthetic": true,
+      "target": 90
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E090_091",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 90,
+      "status": "active",
+      "synthetic": true,
+      "target": 91
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E091_092",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 91,
+      "status": "active",
+      "synthetic": true,
+      "target": 92
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E092_093",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 92,
+      "status": "active",
+      "synthetic": true,
+      "target": 93
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E093_094",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 93,
+      "status": "active",
+      "synthetic": true,
+      "target": 94
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E094_095",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 94,
+      "status": "active",
+      "synthetic": true,
+      "target": 95
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E095_096",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 95,
+      "status": "active",
+      "synthetic": true,
+      "target": 96
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E096_097",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 96,
+      "status": "active",
+      "synthetic": true,
+      "target": 97
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E097_098",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 97,
+      "status": "active",
+      "synthetic": true,
+      "target": 98
+    },
+    {
+      "capacity_mbps": 1000,
+      "length_km": 2.0,
+      "physical_link_id": "E098_099",
+      "reserved_mbps": 0,
+      "rings": [
+        "sub_6"
+      ],
+      "source": 98,
+      "status": "active",
+      "synthetic": true,
+      "target": 99
+    }
+  ],
+  "metadata": {
+    "gateway_mode": "dual",
+    "main_nodes": 20,
+    "model": "Phase 2 physical graph, NOT MSRP",
+    "physical_resource_policy": "shared physical edge stored once",
+    "requested_nodes": 100,
+    "seed": 42,
+    "subring_count": 6,
+    "synthetic": true,
+    "units": {
+      "capacity": "Mb/s",
+      "length": "km"
+    }
+  },
+  "nodes": [
+    {
+      "gateway": false,
+      "id": 0,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 1,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 2,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 3,
+      "rings": [
+        "main",
+        "sub_1"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 4,
+      "rings": [
+        "main",
+        "sub_1"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 5,
+      "rings": [
+        "main",
+        "sub_2"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 6,
+      "rings": [
+        "main",
+        "sub_2"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 7,
+      "rings": [
+        "main",
+        "sub_3"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 8,
+      "rings": [
+        "main",
+        "sub_3"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 9,
+      "rings": [
+        "main",
+        "sub_4"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 10,
+      "rings": [
+        "main",
+        "sub_4"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 11,
+      "rings": [
+        "main",
+        "sub_5"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 12,
+      "rings": [
+        "main",
+        "sub_5"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 13,
+      "rings": [
+        "main",
+        "sub_6"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": true,
+      "id": 14,
+      "rings": [
+        "main",
+        "sub_6"
+      ],
+      "role": "interconnection_gateway",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 15,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 16,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 17,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 18,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 19,
+      "rings": [
+        "main"
+      ],
+      "role": "main_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 20,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 21,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 22,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 23,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 24,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 25,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 26,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 27,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 28,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 29,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 30,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 31,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 32,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 33,
+      "rings": [
+        "sub_1"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 34,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 35,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 36,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 37,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 38,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 39,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 40,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 41,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 42,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 43,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 44,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 45,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 46,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 47,
+      "rings": [
+        "sub_2"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 48,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 49,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 50,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 51,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 52,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 53,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 54,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 55,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 56,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 57,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 58,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 59,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 60,
+      "rings": [
+        "sub_3"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 61,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 62,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 63,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 64,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 65,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 66,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 67,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 68,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 69,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 70,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 71,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 72,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 73,
+      "rings": [
+        "sub_4"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 74,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 75,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 76,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 77,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 78,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 79,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 80,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 81,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 82,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 83,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 84,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 85,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 86,
+      "rings": [
+        "sub_5"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 87,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 88,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 89,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 90,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 91,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 92,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 93,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 94,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 95,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 96,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 97,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 98,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    },
+    {
+      "gateway": false,
+      "id": 99,
+      "rings": [
+        "sub_6"
+      ],
+      "role": "sub_transport",
+      "synthetic": true
+    }
+  ],
+  "rings": {
+    "main": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "sub_1": [
+      3,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      4
+    ],
+    "sub_2": [
+      5,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      6
+    ],
+    "sub_3": [
+      7,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      8
+    ],
+    "sub_4": [
+      9,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      10
+    ],
+    "sub_5": [
+      11,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      12
+    ],
+    "sub_6": [
+      13,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      14
+    ]
+  }
+}
