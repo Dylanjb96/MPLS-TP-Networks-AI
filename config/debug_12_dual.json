@@ -1,0 +1,9 @@
+{"nodes":12,
+"seed":42,
+"gateway_mode":"dual",
+"main_capacity_mbps":10000,
+"sub_capacity_mbps":1000,
+"main_nodes":6,
+"subring_count":1,
+"length_km":2.0
+}
