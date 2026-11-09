@@ -1,0 +1,5 @@
+endpoint_category,sampled_pairs,mean_shortest_hops,max_shortest_hops,mean_gateway_transits_on_shortest_path,minimum_observed_local_edge_connectivity,mean_local_edge_connectivity,pct_with_at_least_5_graph_candidates
+main-to-main,12,1.667,3,0,2,2,100.0
+within-subring,35,3.457,7,0.171,2,2,100.0
+main-to-subring,35,7.286,12,2.486,2,2,100.0
+subring-to-subring,35,10.057,15,4.029,2,2,100.0

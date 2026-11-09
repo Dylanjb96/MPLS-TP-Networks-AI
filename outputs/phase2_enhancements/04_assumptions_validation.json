@@ -1,0 +1,14 @@
+{
+  "example_physical_link_capacity_mbps": 10000,
+  "example_shared_link_id": "E000_001",
+  "example_shared_link_rings": [
+    "main",
+    "sub_2"
+  ],
+  "example_unique_physical_link_count": 1,
+  "existing_phase2_network_graph": "undirected physical connectivity graph",
+  "model_decisions_documented": true,
+  "phase3_proposed_direction_model": "independent_per_direction",
+  "phase3_protection_scheme_frozen": false,
+  "warning": "These Phase 3 settings are a PROPOSAL, not implemented capacity checks or RFC 8227 protection."
+}

@@ -1,0 +1,16 @@
+shape,seed,nodes,links,rings,main_nodes,subring_count,gateways,all_cycles,single_link_connected,single_node_connected_DIAGNOSTIC,articulation_points,graph_edge_connectivity,fingerprint
+primary,42,60,64,5,12,4,0;1;2;3;4;5;10;11,True,True,True,0,2,dc93943c025aa4d5a7234a64fc15203841ca0c5b43277a213bf1ca95ffefe1e9
+primary,43,60,64,5,12,4,0;1;2;3;4;5;6;7,True,True,True,0,2,4a758ba98945a2bb59ca4c56fefd842a36c66ed3100f6d82d1d60b21b518d274
+primary,44,60,64,5,12,4,0;1;6;7;8;9;10;11,True,True,True,0,2,cfb991483e8fa0654e37ad026c131243949f1a0fa869c63665299cf2fa1afd88
+primary,45,60,64,5,12,4,4;5;6;7;8;9;10;11,True,True,True,0,2,19b38cb052c21254f6c462f7167f4de148b78dbc088fa0fbe4481004cbbbd9ac
+primary,46,60,64,5,12,4,1;2;3;4;5;6;7;8,True,True,True,0,2,026ba7a0dedc74c1ef4392a45fa4ab1f73affebb6d0862e77a753948127e69f0
+fewer_rings,42,60,63,4,12,3,0;1;2;3;10;11,True,True,True,0,2,628b99058d9501f703ad2f2be2d42fac8fd1297491c87353eaadc7ae6689881b
+fewer_rings,43,60,63,4,12,3,0;1;2;3;4;5,True,True,True,0,2,f3e8b799c3901722187121dafea5673400cecb649de8611ca8b54bff18e9b869
+fewer_rings,44,60,63,4,12,3,6;7;8;9;10;11,True,True,True,0,2,67fcd294bdc0773b995315634b018f53b9322c029a98e96f847233e90c35e233
+fewer_rings,45,60,63,4,12,3,4;5;6;7;8;9,True,True,True,0,2,39385fefe4b65a75af80d7c127c21eab2b5e6959886c708ceec8e066264d5bfe
+fewer_rings,46,60,63,4,12,3,1;2;3;4;5;6,True,True,True,0,2,66d04e2b80beea1619622e3b5ab9389d009aabf55a91be9788a1388384756318
+wider_main,42,60,64,5,16,4,3;4;5;6;7;8;9;10,True,True,True,0,2,dd4ffbe41fc96e6e4cd62b0803298e58373b62f6ec40e636531dc6d8f96be7c4
+wider_main,43,60,64,5,16,4,1;2;3;4;5;6;7;8,True,True,True,0,2,42dbd9cc8a68cea647c795125bb7d3a01e223353e140618b92dfc3f81abf32d9
+wider_main,44,60,64,5,16,4,0;1;2;3;4;13;14;15,True,True,True,0,2,438354e198373758279546f35f6063a017737699c24a7f3601db221a63804acb
+wider_main,45,60,64,5,16,4,8;9;10;11;12;13;14;15,True,True,True,0,2,a73e94861eb84ec6cd8d9582396417801ca2f9bbee07bc9d5fd23208e1acc06b
+wider_main,46,60,64,5,16,4,2;3;4;5;6;7;8;9,True,True,True,0,2,966dae66de1a6d43e1055933b668ee8c714de4e12de8efdabe8a602db9358ce9

@@ -1,0 +1,6 @@
+configuration,manifest_present,structural_pass,listed_output_files,verified_sha256,bad_or_missing_files,fully_validated
+debug_12_dual,True,True,11,11,,True
+contrast_12_single,True,True,11,11,,True
+primary_60_dual,True,True,11,11,,True
+scale_100_dual,True,True,11,11,,True
+optional_150_dual,True,True,11,11,,True
