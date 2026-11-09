@@ -1,0 +1,33 @@
+| Network configuration | Nodes | Links | Rings | Topology valid | Single-link connectivity | Node-loss diagnostic |
+|-----------------------|-------|-------|-------|----------------|--------------------------|----------------------|
+| 12-node dual gateway  | 12 | 13 | 2 | ✅ | ✅ | ✅ |
+| 12-node single gateway| 12 | 13 | 2 | ✅ | ✅ | ❌ |
+| 60-node dual gateway  | 60 | 64 | 5 | ✅ | ✅ | ✅ |
+| 100-node dual gateway | 100 | 106 | 7 | ✅ | ✅ | ✅ |
+| 150-node dual gateway | 150 | 156 | 7 | ✅ | ✅ | ✅ |
+
+
+Phase 2:
+The two 12-node configurations illustrate why gateway architecture matters.
+The single-gateway network remains connected after individual physical-link removals but fails the node-loss connectivity diagnostic. The dual-gateway network passes both.
+This suggests that the single-gateway architecture introduces a potential interconnection single point of failure.
+However, these are graph-connectivity results, not demonstrations of actual MPLS-TP service recovery or protection switching.
+Likewise, generating networks with 60, 100 and 150 nodes demonstrates that the topology generator supports those sizes. It does not yet establish the computational scalability of the actual existing system.
+
+Current Progress
+| Component                     | Status       |
+|-------------------------------|--------------|
+| 12-node dual-gateway topology | ✅ Complete |
+| 12-node single-gateway topology | ✅ Complete |
+| 60-node primary topology | ✅ Complete |
+| 100-node scalability topology | ✅ Complete |
+| 150-node extended topology | ✅ Complete |
+| Physical-link connectivity testing | ✅ Complete |
+| Node-removal connectivity diagnostics | ✅ Complete |
+| Automated tests | ✅ 20/20 passed |
+| Topology diagrams | ✅ Generated |
+| Synthetic service request generation | ✅ Implemented |
+| Multiple random-seed experiments | 🔶 Worth expanding |
+| Topology sensitivity analysis | 🔶 Worth expanding |
+| Network architecture comparison | 🔶 Worth expanding |
+| Research evidence and documentation | 🔶 Final review recommended |
