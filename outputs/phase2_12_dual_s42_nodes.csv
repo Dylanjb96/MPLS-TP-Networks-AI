@@ -1,0 +1,13 @@
+node_id,role,gateway,rings
+0,interconnection_gateway,True,main;sub_1
+1,main_transport,False,main
+2,main_transport,False,main
+3,main_transport,False,main
+4,main_transport,False,main
+5,interconnection_gateway,True,main;sub_1
+6,sub_transport,False,sub_1
+7,sub_transport,False,sub_1
+8,sub_transport,False,sub_1
+9,sub_transport,False,sub_1
+10,sub_transport,False,sub_1
+11,sub_transport,False,sub_1
