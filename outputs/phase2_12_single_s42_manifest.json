@@ -1,0 +1,69 @@
+{
+  "config": {
+    "gateway_mode": "single",
+    "length_km": 2.0,
+    "main_capacity_mbps": 10000,
+    "main_nodes": 6,
+    "nodes": 12,
+    "seed": 42,
+    "sub_capacity_mbps": 1000,
+    "subring_count": 1
+  },
+  "demand_class_counts": {
+    "critical": 13,
+    "non_critical": 10,
+    "operational": 27
+  },
+  "output_files_sha256": {
+    "phase2_12_single_s42_diagram.png": "b7f523fb16da61972009e1a404b712c738616ef71db2cdf41dcc1f4bd741e862",
+    "phase2_12_single_s42_link_failure_checks.csv": "05e56292c762c2869e1baf8c58c8c8e88e3a8cd08527ff4f445cc88d0cc13ca4",
+    "phase2_12_single_s42_links.csv": "ccfdbf4c4fbaa2db9579a5e1ceb78f8c2747f34565ee9f93211db0f8e2bfb841",
+    "phase2_12_single_s42_node_failure_DIAGNOSTIC.csv": "eefbadfe9d0a18683b16697d924ee3bfa4585f4f365ac64c718841049e52fce8",
+    "phase2_12_single_s42_nodes.csv": "b27540600af7652faf7a1a20178aa886ae673972a0b40043d14db53a301c21b1",
+    "phase2_12_single_s42_requests.json": "1dab210217001e7505b9a14314765e2eb0afac2cdc8d9a5872a0c4cabda3c457",
+    "phase2_12_single_s42_ring_inventory.csv": "80235e17cf1be05adf950238be8a74ba6e8ae317e7edac29e9ce755c76af2c87",
+    "phase2_12_single_s42_route_examples.json": "11df3be6a27a912d4f6dd6a6d88dd077c1be33fc593957fc396af21e8adf040a",
+    "phase2_12_single_s42_synthetic_demand.csv": "443c5efaff954642f50876dcf9ef41067cc6bdf79f7a59547cf52928f3ee8fd2",
+    "phase2_12_single_s42_topology.json": "a24830ec398ff6fc87bb92b80f2f670921f4458d1a035055e623289ad9cd7d60",
+    "phase2_12_single_s42_validation.json": "b17f8140a4d5581acbde29c19f2c2c90da07ac16299354a9306a2800277ee05d"
+  },
+  "passed_structural_gate": true,
+  "project": "Phase 2 synthetic railway-like interconnected-ring topology",
+  "request_count": 50,
+  "request_endpoint_category_counts": {
+    "main-to-main": 15,
+    "main-to-subring": 23,
+    "within-subring": 12
+  },
+  "scope": "topology-only, no MPLS-TP shared-ring protection or service admission",
+  "standards_reference": "https://www.rfc-editor.org/info/rfc8227/",
+  "validation": {
+    "IMPORTANT": "Graph-only tests. NO MPLS-TP protection switching, service continuity, bandwidth assurance, or railway-safety result.",
+    "all_rings_valid_cycles": true,
+    "all_single_link_removals_preserve_graph_connectivity": true,
+    "all_single_node_removals_preserve_graph_connectivity_DIAGNOSTIC": false,
+    "bridge_count": 0,
+    "capacity_units": "Mb/s",
+    "connected": true,
+    "gateway_counts_valid": true,
+    "gateway_node_pairs": {
+      "sub_1": [
+        5
+      ]
+    },
+    "link_count": 13,
+    "node_count": 12,
+    "node_failures_checked_DIAGNOSTIC": 12,
+    "node_ring_membership_consistent": true,
+    "physical_link_failures_checked": 13,
+    "positive_capacity_and_zero_initial_reservations": true,
+    "ring_count": 2,
+    "ring_validity": {
+      "main": true,
+      "sub_1": true
+    },
+    "shared_physical_link_count": 0,
+    "subring_count": 1,
+    "unique_physical_link_ids": true
+  }
+}

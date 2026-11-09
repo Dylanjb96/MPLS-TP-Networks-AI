@@ -1,0 +1,96 @@
+{
+  "config": {
+    "gateway_mode": "dual",
+    "length_km": 2.0,
+    "main_capacity_mbps": 10000,
+    "main_nodes": 30,
+    "nodes": 150,
+    "seed": 42,
+    "sub_capacity_mbps": 1000,
+    "subring_count": 6
+  },
+  "demand_class_counts": {
+    "critical": 10,
+    "non_critical": 13,
+    "operational": 27
+  },
+  "output_files_sha256": {
+    "phase2_150_dual_s42_diagram.png": "5c93a5035d2d047a28441e70b7eaade442a2d95fccd83edc1e7794063f2f8662",
+    "phase2_150_dual_s42_link_failure_checks.csv": "de6cdb0641e745c2e34014748873d9e3cd29762c053452e178d2dfc62e682cbf",
+    "phase2_150_dual_s42_links.csv": "9efeaa2cc1e2f79126c1e3f12ec203dfe40a3398c7082486127a07bd21c20b47",
+    "phase2_150_dual_s42_node_failure_DIAGNOSTIC.csv": "3e2f07fc5d257bd8a88c30b4119928b0e6457c00b8c684a29c76377a191d8b79",
+    "phase2_150_dual_s42_nodes.csv": "9e6e941a713227dfa8240324c5a896113422abf4d4a63b00cba1adfadfacd803",
+    "phase2_150_dual_s42_requests.json": "04547615605f43150b395553411e97c1c00439621f95b6a980036254827f2dc6",
+    "phase2_150_dual_s42_ring_inventory.csv": "71ca81d4098521e2274bd0907d20b3a6c7dd2501325c41a2769b196bff307fe9",
+    "phase2_150_dual_s42_route_examples.json": "ff22a07d141c0a55e3f61057ead5a0fed639525a25a4b40554607eee332a89d8",
+    "phase2_150_dual_s42_synthetic_demand.csv": "142969ea98294ffc32d7fe7c302ac498cd57bf2a9b97cac25adef38bdbe5f6c6",
+    "phase2_150_dual_s42_topology.json": "d5e926edfdb323fc09fc68d31800019af5ddbb7add62d7018953382096a7cae1",
+    "phase2_150_dual_s42_validation.json": "c7433deb046ff2148d91ed94f6244013a4c64c12f2afb987dcef3f85586566d9"
+  },
+  "passed_structural_gate": true,
+  "project": "Phase 2 synthetic railway-like interconnected-ring topology",
+  "request_count": 50,
+  "request_endpoint_category_counts": {
+    "main-to-main": 4,
+    "main-to-subring": 12,
+    "subring-to-subring": 31,
+    "within-subring": 3
+  },
+  "scope": "topology-only, no MPLS-TP shared-ring protection or service admission",
+  "standards_reference": "https://www.rfc-editor.org/info/rfc8227/",
+  "validation": {
+    "IMPORTANT": "Graph-only tests. NO MPLS-TP protection switching, service continuity, bandwidth assurance, or railway-safety result.",
+    "all_rings_valid_cycles": true,
+    "all_single_link_removals_preserve_graph_connectivity": true,
+    "all_single_node_removals_preserve_graph_connectivity_DIAGNOSTIC": true,
+    "bridge_count": 0,
+    "capacity_units": "Mb/s",
+    "connected": true,
+    "gateway_counts_valid": true,
+    "gateway_node_pairs": {
+      "sub_1": [
+        20,
+        21
+      ],
+      "sub_2": [
+        22,
+        23
+      ],
+      "sub_3": [
+        24,
+        25
+      ],
+      "sub_4": [
+        26,
+        27
+      ],
+      "sub_5": [
+        28,
+        29
+      ],
+      "sub_6": [
+        0,
+        1
+      ]
+    },
+    "link_count": 156,
+    "node_count": 150,
+    "node_failures_checked_DIAGNOSTIC": 150,
+    "node_ring_membership_consistent": true,
+    "physical_link_failures_checked": 156,
+    "positive_capacity_and_zero_initial_reservations": true,
+    "ring_count": 7,
+    "ring_validity": {
+      "main": true,
+      "sub_1": true,
+      "sub_2": true,
+      "sub_3": true,
+      "sub_4": true,
+      "sub_5": true,
+      "sub_6": true
+    },
+    "shared_physical_link_count": 6,
+    "subring_count": 6,
+    "unique_physical_link_ids": true
+  }
+}

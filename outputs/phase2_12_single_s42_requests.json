@@ -1,0 +1,452 @@
+[
+  {
+    "bandwidth_mbps": 50,
+    "destination": 4,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 3,
+    "request_id": "R0001",
+    "service_class": "operational",
+    "source": 0
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 5,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0002",
+    "service_class": "operational",
+    "source": 7
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 9,
+    "endpoint_category": "within-subring",
+    "priority_weight": 3,
+    "request_id": "R0003",
+    "service_class": "operational",
+    "source": 7
+  },
+  {
+    "bandwidth_mbps": 200,
+    "destination": 6,
+    "endpoint_category": "within-subring",
+    "priority_weight": 3,
+    "request_id": "R0004",
+    "service_class": "operational",
+    "source": 8
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 6,
+    "endpoint_category": "within-subring",
+    "priority_weight": 3,
+    "request_id": "R0005",
+    "service_class": "operational",
+    "source": 8
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 11,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0006",
+    "service_class": "operational",
+    "source": 1
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 8,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 1,
+    "request_id": "R0007",
+    "service_class": "non_critical",
+    "source": 2
+  },
+  {
+    "bandwidth_mbps": 200,
+    "destination": 9,
+    "endpoint_category": "within-subring",
+    "priority_weight": 1,
+    "request_id": "R0008",
+    "service_class": "non_critical",
+    "source": 6
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 2,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0009",
+    "service_class": "operational",
+    "source": 9
+  },
+  {
+    "bandwidth_mbps": 10,
+    "destination": 0,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 5,
+    "request_id": "R0010",
+    "service_class": "critical",
+    "source": 9
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 4,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 3,
+    "request_id": "R0011",
+    "service_class": "operational",
+    "source": 2
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 9,
+    "endpoint_category": "within-subring",
+    "priority_weight": 5,
+    "request_id": "R0012",
+    "service_class": "critical",
+    "source": 8
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 11,
+    "endpoint_category": "within-subring",
+    "priority_weight": 3,
+    "request_id": "R0013",
+    "service_class": "operational",
+    "source": 10
+  },
+  {
+    "bandwidth_mbps": 400,
+    "destination": 7,
+    "endpoint_category": "within-subring",
+    "priority_weight": 1,
+    "request_id": "R0014",
+    "service_class": "non_critical",
+    "source": 9
+  },
+  {
+    "bandwidth_mbps": 200,
+    "destination": 11,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0015",
+    "service_class": "operational",
+    "source": 5
+  },
+  {
+    "bandwidth_mbps": 10,
+    "destination": 2,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 5,
+    "request_id": "R0016",
+    "service_class": "critical",
+    "source": 7
+  },
+  {
+    "bandwidth_mbps": 200,
+    "destination": 0,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 1,
+    "request_id": "R0017",
+    "service_class": "non_critical",
+    "source": 5
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 2,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 3,
+    "request_id": "R0018",
+    "service_class": "operational",
+    "source": 5
+  },
+  {
+    "bandwidth_mbps": 20,
+    "destination": 10,
+    "endpoint_category": "within-subring",
+    "priority_weight": 5,
+    "request_id": "R0019",
+    "service_class": "critical",
+    "source": 8
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 5,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 1,
+    "request_id": "R0020",
+    "service_class": "non_critical",
+    "source": 11
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 6,
+    "endpoint_category": "within-subring",
+    "priority_weight": 3,
+    "request_id": "R0021",
+    "service_class": "operational",
+    "source": 7
+  },
+  {
+    "bandwidth_mbps": 200,
+    "destination": 2,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 3,
+    "request_id": "R0022",
+    "service_class": "operational",
+    "source": 5
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 2,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0023",
+    "service_class": "operational",
+    "source": 11
+  },
+  {
+    "bandwidth_mbps": 200,
+    "destination": 8,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0024",
+    "service_class": "operational",
+    "source": 1
+  },
+  {
+    "bandwidth_mbps": 10,
+    "destination": 2,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 5,
+    "request_id": "R0025",
+    "service_class": "critical",
+    "source": 0
+  },
+  {
+    "bandwidth_mbps": 200,
+    "destination": 0,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 1,
+    "request_id": "R0026",
+    "service_class": "non_critical",
+    "source": 2
+  },
+  {
+    "bandwidth_mbps": 200,
+    "destination": 8,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0027",
+    "service_class": "operational",
+    "source": 1
+  },
+  {
+    "bandwidth_mbps": 200,
+    "destination": 5,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 1,
+    "request_id": "R0028",
+    "service_class": "non_critical",
+    "source": 7
+  },
+  {
+    "bandwidth_mbps": 10,
+    "destination": 0,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 5,
+    "request_id": "R0029",
+    "service_class": "critical",
+    "source": 1
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 6,
+    "endpoint_category": "within-subring",
+    "priority_weight": 5,
+    "request_id": "R0030",
+    "service_class": "critical",
+    "source": 10
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 4,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0031",
+    "service_class": "operational",
+    "source": 6
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 6,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0032",
+    "service_class": "operational",
+    "source": 5
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 2,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 1,
+    "request_id": "R0033",
+    "service_class": "non_critical",
+    "source": 8
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 0,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0034",
+    "service_class": "operational",
+    "source": 11
+  },
+  {
+    "bandwidth_mbps": 10,
+    "destination": 5,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 5,
+    "request_id": "R0035",
+    "service_class": "critical",
+    "source": 3
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 11,
+    "endpoint_category": "within-subring",
+    "priority_weight": 3,
+    "request_id": "R0036",
+    "service_class": "operational",
+    "source": 6
+  },
+  {
+    "bandwidth_mbps": 10,
+    "destination": 0,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 5,
+    "request_id": "R0037",
+    "service_class": "critical",
+    "source": 8
+  },
+  {
+    "bandwidth_mbps": 400,
+    "destination": 9,
+    "endpoint_category": "within-subring",
+    "priority_weight": 1,
+    "request_id": "R0038",
+    "service_class": "non_critical",
+    "source": 8
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 1,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0039",
+    "service_class": "operational",
+    "source": 8
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 2,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 3,
+    "request_id": "R0040",
+    "service_class": "operational",
+    "source": 3
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 3,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 5,
+    "request_id": "R0041",
+    "service_class": "critical",
+    "source": 2
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 1,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 3,
+    "request_id": "R0042",
+    "service_class": "operational",
+    "source": 3
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 6,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0043",
+    "service_class": "operational",
+    "source": 3
+  },
+  {
+    "bandwidth_mbps": 20,
+    "destination": 6,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 5,
+    "request_id": "R0044",
+    "service_class": "critical",
+    "source": 2
+  },
+  {
+    "bandwidth_mbps": 50,
+    "destination": 8,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 5,
+    "request_id": "R0045",
+    "service_class": "critical",
+    "source": 4
+  },
+  {
+    "bandwidth_mbps": 10,
+    "destination": 3,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 5,
+    "request_id": "R0046",
+    "service_class": "critical",
+    "source": 2
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 4,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 3,
+    "request_id": "R0047",
+    "service_class": "operational",
+    "source": 1
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 1,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 3,
+    "request_id": "R0048",
+    "service_class": "operational",
+    "source": 10
+  },
+  {
+    "bandwidth_mbps": 200,
+    "destination": 5,
+    "endpoint_category": "main-to-main",
+    "priority_weight": 3,
+    "request_id": "R0049",
+    "service_class": "operational",
+    "source": 2
+  },
+  {
+    "bandwidth_mbps": 100,
+    "destination": 7,
+    "endpoint_category": "main-to-subring",
+    "priority_weight": 1,
+    "request_id": "R0050",
+    "service_class": "non_critical",
+    "source": 3
+  }
+]

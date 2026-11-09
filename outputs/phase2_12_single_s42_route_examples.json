@@ -1,0 +1,139 @@
+{
+  "WARNING": "Global graph routes and ring arcs are not yet valid protected MPLS-TP LSP plans.",
+  "main-to-main": {
+    "candidate_count": 2,
+    "candidate_graph_paths": [
+      {
+        "hops": 1,
+        "km": 2.0,
+        "nodes": [
+          0,
+          1
+        ]
+      },
+      {
+        "hops": 5,
+        "km": 10.0,
+        "nodes": [
+          0,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      }
+    ],
+    "source": 0,
+    "target": 1
+  },
+  "main-to-subring": {
+    "candidate_count": 4,
+    "candidate_graph_paths": [
+      {
+        "hops": 2,
+        "km": 4.0,
+        "nodes": [
+          0,
+          5,
+          11
+        ]
+      },
+      {
+        "hops": 6,
+        "km": 12.0,
+        "nodes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          11
+        ]
+      },
+      {
+        "hops": 7,
+        "km": 14.0,
+        "nodes": [
+          0,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "hops": 11,
+        "km": 22.0,
+        "nodes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    ],
+    "source": 0,
+    "target": 11
+  },
+  "two_arcs_within_subring": {
+    "physical_arcs": [
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        5,
+        11,
+        10,
+        9,
+        8,
+        7
+      ]
+    ],
+    "ring": "sub_1",
+    "source": 6,
+    "target": 7
+  },
+  "within-subring": {
+    "candidate_count": 2,
+    "candidate_graph_paths": [
+      {
+        "hops": 1,
+        "km": 2.0,
+        "nodes": [
+          6,
+          7
+        ]
+      },
+      {
+        "hops": 6,
+        "km": 12.0,
+        "nodes": [
+          6,
+          5,
+          11,
+          10,
+          9,
+          8,
+          7
+        ]
+      }
+    ],
+    "source": 6,
+    "target": 7
+  }
+}

@@ -1,0 +1,14 @@
+link_id,source,target,rings,capacity_mbps,reserved_mbps,length_km,status
+E000_001,0,1,main,10000,0,2.0,active
+E000_005,0,5,main;sub_1,10000,0,2.0,active
+E000_011,0,11,sub_1,1000,0,2.0,active
+E001_002,1,2,main,10000,0,2.0,active
+E002_003,2,3,main,10000,0,2.0,active
+E003_004,3,4,main,10000,0,2.0,active
+E004_005,4,5,main,10000,0,2.0,active
+E005_006,5,6,sub_1,1000,0,2.0,active
+E006_007,6,7,sub_1,1000,0,2.0,active
+E007_008,7,8,sub_1,1000,0,2.0,active
+E008_009,8,9,sub_1,1000,0,2.0,active
+E009_010,9,10,sub_1,1000,0,2.0,active
+E010_011,10,11,sub_1,1000,0,2.0,active
