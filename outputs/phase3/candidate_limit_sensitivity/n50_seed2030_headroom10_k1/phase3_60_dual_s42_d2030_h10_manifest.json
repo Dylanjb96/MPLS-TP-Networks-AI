@@ -1,0 +1,17 @@
+{
+  "artifact_sha256": {
+    "phase3_60_dual_s42_d2030_h10_accepted_protection_plans.json": "26038a589c8674bba8c2669ca54a5d2db6b0355219bd39fd5b21413ca93d44a0",
+    "phase3_60_dual_s42_d2030_h10_decisions.csv": "bebc4003dd0df79daef6567e6b3db8154eda5ca9c4dca95751b89be2581d7cff",
+    "phase3_60_dual_s42_d2030_h10_requests.csv": "faca585451058a86d240058693d3a238c040c87660017daa3cc89d4cbac5ca16",
+    "phase3_60_dual_s42_d2030_h10_summary.json": "fa0ff92bbbe8f0fb92d0b0716cdcac4a633bc2c8be9d59686feafbd98f1abb96"
+  },
+  "environment": "Use requirements.txt; Python >= 3.10",
+  "files": [
+    "phase3_60_dual_s42_d2030_h10_requests.csv",
+    "phase3_60_dual_s42_d2030_h10_decisions.csv",
+    "phase3_60_dual_s42_d2030_h10_accepted_protection_plans.json",
+    "phase3_60_dual_s42_d2030_h10_summary.json"
+  ],
+  "model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "standards_reference": "https://www.rfc-editor.org/info/rfc8227/"
+}
