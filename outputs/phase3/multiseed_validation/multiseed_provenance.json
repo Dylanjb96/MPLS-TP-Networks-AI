@@ -1,0 +1,26 @@
+{
+  "scope": "synthetic ring-segment robust-admission surrogate, NOT actual MPLS-TP MSRP",
+  "configuration": "C:\\Users\\Dylan B\\Desktop\\MPLS AI\\MPLS-AI\\config\\primary_60_dual.json",
+  "nodes": 60,
+  "topology_seed": 42,
+  "demand_seeds": [
+    2027,
+    2028,
+    2029,
+    2030,
+    2031
+  ],
+  "headrooms": [
+    0,
+    10,
+    20
+  ],
+  "requests_per_run": 50,
+  "max_candidates": 12,
+  "runs": 15,
+  "outputs": [
+    "multiseed_runs.csv",
+    "multiseed_summary.csv"
+  ],
+  "interpretation": "Pilot descriptive analysis; seeds held identical across headroom settings. No operator claims."
+}

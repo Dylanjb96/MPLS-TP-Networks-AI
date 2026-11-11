@@ -1,0 +1,16 @@
+nodes,gateway_mode,topology_seed,demand_seed,requests,headroom_percent,max_candidates,admitted,rejected,protected_admission_ratio,weighted_protected_acceptance_ratio,normal_capacity_rejections,postfault_capacity_rejections,candidate_absent_count,peak_utilization,output_dir
+60,dual,42,2027,50,0,12,32,18,0.64,0.702703,3,15,0,1.0,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2027_headroom0_k12
+60,dual,42,2027,50,10,12,30,20,0.6,0.662162,5,15,0,1.0,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2027_headroom10_k12
+60,dual,42,2027,50,20,12,29,21,0.58,0.655405,4,17,0,1.0,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2027_headroom20_k12
+60,dual,42,2028,50,0,12,26,24,0.52,0.61194,4,20,0,1.0,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2028_headroom0_k12
+60,dual,42,2028,50,10,12,20,30,0.4,0.447761,6,24,0,1.0,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2028_headroom10_k12
+60,dual,42,2028,50,20,12,24,26,0.48,0.58209,11,15,0,1.0,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2028_headroom20_k12
+60,dual,42,2029,50,0,12,30,20,0.6,0.656716,2,18,0,0.98,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2029_headroom0_k12
+60,dual,42,2029,50,10,12,27,23,0.54,0.559701,1,22,0,0.977778,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2029_headroom10_k12
+60,dual,42,2029,50,20,12,25,25,0.5,0.529851,4,21,0,0.975,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2029_headroom20_k12
+60,dual,42,2030,50,0,12,30,20,0.6,0.631579,1,19,0,1.0,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2030_headroom0_k12
+60,dual,42,2030,50,10,12,28,22,0.56,0.605263,1,21,0,1.0,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2030_headroom10_k12
+60,dual,42,2030,50,20,12,30,20,0.6,0.657895,2,18,0,1.0,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2030_headroom20_k12
+60,dual,42,2031,50,0,12,26,24,0.52,0.611111,3,21,0,1.0,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2031_headroom0_k12
+60,dual,42,2031,50,10,12,26,24,0.52,0.625,7,17,0,1.0,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2031_headroom10_k12
+60,dual,42,2031,50,20,12,24,26,0.48,0.583333,6,20,0,1.0,C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase3\multiseed_validation\n50_seed2031_headroom20_k12
