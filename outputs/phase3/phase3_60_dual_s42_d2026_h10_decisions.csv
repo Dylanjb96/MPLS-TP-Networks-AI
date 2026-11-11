@@ -1,0 +1,21 @@
+request_id,src,dst,class,priority,category,bandwidth_mbps,candidate_count,accepted,reason,candidate_id,worst_fault_id,worst_utilization,capacity_margin_mbps,details
+R0001,7,20,operational,3,main-to-subring,200,2,1,OK,P-6a616f97f583,normal,0.222222,700,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0002,41,55,non_critical,1,subring-to-subring,100,2,1,OK,P-0b94663d12e6,normal,0.222222,700,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0003,57,38,operational,3,subring-to-subring,100,2,1,OK,P-cf8c659b76fa,normal,0.222222,700,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0004,50,36,operational,3,subring-to-subring,200,2,1,OK,P-a4bdd5a3bc59,E002_036,0.444444,500,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0005,49,31,non_critical,1,subring-to-subring,400,2,1,OK,P-7c9fe78a066b,E004_048,0.888889,100,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0006,28,15,critical,5,subring-to-subring,10,2,1,OK,P-e99c8cb44fa8,E004_048,0.888889,100,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0007,7,18,non_critical,1,main-to-subring,200,2,1,OK,P-594e22d84468,E004_048,0.888889,100,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0008,0,52,non_critical,1,main-to-subring,200,2,0,POSTFAULT_CAPACITY_EXCEEDED,P-de47da01d58d,E004_048,1.111111,-100,"First failed budget: scenario=E004_048, arc=(5, 59), load=1000, usable=900 Mb/s; evaluated all faults"
+R0009,43,20,operational,3,subring-to-subring,100,2,1,OK,P-112cab832404,E004_048,0.888889,100,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0010,22,59,operational,3,subring-to-subring,100,2,1,OK,P-17a18ea7bb1e,E004_048,1.0,0,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0011,47,32,operational,3,subring-to-subring,200,2,1,OK,P-28237d2cea81,E004_048,1.0,0,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0012,21,5,operational,3,main-to-subring,100,2,1,OK,P-11e7379b4c00,E004_048,1.0,0,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0013,18,29,critical,5,subring-to-subring,50,2,1,OK,P-59647b13a77f,E004_048,1.0,0,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0014,45,36,operational,3,within-subring,200,2,1,OK,P-8244e5073f2d,E004_048,1.0,0,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0015,23,29,operational,3,subring-to-subring,100,2,1,OK,P-6be82be1afcf,E004_048,1.0,0,Checked normal and all 64 unique physical-link failure scenarios; both directions
+R0016,57,37,operational,3,subring-to-subring,50,2,0,POSTFAULT_CAPACITY_EXCEEDED,P-c8ad4e1f8442,E004_048,1.055556,-50,"First failed budget: scenario=E004_048, arc=(5, 59), load=950, usable=900 Mb/s; evaluated all faults"
+R0017,27,32,non_critical,1,within-subring,400,2,0,POSTFAULT_CAPACITY_EXCEEDED,P-4683c979f181,E000_024,1.288889,-260,"First failed budget: scenario=E000_024, arc=(31, 32), load=960, usable=900 Mb/s; evaluated all faults"
+R0018,56,31,operational,3,subring-to-subring,200,2,0,POSTFAULT_CAPACITY_EXCEEDED,P-938b2a699d12,E000_024,1.222222,-200,"First failed budget: scenario=E000_024, arc=(1, 35), load=960, usable=900 Mb/s; evaluated all faults"
+R0019,16,54,operational,3,subring-to-subring,100,2,0,POSTFAULT_CAPACITY_EXCEEDED,P-90df76d331ed,E004_048,1.111111,-100,"First failed budget: scenario=E004_048, arc=(5, 59), load=1000, usable=900 Mb/s; evaluated all faults"
+R0020,32,33,non_critical,1,within-subring,400,2,0,NORMAL_CAPACITY_EXCEEDED,P-5e6a3f350c2d,normal,1.288889,-260,"First failed budget: scenario=normal, arc=(32, 33), load=1000, usable=900 Mb/s; evaluated all faults"

@@ -1,0 +1,48 @@
+{
+  "admitted_count": 15,
+  "candidate_absent_count": 0,
+  "config": {
+    "gateway_mode": "dual",
+    "length_km": 2.0,
+    "main_capacity_mbps": 10000,
+    "main_nodes": 30,
+    "nodes": 150,
+    "seed": 42,
+    "sub_capacity_mbps": 1000,
+    "subring_count": 6
+  },
+  "demand_seed": 2026,
+  "fault_scenarios": 156,
+  "model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "notes": [
+    "No node fault, no multiple faults, no release/preemption, no OAM/RPS, no packet timing",
+    "Greedy first-feasible demonstration is NOT a Phase 4/5 comparative result"
+  ],
+  "protected_admission_ratio": 0.75,
+  "protection_model_approved": false,
+  "reason_counts": {
+    "NORMAL_CAPACITY_EXCEEDED": 1,
+    "OK": 15,
+    "POSTFAULT_CAPACITY_EXCEEDED": 4
+  },
+  "rejected_count": 5,
+  "request_count": 20,
+  "scenario_ledger": {
+    "admitted_services": 15,
+    "headroom_percent": 10,
+    "peak_directed_arc": [
+      91,
+      90
+    ],
+    "peak_reserved_mbps": 850,
+    "peak_scenario": "E108_109",
+    "peak_utilization": 0.944444,
+    "physical_faults": 156,
+    "scenarios_checked": 157,
+    "scope": "scenario-based robust directed-capacity check, not MSRP reservation signalling"
+  },
+  "scope": "Simulation only; no MSRP, no train safety / performance",
+  "state_digest": "d23a6f75d767cb82230c05aebf1d965f0b6845a9923da014f7bafd4070f7da3f",
+  "topology_structural_valid": true,
+  "weighted_protected_acceptance_ratio": 0.868421
+}
