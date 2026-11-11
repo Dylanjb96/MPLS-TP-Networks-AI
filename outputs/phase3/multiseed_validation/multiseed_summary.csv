@@ -1,0 +1,4 @@
+headroom_percent,num_seeds,requests_per_seed,mean_protected_admission,sd_protected_admission,min_protected_admission,max_protected_admission,mean_weighted_admission,sd_weighted_admission
+0,5,50,0.576,0.053666,0.52,0.64,0.64281,0.03829
+10,5,50,0.524,0.075366,0.4,0.6,0.579977,0.082633
+20,5,50,0.528,0.057619,0.48,0.6,0.601715,0.054604

@@ -1,0 +1,1482 @@
+{
+  "admitted": [
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "E000_005": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "E001_002": [
+          1,
+          0,
+          5
+        ],
+        "E002_003": [
+          1,
+          0,
+          5
+        ],
+        "E003_004": [
+          1,
+          0,
+          5
+        ],
+        "E004_005": [
+          1,
+          0,
+          5
+        ],
+        "E005_006": [
+          1,
+          0,
+          5
+        ],
+        "E005_011": [
+          1,
+          0,
+          5
+        ],
+        "E006_007": [
+          1,
+          0,
+          5
+        ],
+        "E007_008": [
+          1,
+          0,
+          5
+        ],
+        "E008_009": [
+          1,
+          0,
+          5
+        ],
+        "E009_010": [
+          1,
+          0,
+          5
+        ],
+        "E010_011": [
+          1,
+          0,
+          5
+        ]
+      },
+      "candidate_id": "P-712a9c2b2e6d",
+      "request": {
+        "bandwidth_mbps": 200,
+        "destination": 5,
+        "endpoint_category": "main-to-main",
+        "priority_weight": 3,
+        "request_id": "R0001",
+        "service_class": "operational",
+        "source": 1
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "main",
+          "working": [
+            1,
+            0,
+            5
+          ]
+        }
+      ],
+      "working_forward": [
+        1,
+        0,
+        5
+      ],
+      "working_reverse": [
+        5,
+        0,
+        1
+      ]
+    },
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          10,
+          11,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "E000_005": [
+          10,
+          11,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "E001_002": [
+          10,
+          11,
+          5,
+          0,
+          1
+        ],
+        "E002_003": [
+          10,
+          11,
+          5,
+          0,
+          1
+        ],
+        "E003_004": [
+          10,
+          11,
+          5,
+          0,
+          1
+        ],
+        "E004_005": [
+          10,
+          11,
+          5,
+          0,
+          1
+        ],
+        "E005_006": [
+          10,
+          11,
+          5,
+          0,
+          1
+        ],
+        "E005_011": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          0,
+          1
+        ],
+        "E006_007": [
+          10,
+          11,
+          5,
+          0,
+          1
+        ],
+        "E007_008": [
+          10,
+          11,
+          5,
+          0,
+          1
+        ],
+        "E008_009": [
+          10,
+          11,
+          5,
+          0,
+          1
+        ],
+        "E009_010": [
+          10,
+          11,
+          5,
+          0,
+          1
+        ],
+        "E010_011": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          0,
+          1
+        ]
+      },
+      "candidate_id": "P-46088401751d",
+      "request": {
+        "bandwidth_mbps": 400,
+        "destination": 1,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 1,
+        "request_id": "R0002",
+        "service_class": "non_critical",
+        "source": 10
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "sub_1",
+          "working": [
+            10,
+            11,
+            5
+          ]
+        },
+        {
+          "ring": "main",
+          "working": [
+            5,
+            0,
+            1
+          ]
+        }
+      ],
+      "working_forward": [
+        10,
+        11,
+        5,
+        0,
+        1
+      ],
+      "working_reverse": [
+        1,
+        0,
+        5,
+        11,
+        10
+      ]
+    },
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          9,
+          8
+        ],
+        "E000_005": [
+          9,
+          8
+        ],
+        "E001_002": [
+          9,
+          8
+        ],
+        "E002_003": [
+          9,
+          8
+        ],
+        "E003_004": [
+          9,
+          8
+        ],
+        "E004_005": [
+          9,
+          8
+        ],
+        "E005_006": [
+          9,
+          8
+        ],
+        "E005_011": [
+          9,
+          8
+        ],
+        "E006_007": [
+          9,
+          8
+        ],
+        "E007_008": [
+          9,
+          8
+        ],
+        "E008_009": [
+          9,
+          10,
+          11,
+          5,
+          6,
+          7,
+          8
+        ],
+        "E009_010": [
+          9,
+          8
+        ],
+        "E010_011": [
+          9,
+          8
+        ]
+      },
+      "candidate_id": "P-535829359297",
+      "request": {
+        "bandwidth_mbps": 200,
+        "destination": 8,
+        "endpoint_category": "within-subring",
+        "priority_weight": 3,
+        "request_id": "R0003",
+        "service_class": "operational",
+        "source": 9
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "sub_1",
+          "working": [
+            9,
+            8
+          ]
+        }
+      ],
+      "working_forward": [
+        9,
+        8
+      ],
+      "working_reverse": [
+        8,
+        9
+      ]
+    },
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          8,
+          7
+        ],
+        "E000_005": [
+          8,
+          7
+        ],
+        "E001_002": [
+          8,
+          7
+        ],
+        "E002_003": [
+          8,
+          7
+        ],
+        "E003_004": [
+          8,
+          7
+        ],
+        "E004_005": [
+          8,
+          7
+        ],
+        "E005_006": [
+          8,
+          7
+        ],
+        "E005_011": [
+          8,
+          7
+        ],
+        "E006_007": [
+          8,
+          7
+        ],
+        "E007_008": [
+          8,
+          9,
+          10,
+          11,
+          5,
+          6,
+          7
+        ],
+        "E008_009": [
+          8,
+          7
+        ],
+        "E009_010": [
+          8,
+          7
+        ],
+        "E010_011": [
+          8,
+          7
+        ]
+      },
+      "candidate_id": "P-df9122f7f021",
+      "request": {
+        "bandwidth_mbps": 400,
+        "destination": 7,
+        "endpoint_category": "within-subring",
+        "priority_weight": 1,
+        "request_id": "R0004",
+        "service_class": "non_critical",
+        "source": 8
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "sub_1",
+          "working": [
+            8,
+            7
+          ]
+        }
+      ],
+      "working_forward": [
+        8,
+        7
+      ],
+      "working_reverse": [
+        7,
+        8
+      ]
+    },
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E000_005": [
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E001_002": [
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E002_003": [
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E003_004": [
+          7,
+          6,
+          5,
+          0,
+          1,
+          2,
+          3
+        ],
+        "E004_005": [
+          7,
+          6,
+          5,
+          0,
+          1,
+          2,
+          3
+        ],
+        "E005_006": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          5,
+          4,
+          3
+        ],
+        "E005_011": [
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E006_007": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          5,
+          4,
+          3
+        ],
+        "E007_008": [
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E008_009": [
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E009_010": [
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E010_011": [
+          7,
+          6,
+          5,
+          4,
+          3
+        ]
+      },
+      "candidate_id": "P-812c537290bd",
+      "request": {
+        "bandwidth_mbps": 10,
+        "destination": 3,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 5,
+        "request_id": "R0005",
+        "service_class": "critical",
+        "source": 7
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "sub_1",
+          "working": [
+            7,
+            6,
+            5
+          ]
+        },
+        {
+          "ring": "main",
+          "working": [
+            5,
+            4,
+            3
+          ]
+        }
+      ],
+      "working_forward": [
+        7,
+        6,
+        5,
+        4,
+        3
+      ],
+      "working_reverse": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "E000_005": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "E001_002": [
+          1,
+          0,
+          5,
+          4
+        ],
+        "E002_003": [
+          1,
+          0,
+          5,
+          4
+        ],
+        "E003_004": [
+          1,
+          0,
+          5,
+          4
+        ],
+        "E004_005": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "E005_006": [
+          1,
+          0,
+          5,
+          4
+        ],
+        "E005_011": [
+          1,
+          0,
+          5,
+          4
+        ],
+        "E006_007": [
+          1,
+          0,
+          5,
+          4
+        ],
+        "E007_008": [
+          1,
+          0,
+          5,
+          4
+        ],
+        "E008_009": [
+          1,
+          0,
+          5,
+          4
+        ],
+        "E009_010": [
+          1,
+          0,
+          5,
+          4
+        ],
+        "E010_011": [
+          1,
+          0,
+          5,
+          4
+        ]
+      },
+      "candidate_id": "P-c3e2e8e3d9f8",
+      "request": {
+        "bandwidth_mbps": 200,
+        "destination": 4,
+        "endpoint_category": "main-to-main",
+        "priority_weight": 1,
+        "request_id": "R0006",
+        "service_class": "non_critical",
+        "source": 1
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "main",
+          "working": [
+            1,
+            0,
+            5,
+            4
+          ]
+        }
+      ],
+      "working_forward": [
+        1,
+        0,
+        5,
+        4
+      ],
+      "working_reverse": [
+        4,
+        5,
+        0,
+        1
+      ]
+    },
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          0,
+          5,
+          11,
+          10
+        ],
+        "E000_005": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          11,
+          10
+        ],
+        "E001_002": [
+          0,
+          5,
+          11,
+          10
+        ],
+        "E002_003": [
+          0,
+          5,
+          11,
+          10
+        ],
+        "E003_004": [
+          0,
+          5,
+          11,
+          10
+        ],
+        "E004_005": [
+          0,
+          5,
+          11,
+          10
+        ],
+        "E005_006": [
+          0,
+          5,
+          11,
+          10
+        ],
+        "E005_011": [
+          0,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "E006_007": [
+          0,
+          5,
+          11,
+          10
+        ],
+        "E007_008": [
+          0,
+          5,
+          11,
+          10
+        ],
+        "E008_009": [
+          0,
+          5,
+          11,
+          10
+        ],
+        "E009_010": [
+          0,
+          5,
+          11,
+          10
+        ],
+        "E010_011": [
+          0,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "candidate_id": "P-59344f1454b9",
+      "request": {
+        "bandwidth_mbps": 100,
+        "destination": 10,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 3,
+        "request_id": "R0007",
+        "service_class": "operational",
+        "source": 0
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "main",
+          "working": [
+            0,
+            5
+          ]
+        },
+        {
+          "ring": "sub_1",
+          "working": [
+            5,
+            11,
+            10
+          ]
+        }
+      ],
+      "working_forward": [
+        0,
+        5,
+        11,
+        10
+      ],
+      "working_reverse": [
+        10,
+        11,
+        5,
+        0
+      ]
+    },
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "E000_005": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "E001_002": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "E002_003": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "E003_004": [
+          3,
+          2,
+          1,
+          0,
+          5,
+          6
+        ],
+        "E004_005": [
+          3,
+          2,
+          1,
+          0,
+          5,
+          6
+        ],
+        "E005_006": [
+          3,
+          4,
+          5,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6
+        ],
+        "E005_011": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "E006_007": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "E007_008": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "E008_009": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "E009_010": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "E010_011": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "candidate_id": "P-dfaa8adc5398",
+      "request": {
+        "bandwidth_mbps": 100,
+        "destination": 6,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 3,
+        "request_id": "R0008",
+        "service_class": "operational",
+        "source": 3
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "main",
+          "working": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "ring": "sub_1",
+          "working": [
+            5,
+            6
+          ]
+        }
+      ],
+      "working_forward": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "working_reverse": [
+        6,
+        5,
+        4,
+        3
+      ]
+    },
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "E000_005": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "E001_002": [
+          5,
+          0,
+          1
+        ],
+        "E002_003": [
+          5,
+          0,
+          1
+        ],
+        "E003_004": [
+          5,
+          0,
+          1
+        ],
+        "E004_005": [
+          5,
+          0,
+          1
+        ],
+        "E005_006": [
+          5,
+          0,
+          1
+        ],
+        "E005_011": [
+          5,
+          0,
+          1
+        ],
+        "E006_007": [
+          5,
+          0,
+          1
+        ],
+        "E007_008": [
+          5,
+          0,
+          1
+        ],
+        "E008_009": [
+          5,
+          0,
+          1
+        ],
+        "E009_010": [
+          5,
+          0,
+          1
+        ],
+        "E010_011": [
+          5,
+          0,
+          1
+        ]
+      },
+      "candidate_id": "P-649cbc07e0e3",
+      "request": {
+        "bandwidth_mbps": 100,
+        "destination": 1,
+        "endpoint_category": "main-to-main",
+        "priority_weight": 3,
+        "request_id": "R0010",
+        "service_class": "operational",
+        "source": 5
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "main",
+          "working": [
+            5,
+            0,
+            1
+          ]
+        }
+      ],
+      "working_forward": [
+        5,
+        0,
+        1
+      ],
+      "working_reverse": [
+        1,
+        0,
+        5
+      ]
+    },
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "E000_005": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "E001_002": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "E002_003": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "E003_004": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "E004_005": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          5,
+          6,
+          7
+        ],
+        "E005_006": [
+          4,
+          5,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "E005_011": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "E006_007": [
+          4,
+          5,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "E007_008": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "E008_009": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "E009_010": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "E010_011": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "candidate_id": "P-ea845d67ea17",
+      "request": {
+        "bandwidth_mbps": 50,
+        "destination": 7,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 5,
+        "request_id": "R0011",
+        "service_class": "critical",
+        "source": 4
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "main",
+          "working": [
+            4,
+            5
+          ]
+        },
+        {
+          "ring": "sub_1",
+          "working": [
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "working_forward": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "working_reverse": [
+        7,
+        6,
+        5,
+        4
+      ]
+    },
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          7,
+          6
+        ],
+        "E000_005": [
+          7,
+          6
+        ],
+        "E001_002": [
+          7,
+          6
+        ],
+        "E002_003": [
+          7,
+          6
+        ],
+        "E003_004": [
+          7,
+          6
+        ],
+        "E004_005": [
+          7,
+          6
+        ],
+        "E005_006": [
+          7,
+          6
+        ],
+        "E005_011": [
+          7,
+          6
+        ],
+        "E006_007": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          5,
+          6
+        ],
+        "E007_008": [
+          7,
+          6
+        ],
+        "E008_009": [
+          7,
+          6
+        ],
+        "E009_010": [
+          7,
+          6
+        ],
+        "E010_011": [
+          7,
+          6
+        ]
+      },
+      "candidate_id": "P-e8acd6f39946",
+      "request": {
+        "bandwidth_mbps": 200,
+        "destination": 6,
+        "endpoint_category": "within-subring",
+        "priority_weight": 1,
+        "request_id": "R0016",
+        "service_class": "non_critical",
+        "source": 7
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "sub_1",
+          "working": [
+            7,
+            6
+          ]
+        }
+      ],
+      "working_forward": [
+        7,
+        6
+      ],
+      "working_reverse": [
+        6,
+        7
+      ]
+    },
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          3,
+          2
+        ],
+        "E000_005": [
+          3,
+          2
+        ],
+        "E001_002": [
+          3,
+          2
+        ],
+        "E002_003": [
+          3,
+          4,
+          5,
+          0,
+          1,
+          2
+        ],
+        "E003_004": [
+          3,
+          2
+        ],
+        "E004_005": [
+          3,
+          2
+        ],
+        "E005_006": [
+          3,
+          2
+        ],
+        "E005_011": [
+          3,
+          2
+        ],
+        "E006_007": [
+          3,
+          2
+        ],
+        "E007_008": [
+          3,
+          2
+        ],
+        "E008_009": [
+          3,
+          2
+        ],
+        "E009_010": [
+          3,
+          2
+        ],
+        "E010_011": [
+          3,
+          2
+        ]
+      },
+      "candidate_id": "P-80c04fdf5e5b",
+      "request": {
+        "bandwidth_mbps": 400,
+        "destination": 2,
+        "endpoint_category": "main-to-main",
+        "priority_weight": 1,
+        "request_id": "R0019",
+        "service_class": "non_critical",
+        "source": 3
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "main",
+          "working": [
+            3,
+            2
+          ]
+        }
+      ],
+      "working_forward": [
+        3,
+        2
+      ],
+      "working_reverse": [
+        2,
+        3
+      ]
+    },
+    {
+      "all_single_physical_link_failure_forward_paths": {
+        "E000_001": [
+          8,
+          9,
+          10
+        ],
+        "E000_005": [
+          8,
+          9,
+          10
+        ],
+        "E001_002": [
+          8,
+          9,
+          10
+        ],
+        "E002_003": [
+          8,
+          9,
+          10
+        ],
+        "E003_004": [
+          8,
+          9,
+          10
+        ],
+        "E004_005": [
+          8,
+          9,
+          10
+        ],
+        "E005_006": [
+          8,
+          9,
+          10
+        ],
+        "E005_011": [
+          8,
+          9,
+          10
+        ],
+        "E006_007": [
+          8,
+          9,
+          10
+        ],
+        "E007_008": [
+          8,
+          9,
+          10
+        ],
+        "E008_009": [
+          8,
+          7,
+          6,
+          5,
+          11,
+          10
+        ],
+        "E009_010": [
+          8,
+          7,
+          6,
+          5,
+          11,
+          10
+        ],
+        "E010_011": [
+          8,
+          9,
+          10
+        ]
+      },
+      "candidate_id": "P-f5dcdd5a31a0",
+      "request": {
+        "bandwidth_mbps": 50,
+        "destination": 10,
+        "endpoint_category": "within-subring",
+        "priority_weight": 5,
+        "request_id": "R0020",
+        "service_class": "critical",
+        "source": 8
+      },
+      "reverse_fault_rule": "exact reverse of each forward failure-state path",
+      "segments": [
+        {
+          "ring": "sub_1",
+          "working": [
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "working_forward": [
+        8,
+        9,
+        10
+      ],
+      "working_reverse": [
+        10,
+        9,
+        8
+      ]
+    }
+  ],
+  "model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "note": "All paths are preplanned surrogate paths, NOT RFC8227 tunnels"
+}

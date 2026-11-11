@@ -1,0 +1,7 @@
+max_candidates,num_seeds,requests_per_seed,mean_protected_admission,sd_protected_admission,min_protected_admission,max_protected_admission,mean_weighted_admission,sd_weighted_admission,requests_with_more_than_k_candidates,candidate_cap_binds_any_request
+1,5,50,0.532,0.076942,0.4,0.6,0.588311,0.090075,250,1
+2,5,50,0.524,0.075366,0.4,0.6,0.579977,0.082633,0,0
+4,5,50,0.524,0.075366,0.4,0.6,0.579977,0.082633,0,0
+8,5,50,0.524,0.075366,0.4,0.6,0.579977,0.082633,0,0
+12,5,50,0.524,0.075366,0.4,0.6,0.579977,0.082633,0,0
+24,5,50,0.524,0.075366,0.4,0.6,0.579977,0.082633,0,0
