@@ -1,0 +1,77 @@
+{
+  "version": "1.0-provisional",
+  "decision_date": "2026-11-09",
+  "status": "recommended baseline; supervisor confirmation pending",
+  "scope": "Offline, simulation-only study; not protocol conformance, railway safety or operational equipment evaluation",
+  "protection_model": {
+    "identifier": "RING_SEGMENT_SCENARIO_SURROGATE_V1",
+    "selected": "Simplified preplanned, deterministic, ring-segment-constrained rerouting for each single physical-link fault",
+    "conformance_claim": "NOT RFC 8227 MSRP compliant; explicitly a scenario-based surrogate",
+    "normal_state": "Ordered, ring-valid route segments joined only at legal gateway nodes; no mid-route cycles",
+    "failure_state": "For each failed physical link, use a precomputed permissible alternative ordered ring arc for every affected segment, with the original inter-ring gateway sequence kept fixed in v1; unaffected segments remain unchanged. A plan failing any scenario is rejected.",
+    "forbidden": [
+      "On-demand unconstrained shortest-path search after a fault",
+      "Inferring sub-50ms switching time",
+      "Calling two global disjoint paths a full MSRP model"
+    ],
+    "optional_future_extension": "Implement RFC 8227 ring tunnels, switching mechanism and interconnection node group explicitly, with separate conformance tests"
+  },
+  "capacity_model": {
+    "selected": "independent_per_direction",
+    "physical_link": "Each undirected NetworkX edge corresponds to one physical link ID; its two directed arc budgets are separate; shared ring membership does not duplicate capacity",
+    "unit": "Mb/s (decimal)",
+    "headroom_default_fraction": 0.1,
+    "headroom_sensitivity_fractions": [
+      0.0,
+      0.1,
+      0.2
+    ],
+    "usable_capacity_formula": "C_usable[a] = C_physical[e] * (1 - headroom_fraction), a in {(u,v),(v,u)}",
+    "budget_semantics": "Scenario-based robust capacity, max-of-single-fault outcomes. Separate no-fault and every one-physical-link-failure demand evaluated; no packet queue, CIR/CBS policing, or actual protection reservation messages modeled.",
+    "admission_rule": "For every surviving directed arc a and each permitted scenario f including none: sum admitted service directional reserved rates traversing a in f <= C_usable[a]; failed physical link cannot carry either direction. Reject candidate atomically on any violation.",
+    "rounding_policy": "All rates integer Mb/s; C_usable rounded down to integer Mb/s; no floating-point boundary tolerance for capacity ledger"
+  },
+  "failure_model": {
+    "included": "Normal state + exhaustive single physical-link failures; each failure removes BOTH directions of that physical link",
+    "excluded": [
+      "Single-node failure",
+      "Multiple simultaneous physical-link failures",
+      "SRLG",
+      "Ingress/egress endpoint failure",
+      "Protection-switching delay",
+      "Packet loss and jitter"
+    ],
+    "link_fault_set": "Unique physical_link_id values, not ring membership references",
+    "preplanned": true
+  },
+  "traffic": {
+    "default_service_mode": "symmetric_bidir",
+    "meaning": "Each accepted service requests b Mbps from source to destination and b Mbps reverse; verify both directional path plans and fault states. A future asymmetric option must be separately defined.",
+    "priority": "Weights used for evaluation/optional reward; not permission to override hard feasibility",
+    "service_lifetime": "Admitted services persist until episode end; no release, preemption or modifications in baseline study",
+    "request_sequence": "Sequential online arrivals; same train/validation/test split and candidates across all algorithms",
+    "acceptance": "Reject if mandatory protected feasibility cannot be guaranteed; optimizer may choose among only feasible options",
+    "reverse_route_rule": "For surrogate v1, the reverse direction uses the exact reverse of the normal or fault-state forward physical-node path and reserves the same b Mbps on reverse directed arcs."
+  },
+  "model_validation": {
+    "baseline_fixture_network": "12-node dual-gateway network",
+    "first_request": "Example 200 Mb/s operational service; select actual valid endpoints from generated topology, not assumed numeric addresses",
+    "required_tests": [
+      "normal and each fault path is valid and policy-allowed",
+      "both directions of a failed physical link unusable",
+      "shared physical edge counted once even with multiple ring memberships",
+      "normal case fits but at least one fault case exceeds capacity -> reject",
+      "headroom boundary at 0, 10 and 20 percent",
+      "atomic rejection leaves all prior reservations unchanged",
+      "repeatable non-fault and fault-state ledgers",
+      "all algorithms use identical independent feasibility validator",
+      "explicitly detect cases with graph connectivity but no policy-valid protected plan"
+    ]
+  },
+  "review": {
+    "supervisor_approved": false,
+    "approval_date": null,
+    "supervisor_or_reviewer": null,
+    "notes": "Decide before interpreting Phase 3 results; can begin prototypes pending approval but report decision status clearly."
+  }
+}
