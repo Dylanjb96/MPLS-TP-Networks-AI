@@ -14,13 +14,15 @@
 from __future__ import annotations
 from dataclasses import dataclass
 from collections import defaultdict
+from fractions import Fraction
 from typing import Any
 
 from phase3.model import (NORMAL, ProtectionSimulator, ProtectedPlan,
                           AdmissionResult, _path_edges)
 from railway_tp.requests import ServiceRequest
 
-POLICIES = ('greedy', 'cspf', 'milp')
+POLICIES = ('greedy', 'cspf', 'milp')  # Version 1 baseline: unchanged.
+ALL_POLICIES = POLICIES + ('milp_v2',)
 
 
 @dataclass(frozen=True)
@@ -110,7 +112,8 @@ def _scipy():
 
 
 def _milp_select(sim: ProtectionSimulator, req: ServiceRequest,
-                 candidates: list[ProtectedPlan], timeout_sec: float
+                 candidates: list[ProtectedPlan], timeout_sec: float,
+                 *, pure_primary: bool = False
                  ) -> tuple[int | None, str, float | None]:
     #Robust min-max scenario MILP for one online request.
 
@@ -162,7 +165,10 @@ def _milp_select(sim: ProtectionSimulator, req: ServiceRequest,
                                   np.r_[np.array(ub), 1.0])
     tie = np.array([len(p.normal_path)-1 for p in candidates], dtype=float)
     tie /= max(1.0, float(tie.max()))
-    c = np.r_[1e-7 * tie, 1.0]
+    # V1 retains the original tiny weighted tie-breaker. V2 solves the
+    # *unmodified* primary minmax MILP, then applies exact lexicographic
+    # optimization over the finite policy-valid candidate set.
+    c = np.r_[np.zeros(n) if pure_primary else 1e-7 * tie, 1.0]
     bounds = Bounds(np.zeros(n+1), np.ones(n+1))
     integrality = np.r_[np.ones(n, dtype=int), 0]
     sol = milp(c, integrality=integrality, bounds=bounds,
@@ -201,6 +207,82 @@ def choose_milp(sim: ProtectionSimulator, req: ServiceRequest,
                   'FALLBACK_GREEDY_' + status, fallback.score)
 
 
+
+def _exact_peak_utilization(sim: ProtectionSimulator, req: ServiceRequest,
+                            plan: ProtectedPlan, base: dict) -> Fraction:
+    """Exact, scenario-by-scenario directed peak utilization of this plan.
+
+    Existing and incremental bandwidths and usable capacities are integers.
+    Fractions prevent float/solver tolerance from changing lexicographic ties.
+    The independent Phase-3 audit must have validated the plan first.
+    """
+    peak = Fraction(0)
+    for scenario in (NORMAL, *sim.failures):
+        loads = base[scenario].copy()
+        path = plan.normal_path if scenario == NORMAL else plan.fault_paths[scenario]
+        for u, v in _path_edges(path):
+            loads[(u, v)] += req.bandwidth_mbps
+            loads[(v, u)] += req.bandwidth_mbps
+        for (u, v), load in loads.items():
+            capacity = sim.available_capacity(u, v)
+            if capacity <= 0:
+                raise AssertionError('Nonpositive capacity in V2 exact scoring')
+            ratio = Fraction(load, capacity)
+            if ratio > peak:
+                peak = ratio
+    return peak
+
+
+def choose_milp_v2(sim: ProtectionSimulator, req: ServiceRequest,
+                   candidates: list[ProtectedPlan],
+                   timeout_sec: float = 5.0) -> Choice:
+    #Version 2: primary MILP, then *exact* lexicographic candidate choice.
+
+    #1. Solve min z (worst directed utilization across normal/fault scenarios).
+    #2. Among feasible candidates attaining the *exact* minimal z, choose the
+     #  shortest normal working path; then smallest candidate_id.
+
+    #With binary choose-one x and the finite, precomputed candidate set,
+    #scanning candidates in stage 2 solves exactly the secondary discrete
+    #optimization, without an unreliable 1e-7 coefficient or second MILP.
+    #Future requests remain unknown, and Phase-3 audit/admit is authoritative.
+    #The previous ``milp`` baseline and its outputs remain unchanged.
+    
+    if timeout_sec <= 0:
+        raise ValueError('timeout_sec must be positive')
+    if not candidates:
+        return _reject(sim, req, candidates, 0, 'NO_CANDIDATES')
+
+    _, status, optimum = _milp_select(sim, req, candidates, timeout_sec,
+                                      pure_primary=True)
+    if status == 'OPTIMAL_ONLINE_MINIMAX':
+        base = sim._ledger(sim.accepted())
+        ranked = []
+        for plan in candidates:
+            if sim.audit(req, plan).feasible:
+                peak = _exact_peak_utilization(sim, req, plan, base)
+                ranked.append(((peak, len(plan.normal_path) - 1,
+                                plan.candidate_id), plan))
+        if not ranked:
+            raise AssertionError('V2 MILP found an optimum but Phase-3 audited no feasible candidate')
+        (score, _, _), chosen = min(ranked, key=lambda item: item[0])
+        # A numerical inconsistency between the MILP's z and exact rational
+        # scoring must be surfaced, never silently accepted as a valid optimum.
+        if optimum is None or abs(float(score) - optimum) > 1e-6:
+            raise AssertionError('V2 solver optimum disagrees with exact scenario utilization')
+        return _commit(sim, req, chosen, len(candidates),
+                       'OPTIMAL_ONLINE_MINIMAX_LEXICOGRAPHIC_V2', float(score))
+
+    if status == 'INFEASIBLE':
+        if any(sim.audit(req, p).feasible for p in candidates):
+            raise AssertionError('V2 MILP incorrectly declared a feasible request infeasible')
+        return _reject(sim, req, candidates, len(candidates), status)
+    # Preserve explicit and recorded fallback behaviour on timeout/errors.
+    fallback = choose_greedy(sim, req, candidates)
+    return Choice(fallback.result, fallback.plan, len(candidates),
+                  'FALLBACK_GREEDY_V2_' + status, fallback.score)
+
+
 def choose(sim: ProtectionSimulator, req: ServiceRequest,
            candidates: list[ProtectedPlan], policy: str,
            milp_timeout_sec: float = 5.0) -> Choice:
@@ -210,4 +292,6 @@ def choose(sim: ProtectionSimulator, req: ServiceRequest,
         return choose_cspf(sim, req, candidates)
     if policy == 'milp':
         return choose_milp(sim, req, candidates, milp_timeout_sec)
-    raise ValueError(f'Unknown Phase 4 policy {policy!r}; select {POLICIES}')
+    if policy == 'milp_v2':
+        return choose_milp_v2(sim, req, candidates, milp_timeout_sec)
+    raise ValueError(f'Unknown Phase 4 policy {policy!r}; select {ALL_POLICIES}')

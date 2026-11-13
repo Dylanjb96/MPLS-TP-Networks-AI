@@ -1,8 +1,9 @@
 #Reproducible Phase 4 paired online-policy benchmark.
 
 #  python -m phase4.cli --config config/primary_60_dual.json \
-#    --requests 50 --seeds 2027 2028 2029 2030 2031 --headrooms 10 \
-#    --out outputs/phase4/pilot
+   # --requests 50 --seeds 2027 2028 2029 2030 2031 --headrooms 10 \
+   # --out outputs/phase4/pilot
+
 from __future__ import annotations
 import argparse
 import csv
@@ -19,7 +20,7 @@ from typing import Sequence
 from railway_tp.topology import TopologyConfig, make_topology
 from railway_tp.requests import ServiceRequest, generate_requests
 from phase3.model import ProtectionSimulator, SCHEME
-from .policies import POLICIES, choose
+from .policies import POLICIES, ALL_POLICIES, choose
 
 
 def _json(path: Path, data) -> None:
@@ -42,8 +43,8 @@ def _hash(items: list[ServiceRequest]) -> str:
 def run_one(cfg: TopologyConfig, incoming: list[ServiceRequest], policy: str,
             headroom: int, max_candidates: int, output: Path,
             milp_timeout: float = 5.0) -> dict:
-    """One complete sequence on fresh, independent simulator state."""
-    if policy not in POLICIES:
+    #One complete sequence on fresh, independent simulator state.
+    if policy not in ALL_POLICIES:
         raise ValueError('unknown policy')
     if not incoming or max_candidates < 1:
         raise ValueError('nonempty request sequence and positive candidate limit required')
@@ -137,6 +138,8 @@ def run_one(cfg: TopologyConfig, incoming: list[ServiceRequest], policy: str,
         digests[name] = hashlib.sha256((output/name).read_bytes()).hexdigest()
     _json(output / 'manifest.json', {'model': SCHEME, 'sha256': digests,
           'policy': policy, 'request_sha256': row['request_sha256'],
+          'algorithm_version': ('V2_PRIMARY_MILP_EXACT_LEXICOGRAPHIC' if policy == 'milp_v2'
+                                else 'V1_ORIGINAL'),
           'notes': 'All accepted candidates committed through phase3.model.ProtectionSimulator.admit'})
     return {**row, 'output_dir': str(output)}
 
@@ -154,7 +157,7 @@ def benchmark(cfg: TopologyConfig, requests: int, seeds: list[int],
         raise ValueError('requests/seeds/headrooms/policies must be nonempty')
     if len(set(seeds)) != len(seeds) or len(set(headrooms)) != len(headrooms) or len(set(policies)) != len(policies):
         raise ValueError('duplicate seeds, headrooms, or policies')
-    if any(p not in POLICIES for p in policies):
+    if any(p not in ALL_POLICIES for p in policies):
         raise ValueError('unknown Phase4 policy')
     if max_candidates < 1 or any(not 0 <= h < 100 for h in headrooms) or milp_timeout <= 0:
         raise ValueError('invalid candidate/headroom/time limit')
@@ -228,6 +231,8 @@ def benchmark(cfg: TopologyConfig, requests: int, seeds: list[int],
         'config':asdict(cfg), 'seeds':seeds, 'headrooms':headrooms,
         'requests_per_seed':requests, 'candidate_cap':max_candidates,
         'algorithms':policies, 'milp_time_limit_seconds':milp_timeout,
+        'milp_v2_definition': ('MILP minimizes max scenario utilization without secondary coefficient; '
+            'exact rational candidate scores then break optimum ties by working hops and candidate ID'),
         'num_runs':len(runrows), 'python':platform.python_version(),
         'packages':package_versions,
         'request_stream_sha256':{str(s): _hash(streams[s]) for s in seeds},
@@ -261,7 +266,7 @@ def main() -> None:
     ap.add_argument('--requests',type=int,default=50)
     ap.add_argument('--seeds',nargs='+',type=int,default=[2027,2028,2029,2030,2031])
     ap.add_argument('--headrooms',nargs='+',type=int,default=[10])
-    ap.add_argument('--algorithms',nargs='+',choices=POLICIES,default=list(POLICIES))
+    ap.add_argument('--algorithms',nargs='+',choices=ALL_POLICIES,default=list(POLICIES))
     ap.add_argument('--max-candidates',type=int,default=2)
     ap.add_argument('--milp-time-limit',type=float,default=5.0)
     ap.add_argument('--out',type=Path,default=Path('outputs/phase4/pilot_60'))
