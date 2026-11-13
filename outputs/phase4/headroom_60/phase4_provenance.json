@@ -1,0 +1,66 @@
+{
+  "algorithms": [
+    "greedy",
+    "cspf",
+    "milp"
+  ],
+  "candidate_cap": 2,
+  "config": {
+    "gateway_mode": "dual",
+    "length_km": 2.0,
+    "main_capacity_mbps": 10000,
+    "main_nodes": 12,
+    "nodes": 60,
+    "seed": 42,
+    "sub_capacity_mbps": 1000,
+    "subring_count": 4
+  },
+  "fairness_rules": [
+    "Separate fresh Phase3 simulator state per policy/seed/headroom",
+    "Same synthetic ordered request stream per paired comparison",
+    "Same sorted policy-valid candidate generation and truncation",
+    "Same ring-segment single-link failure semantics and headroom",
+    "Every admitted plan independently checked by Phase3 audit/admit",
+    "No future requests visible to the online policies",
+    "MILP is one-request robust minmax utilization, NOT offline optimal admission",
+    "CSPF is candidate-constrained shortest working path, NOT unconstrained graph routing",
+    "Latency includes policy decision but not candidate generation; see per-run totals"
+  ],
+  "headrooms": [
+    0,
+    10,
+    20
+  ],
+  "limitations": [
+    "Single physical-link faults only, no node faults or RPS/OAM switching",
+    "No RFC8227 MSRP emulation or safety/production claims",
+    "Fixed accepted services; no release, reroute, or preemption",
+    "The observed 60-node configuration has two policy-valid candidates per request",
+    "Running standard deviation across independent demand seeds is descriptive only"
+  ],
+  "milp_time_limit_seconds": 5.0,
+  "model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "num_runs": 45,
+  "packages": {
+    "networkx": "3.5",
+    "numpy": "2.2.6",
+    "scipy": "1.16.2"
+  },
+  "phase4_scope": "ONLINE myopic policies, no future request oracle",
+  "python": "3.11.9",
+  "request_stream_sha256": {
+    "2027": "d41186e54733ad70372b8213ce1665773dc29ff34d6a166b34ff1bea34dd7d75",
+    "2028": "88f7ff0928c17dbbbc5feb59990008fe3d9de3138ef2d7962946b27aa0deb59e",
+    "2029": "41b870f3b5046fcbd3893fcdf3cf5d484587c922c5106d44484b00652463c2f1",
+    "2030": "3f1497c0223c2dbfe00f0c8a28fca4e94c02ae6af6c020b86e3a3b1adae76a22",
+    "2031": "e15605a18a8664d0439953f14168f2f313a12b503df6a870aaa5a07b92a8062e"
+  },
+  "requests_per_seed": 50,
+  "seeds": [
+    2027,
+    2028,
+    2029,
+    2030,
+    2031
+  ]
+}

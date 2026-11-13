@@ -1,0 +1,4 @@
+category,offered,admitted,rate,weighted_rate
+main-to-subring,15,10,0.666667,0.755556
+subring-to-subring,30,11,0.366667,0.391892
+within-subring,5,4,0.8,0.769231

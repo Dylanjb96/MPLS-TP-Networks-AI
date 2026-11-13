@@ -1,0 +1,16 @@
+request_id,source,destination,bandwidth_mbps,service_class,priority_weight,endpoint_category
+R0001,13,59,50,critical,5,main-to-subring
+R0002,41,51,50,operational,3,subring-to-subring
+R0003,51,23,50,operational,3,subring-to-subring
+R0004,35,36,50,operational,3,within-subring
+R0005,81,84,50,operational,3,within-subring
+R0006,32,96,400,non_critical,1,subring-to-subring
+R0007,32,54,50,operational,3,subring-to-subring
+R0008,93,43,100,non_critical,1,subring-to-subring
+R0009,50,58,100,operational,3,within-subring
+R0010,47,94,400,non_critical,1,subring-to-subring
+R0011,15,98,100,non_critical,1,main-to-subring
+R0012,99,7,100,operational,3,main-to-subring
+R0013,67,12,100,operational,3,main-to-subring
+R0014,49,72,10,critical,5,subring-to-subring
+R0015,34,75,50,critical,5,subring-to-subring

@@ -1,0 +1,11 @@
+request_id,source,destination,category,bandwidth_mbps,service_class,priority_weight,candidate_count,candidates_evaluated,admitted,reason,candidate_id,working_hops,worst_scenario,worst_utilization,solver_status,selection_ms,candidate_generation_ms,objective_or_score
+R0001,1,7,main-to-subring,50,critical,5,2,1,1,OK,P-3784b03781f5,6,normal,0.055556,FIRST_FEASIBLE,0.8641,0.4736,
+R0002,5,6,main-to-subring,50,operational,3,2,1,1,OK,P-6d9de2640679,1,E000_011,0.111111,FIRST_FEASIBLE,1.1464,0.2361,
+R0003,6,2,main-to-subring,50,operational,3,2,1,1,OK,P-8d33e4a8572c,4,E000_011,0.166667,FIRST_FEASIBLE,1.1544,0.5239,
+R0004,4,11,main-to-subring,50,operational,3,2,1,1,OK,P-83fc735c3e3e,5,E000_011,0.222222,FIRST_FEASIBLE,1.5782,0.4661,
+R0005,10,11,within-subring,50,operational,3,2,1,1,OK,P-80d8901fcc6e,1,E000_011,0.222222,FIRST_FEASIBLE,0.9313,0.1775,
+R0006,4,10,main-to-subring,200,non_critical,1,2,1,1,OK,P-d5799a834bf9,6,E000_011,0.444444,FIRST_FEASIBLE,1.0811,0.4347,
+R0007,8,3,main-to-subring,20,critical,5,2,1,1,OK,P-515f81868d1a,5,E000_011,0.466667,FIRST_FEASIBLE,1.0939,0.4228,
+R0008,5,3,main-to-main,100,operational,3,2,1,1,OK,P-8de2bcf91399,2,E000_011,0.466667,FIRST_FEASIBLE,1.0014,0.1464,
+R0009,2,7,main-to-subring,200,operational,3,2,1,1,OK,P-3a291513b848,5,E000_011,0.688889,FIRST_FEASIBLE,1.1314,0.4067,
+R0010,5,9,main-to-subring,100,non_critical,1,2,1,1,OK,P-d637af360570,4,E000_011,0.8,FIRST_FEASIBLE,1.0911,0.248,

@@ -1,0 +1,74 @@
+{
+  "algorithms": [
+    "greedy",
+    "cspf",
+    "milp"
+  ],
+  "candidate_cap": 2,
+  "config": {
+    "gateway_mode": "dual",
+    "length_km": 2.0,
+    "main_capacity_mbps": 10000,
+    "main_nodes": 12,
+    "nodes": 60,
+    "seed": 42,
+    "sub_capacity_mbps": 1000,
+    "subring_count": 4
+  },
+  "fairness_rules": [
+    "Separate fresh Phase3 simulator state per policy/seed/headroom",
+    "Same synthetic ordered request stream per paired comparison",
+    "Same sorted policy-valid candidate generation and truncation",
+    "Same ring-segment single-link failure semantics and headroom",
+    "Every admitted plan independently checked by Phase3 audit/admit",
+    "No future requests visible to the online policies",
+    "MILP is one-request robust minmax utilization, NOT offline optimal admission",
+    "CSPF is candidate-constrained shortest working path, NOT unconstrained graph routing",
+    "Latency includes policy decision but not candidate generation; see per-run totals"
+  ],
+  "headrooms": [
+    10
+  ],
+  "limitations": [
+    "Single physical-link faults only, no node faults or RPS/OAM switching",
+    "No RFC8227 MSRP emulation or safety/production claims",
+    "Fixed accepted services; no release, reroute, or preemption",
+    "The observed 60-node configuration has two policy-valid candidates per request",
+    "Running standard deviation across independent demand seeds is descriptive only"
+  ],
+  "milp_time_limit_seconds": 5.0,
+  "model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "num_runs": 30,
+  "packages": {
+    "networkx": "3.5",
+    "numpy": "2.2.6",
+    "scipy": "1.16.2"
+  },
+  "phase4_scope": "ONLINE myopic policies, no future request oracle",
+  "python": "3.11.9",
+  "request_stream_sha256": {
+    "2032": "0ae655905e3c7a83928441d686d62c35fe062f5fff861371688b1a4cff94232d",
+    "2033": "3580d1d2eaa6a677cb9f40eadec787ca6616486952e1848fd51c30a1b7d37e96",
+    "2034": "6e282779d7caac29e03071f3620deb5bdb57f71df862479ab1aee237266439e6",
+    "2035": "f381a1d1e10cba1656bd20e83b70bb608c210e16568e6bd92e8773b73cafe0fc",
+    "2036": "9bba7b55b9b673a7c89eac5b62f6a48c3ad54c2798e66959b1d587e3d0735746",
+    "2037": "bbac090198f6b78d85169c2267341aec8dc6a352dd65b904fd023b7caff39e84",
+    "2038": "81d63829f18243b30904565980ebb5a92e1003ca476763611e68c3576ed2286b",
+    "2039": "3ba2b1299e3d357136b4b79e9052f9ee7f429d7afdc1c1be7e58545295278b15",
+    "2040": "6f0d897a5cfe3933682978f7707f292fc1a0f36d6ba907cbdc661a417edc4b90",
+    "2041": "016f82c9e55a212b89bdfef10807b67ef73b6ef4ed2aec575c861d1caa2e4973"
+  },
+  "requests_per_seed": 100,
+  "seeds": [
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040,
+    2041
+  ]
+}
