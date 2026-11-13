@@ -1,0 +1,3 @@
+headroom_percent,demand_seed,policy,baseline,delta_admitted,delta_admission_ratio,delta_weighted_ratio
+10,2029,milp,greedy,-1,-0.02,-0.022728
+10,2029,milp_v2,greedy,0,0.0,0.0
