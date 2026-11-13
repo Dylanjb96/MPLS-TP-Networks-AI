@@ -1,0 +1,13 @@
+{
+  "model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "notes": "All accepted candidates committed through phase3.model.ProtectionSimulator.admit",
+  "policy": "greedy",
+  "request_sha256": "6f0d897a5cfe3933682978f7707f292fc1a0f36d6ba907cbdc661a417edc4b90",
+  "sha256": {
+    "accepted_protection_plans.json": "10467543da45bba02c1ecf7ba57aaab4f00f6934736f6c5d9356afedb3f0afb0",
+    "category_results.csv": "9c2ab7643252d262cc3b44baef6c5b7a5439da8de1712800270dd81fe3cc4902",
+    "decisions.csv": "7fde6565c80f4bebfa53c45ab11e3a2725a9a5ad0002ba9e33413dd1b56dd609",
+    "requests.csv": "601eec2b0fae8fea4a667f16286280cfdc00fd0a39368b1b433c8e7bc22f6a27",
+    "summary.json": "826d0f5abb0ae21e32555e9a520893549f4631a56efbe28b346cfa241d3044c3"
+  }
+}
