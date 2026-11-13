@@ -1,0 +1,21 @@
+FILES_SCANNED=11
+ORIGINAL_RUNS=174
+UNIQUE_RUNS=141
+DUPLICATE_EXPORTS_IGNORED=33
+PAIRED_CONDITIONS=47
+ALL_INTEGRITY_CHECKS=PASS
+WARNING=Aggregate CSV cannot verify request prefix equivalence between different offered loads.
+WARNING=Confidence intervals use demand seeds only; topology variability is not sampled.
+WARNING=Observed all-zero paired difference is not a formal equivalence test.
+FILES:
+/mnt/data/phase4_final_stats_staging/phase4_runs(1)/phase4_runs.csv
+/mnt/data/phase4_final_stats_staging/phase4_runs(10)/phase4_runs.csv
+/mnt/data/phase4_final_stats_staging/phase4_runs(2)/phase4_runs.csv
+/mnt/data/phase4_final_stats_staging/phase4_runs(20261113-095350)/phase4_runs.csv
+/mnt/data/phase4_final_stats_staging/phase4_runs(3)/phase4_runs.csv
+/mnt/data/phase4_final_stats_staging/phase4_runs(4)/phase4_runs.csv
+/mnt/data/phase4_final_stats_staging/phase4_runs(5)/phase4_runs.csv
+/mnt/data/phase4_final_stats_staging/phase4_runs(6)/phase4_runs.csv
+/mnt/data/phase4_final_stats_staging/phase4_runs(7)/phase4_runs.csv
+/mnt/data/phase4_final_stats_staging/phase4_runs(8)/phase4_runs.csv
+/mnt/data/phase4_final_stats_staging/phase4_runs(9)/phase4_runs.csv
