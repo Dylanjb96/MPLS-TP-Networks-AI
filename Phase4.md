@@ -75,7 +75,7 @@ This performs **15 runs**, i.e. 5 paired demand sequences × 3 algorithms. Each 
 python run_phase4_benchmark.py --config config/primary_60_dual.json --requests 50 --seeds 2027 2028 2029 2030 2031 --headrooms 0 10 20 --max-candidates 2 --out outputs\phase4\headroom_60
 ```
 
-This runs 45 policy sequences. It provides within-seed comparisons; the small seed count is a **pilot**, not a basis for claims of statistical superiority. For main dissertation evaluation, plan at least 20 independent demand seeds per condition and include load variation and topology variation after supervisor agreement.
+This runs 45 policy sequences. It provides within-seed comparisons; the small seed count is a **pilot**, not a basis for claims of statistical superiority. For main dissertation evaluation, plan at least 20 independent demand seeds per condition and include load variation and topology variation.
 
 ### 4. Optional larger-network smoke checks
 
