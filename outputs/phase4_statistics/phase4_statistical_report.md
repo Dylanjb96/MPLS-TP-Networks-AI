@@ -2,8 +2,8 @@
 
 ## Scope
 
-- Input files scanned: **11**.
-- Original rows: **174**; unique matched policy runs: **141**; duplicate exports removed: **33**.
+- Input files scanned: **9**.
+- Original rows: **156**; unique matched policy runs: **141**; duplicate exports removed: **15**.
 - Unique paired seed/condition groups: **47**.
 - All three algorithms were present for every retained condition, and their request hashes matched within each paired seed.
 - No repeated-export timings are treated as independent observations.
