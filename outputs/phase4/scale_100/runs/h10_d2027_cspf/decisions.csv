@@ -1,0 +1,16 @@
+request_id,source,destination,category,bandwidth_mbps,service_class,priority_weight,candidate_count,candidates_evaluated,admitted,reason,candidate_id,working_hops,worst_scenario,worst_utilization,solver_status,selection_ms,candidate_generation_ms,objective_or_score
+R0001,13,59,main-to-subring,50,critical,5,2,2,1,OK,P-d587de032aee,7,normal,0.055556,CSPF_STYLE_FEASIBLE_SHORTEST,93.2435,6.1402,7.0
+R0002,41,51,subring-to-subring,50,operational,3,2,2,1,OK,P-41d8d49b6e44,12,E007_048,0.111111,CSPF_STYLE_FEASIBLE_SHORTEST,104.269,12.0157,12.0
+R0003,51,23,subring-to-subring,50,operational,3,2,2,1,OK,P-2beebdea2fd9,18,E007_048,0.166667,CSPF_STYLE_FEASIBLE_SHORTEST,161.9473,15.0613,18.0
+R0004,35,36,within-subring,50,operational,3,2,2,1,OK,P-bd2efa11e2e0,1,E007_048,0.166667,CSPF_STYLE_FEASIBLE_SHORTEST,187.7439,4.5585,1.0
+R0005,81,84,within-subring,50,operational,3,2,2,1,OK,P-4c9dc73d8869,3,E007_048,0.166667,CSPF_STYLE_FEASIBLE_SHORTEST,180.4657,4.2453,3.0
+R0006,32,96,subring-to-subring,400,non_critical,1,2,2,1,OK,P-7c3280e1f61e,21,normal,0.5,CSPF_STYLE_FEASIBLE_SHORTEST,208.4904,20.2547,21.0
+R0007,32,54,subring-to-subring,50,operational,3,2,2,1,OK,P-fd8eb20b3760,12,normal,0.555556,CSPF_STYLE_FEASIBLE_SHORTEST,203.4183,20.2193,12.0
+R0008,93,43,subring-to-subring,100,non_critical,1,2,2,1,OK,P-62df78a2f864,19,normal,0.555556,CSPF_STYLE_FEASIBLE_SHORTEST,184.9229,26.0487,19.0
+R0009,50,58,within-subring,100,operational,3,2,2,1,OK,P-d4c33186203e,7,normal,0.555556,CSPF_STYLE_FEASIBLE_SHORTEST,157.4078,3.4494,7.0
+R0010,47,94,subring-to-subring,400,non_critical,1,2,2,1,OK,P-59f293004e2d,16,normal,1.0,CSPF_STYLE_FEASIBLE_SHORTEST,157.1213,16.8931,16.0
+R0011,15,98,main-to-subring,100,non_critical,1,2,2,0,POSTFAULT_CAPACITY_EXCEEDED,P-ef1008810b2b,,E013_087,1.111111,NO_FEASIBLE_CANDIDATE,166.3587,7.4633,
+R0012,99,7,main-to-subring,100,operational,3,2,2,0,POSTFAULT_CAPACITY_EXCEEDED,P-2257d511f845,,E013_087,1.111111,NO_FEASIBLE_CANDIDATE,199.4836,9.995,
+R0013,67,12,main-to-subring,100,operational,3,2,2,1,OK,P-482f46762508,9,normal,1.0,CSPF_STYLE_FEASIBLE_SHORTEST,297.2304,9.7663,9.0
+R0014,49,72,subring-to-subring,10,critical,5,2,2,1,OK,P-2ed6389d7f21,21,normal,1.0,CSPF_STYLE_FEASIBLE_SHORTEST,252.2172,25.4688,21.0
+R0015,34,75,subring-to-subring,50,critical,5,2,2,1,OK,P-b9861ad2a44b,21,normal,1.0,CSPF_STYLE_FEASIBLE_SHORTEST,237.6137,23.9722,21.0

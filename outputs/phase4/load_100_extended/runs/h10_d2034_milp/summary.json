@@ -1,0 +1,45 @@
+{
+  "admission_ratio": 0.47,
+  "admitted": 47,
+  "avg_selection_ms": 79.234972,
+  "candidate_generation_seconds": 0.464701,
+  "fallback_count": 0,
+  "headroom_percent": 10,
+  "max_candidates": 2,
+  "no_plan_rejections": 0,
+  "nodes": 60,
+  "normal_capacity_rejections": 4,
+  "peak_scenario_utilization": 1.0,
+  "policy": "milp",
+  "postfault_capacity_rejections": 49,
+  "protection_model_approved": false,
+  "rejected": 53,
+  "request_sha256": "6e282779d7caac29e03071f3620deb5bdb57f71df862479ab1aee237266439e6",
+  "requests": 100,
+  "scenario_ledger": {
+    "admitted_services": 47,
+    "headroom_percent": 10,
+    "peak_directed_arc": [
+      47,
+      3
+    ],
+    "peak_reserved_mbps": 900,
+    "peak_scenario": "E036_037",
+    "peak_utilization": 1.0,
+    "physical_faults": 64,
+    "scenarios_checked": 65,
+    "scope": "scenario-based robust directed-capacity check, not MSRP reservation signalling"
+  },
+  "scenarios_checked": 65,
+  "scope": "Online Phase 4 comparison of Phase 3 single-link scenario surrogate; NOT RFC8227 MSRP",
+  "selection_seconds": 7.923497,
+  "solver_nonoptimal_count": 0,
+  "solver_status_counts": {
+    "INFEASIBLE": 53,
+    "OPTIMAL_ONLINE_MINIMAX": 47
+  },
+  "state_digest": "c6373e702348b425db9432c5432a367ce31f0537b6e0f393b827dca7d32cbf7c",
+  "topology_seed": 42,
+  "total_policy_seconds": 8.388198,
+  "weighted_admission_ratio": 0.545775
+}

@@ -1,0 +1,1147 @@
+{
+  "admitted": [
+    {
+      "candidate_id": "P-3784b03781f5",
+      "failure_state_forward_paths": {
+        "E000_001": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "E000_005": [
+          1,
+          0,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "E000_011": [
+          1,
+          0,
+          5,
+          6,
+          7
+        ],
+        "E001_002": [
+          1,
+          0,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "E002_003": [
+          1,
+          0,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "E003_004": [
+          1,
+          0,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "E004_005": [
+          1,
+          0,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "E005_006": [
+          1,
+          0,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "E006_007": [
+          1,
+          0,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "E007_008": [
+          1,
+          0,
+          5,
+          6,
+          7
+        ],
+        "E008_009": [
+          1,
+          0,
+          5,
+          6,
+          7
+        ],
+        "E009_010": [
+          1,
+          0,
+          5,
+          6,
+          7
+        ],
+        "E010_011": [
+          1,
+          0,
+          5,
+          6,
+          7
+        ]
+      },
+      "request": {
+        "bandwidth_mbps": 50,
+        "destination": 7,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 5,
+        "request_id": "R0001",
+        "service_class": "critical",
+        "source": 1
+      },
+      "reverse_rule": "exact reverse of the corresponding forward path",
+      "working_forward": [
+        1,
+        0,
+        11,
+        10,
+        9,
+        8,
+        7
+      ]
+    },
+    {
+      "candidate_id": "P-6d9de2640679",
+      "failure_state_forward_paths": {
+        "E000_001": [
+          5,
+          6
+        ],
+        "E000_005": [
+          5,
+          6
+        ],
+        "E000_011": [
+          5,
+          6
+        ],
+        "E001_002": [
+          5,
+          6
+        ],
+        "E002_003": [
+          5,
+          6
+        ],
+        "E003_004": [
+          5,
+          6
+        ],
+        "E004_005": [
+          5,
+          6
+        ],
+        "E005_006": [
+          5,
+          0,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6
+        ],
+        "E006_007": [
+          5,
+          6
+        ],
+        "E007_008": [
+          5,
+          6
+        ],
+        "E008_009": [
+          5,
+          6
+        ],
+        "E009_010": [
+          5,
+          6
+        ],
+        "E010_011": [
+          5,
+          6
+        ]
+      },
+      "request": {
+        "bandwidth_mbps": 50,
+        "destination": 6,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 3,
+        "request_id": "R0002",
+        "service_class": "operational",
+        "source": 5
+      },
+      "reverse_rule": "exact reverse of the corresponding forward path",
+      "working_forward": [
+        5,
+        6
+      ]
+    },
+    {
+      "candidate_id": "P-8d33e4a8572c",
+      "failure_state_forward_paths": {
+        "E000_001": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "E000_005": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "E000_011": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "E001_002": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "E002_003": [
+          6,
+          5,
+          0,
+          1,
+          2
+        ],
+        "E003_004": [
+          6,
+          5,
+          0,
+          1,
+          2
+        ],
+        "E004_005": [
+          6,
+          5,
+          0,
+          1,
+          2
+        ],
+        "E005_006": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          0,
+          5,
+          4,
+          3,
+          2
+        ],
+        "E006_007": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "E007_008": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "E008_009": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "E009_010": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "E010_011": [
+          6,
+          5,
+          4,
+          3,
+          2
+        ]
+      },
+      "request": {
+        "bandwidth_mbps": 50,
+        "destination": 2,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 3,
+        "request_id": "R0003",
+        "service_class": "operational",
+        "source": 6
+      },
+      "reverse_rule": "exact reverse of the corresponding forward path",
+      "working_forward": [
+        6,
+        5,
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "candidate_id": "P-83fc735c3e3e",
+      "failure_state_forward_paths": {
+        "E000_001": [
+          4,
+          5,
+          0,
+          11
+        ],
+        "E000_005": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          11
+        ],
+        "E000_011": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "E001_002": [
+          4,
+          5,
+          0,
+          11
+        ],
+        "E002_003": [
+          4,
+          5,
+          0,
+          11
+        ],
+        "E003_004": [
+          4,
+          5,
+          0,
+          11
+        ],
+        "E004_005": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          11
+        ],
+        "E005_006": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          11
+        ],
+        "E006_007": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          11
+        ],
+        "E007_008": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          11
+        ],
+        "E008_009": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          11
+        ],
+        "E009_010": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          11
+        ],
+        "E010_011": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          11
+        ]
+      },
+      "request": {
+        "bandwidth_mbps": 50,
+        "destination": 11,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 3,
+        "request_id": "R0004",
+        "service_class": "operational",
+        "source": 4
+      },
+      "reverse_rule": "exact reverse of the corresponding forward path",
+      "working_forward": [
+        4,
+        3,
+        2,
+        1,
+        0,
+        11
+      ]
+    },
+    {
+      "candidate_id": "P-80d8901fcc6e",
+      "failure_state_forward_paths": {
+        "E000_001": [
+          10,
+          11
+        ],
+        "E000_005": [
+          10,
+          11
+        ],
+        "E000_011": [
+          10,
+          11
+        ],
+        "E001_002": [
+          10,
+          11
+        ],
+        "E002_003": [
+          10,
+          11
+        ],
+        "E003_004": [
+          10,
+          11
+        ],
+        "E004_005": [
+          10,
+          11
+        ],
+        "E005_006": [
+          10,
+          11
+        ],
+        "E006_007": [
+          10,
+          11
+        ],
+        "E007_008": [
+          10,
+          11
+        ],
+        "E008_009": [
+          10,
+          11
+        ],
+        "E009_010": [
+          10,
+          11
+        ],
+        "E010_011": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          0,
+          11
+        ]
+      },
+      "request": {
+        "bandwidth_mbps": 50,
+        "destination": 11,
+        "endpoint_category": "within-subring",
+        "priority_weight": 3,
+        "request_id": "R0005",
+        "service_class": "operational",
+        "source": 10
+      },
+      "reverse_rule": "exact reverse of the corresponding forward path",
+      "working_forward": [
+        10,
+        11
+      ]
+    },
+    {
+      "candidate_id": "P-28a24f9addf5",
+      "failure_state_forward_paths": {
+        "E000_001": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "E000_005": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "E000_011": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "E001_002": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "E002_003": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "E003_004": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "E004_005": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "E005_006": [
+          4,
+          5,
+          0,
+          11,
+          10
+        ],
+        "E006_007": [
+          4,
+          5,
+          0,
+          11,
+          10
+        ],
+        "E007_008": [
+          4,
+          5,
+          0,
+          11,
+          10
+        ],
+        "E008_009": [
+          4,
+          5,
+          0,
+          11,
+          10
+        ],
+        "E009_010": [
+          4,
+          5,
+          0,
+          11,
+          10
+        ],
+        "E010_011": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "request": {
+        "bandwidth_mbps": 200,
+        "destination": 10,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 1,
+        "request_id": "R0006",
+        "service_class": "non_critical",
+        "source": 4
+      },
+      "reverse_rule": "exact reverse of the corresponding forward path",
+      "working_forward": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "candidate_id": "P-515f81868d1a",
+      "failure_state_forward_paths": {
+        "E000_001": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E000_005": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E000_011": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E001_002": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E002_003": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E003_004": [
+          8,
+          7,
+          6,
+          5,
+          0,
+          1,
+          2,
+          3
+        ],
+        "E004_005": [
+          8,
+          7,
+          6,
+          5,
+          0,
+          1,
+          2,
+          3
+        ],
+        "E005_006": [
+          8,
+          9,
+          10,
+          11,
+          0,
+          5,
+          4,
+          3
+        ],
+        "E006_007": [
+          8,
+          9,
+          10,
+          11,
+          0,
+          5,
+          4,
+          3
+        ],
+        "E007_008": [
+          8,
+          9,
+          10,
+          11,
+          0,
+          5,
+          4,
+          3
+        ],
+        "E008_009": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E009_010": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "E010_011": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3
+        ]
+      },
+      "request": {
+        "bandwidth_mbps": 20,
+        "destination": 3,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 5,
+        "request_id": "R0007",
+        "service_class": "critical",
+        "source": 8
+      },
+      "reverse_rule": "exact reverse of the corresponding forward path",
+      "working_forward": [
+        8,
+        7,
+        6,
+        5,
+        4,
+        3
+      ]
+    },
+    {
+      "candidate_id": "P-8de2bcf91399",
+      "failure_state_forward_paths": {
+        "E000_001": [
+          5,
+          4,
+          3
+        ],
+        "E000_005": [
+          5,
+          4,
+          3
+        ],
+        "E000_011": [
+          5,
+          4,
+          3
+        ],
+        "E001_002": [
+          5,
+          4,
+          3
+        ],
+        "E002_003": [
+          5,
+          4,
+          3
+        ],
+        "E003_004": [
+          5,
+          0,
+          1,
+          2,
+          3
+        ],
+        "E004_005": [
+          5,
+          0,
+          1,
+          2,
+          3
+        ],
+        "E005_006": [
+          5,
+          4,
+          3
+        ],
+        "E006_007": [
+          5,
+          4,
+          3
+        ],
+        "E007_008": [
+          5,
+          4,
+          3
+        ],
+        "E008_009": [
+          5,
+          4,
+          3
+        ],
+        "E009_010": [
+          5,
+          4,
+          3
+        ],
+        "E010_011": [
+          5,
+          4,
+          3
+        ]
+      },
+      "request": {
+        "bandwidth_mbps": 100,
+        "destination": 3,
+        "endpoint_category": "main-to-main",
+        "priority_weight": 3,
+        "request_id": "R0008",
+        "service_class": "operational",
+        "source": 5
+      },
+      "reverse_rule": "exact reverse of the corresponding forward path",
+      "working_forward": [
+        5,
+        4,
+        3
+      ]
+    },
+    {
+      "candidate_id": "P-3a291513b848",
+      "failure_state_forward_paths": {
+        "E000_001": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "E000_005": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "E000_011": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "E001_002": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "E002_003": [
+          2,
+          1,
+          0,
+          5,
+          6,
+          7
+        ],
+        "E003_004": [
+          2,
+          1,
+          0,
+          5,
+          6,
+          7
+        ],
+        "E004_005": [
+          2,
+          1,
+          0,
+          5,
+          6,
+          7
+        ],
+        "E005_006": [
+          2,
+          3,
+          4,
+          5,
+          0,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "E006_007": [
+          2,
+          3,
+          4,
+          5,
+          0,
+          11,
+          10,
+          9,
+          8,
+          7
+        ],
+        "E007_008": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "E008_009": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "E009_010": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "E010_011": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "request": {
+        "bandwidth_mbps": 200,
+        "destination": 7,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 3,
+        "request_id": "R0009",
+        "service_class": "operational",
+        "source": 2
+      },
+      "reverse_rule": "exact reverse of the corresponding forward path",
+      "working_forward": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "candidate_id": "P-d637af360570",
+      "failure_state_forward_paths": {
+        "E000_001": [
+          5,
+          0,
+          11,
+          10,
+          9
+        ],
+        "E000_005": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "E000_011": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "E001_002": [
+          5,
+          0,
+          11,
+          10,
+          9
+        ],
+        "E002_003": [
+          5,
+          0,
+          11,
+          10,
+          9
+        ],
+        "E003_004": [
+          5,
+          0,
+          11,
+          10,
+          9
+        ],
+        "E004_005": [
+          5,
+          0,
+          11,
+          10,
+          9
+        ],
+        "E005_006": [
+          5,
+          0,
+          11,
+          10,
+          9
+        ],
+        "E006_007": [
+          5,
+          0,
+          11,
+          10,
+          9
+        ],
+        "E007_008": [
+          5,
+          0,
+          11,
+          10,
+          9
+        ],
+        "E008_009": [
+          5,
+          0,
+          11,
+          10,
+          9
+        ],
+        "E009_010": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "E010_011": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "request": {
+        "bandwidth_mbps": 100,
+        "destination": 9,
+        "endpoint_category": "main-to-subring",
+        "priority_weight": 1,
+        "request_id": "R0010",
+        "service_class": "non_critical",
+        "source": 5
+      },
+      "reverse_rule": "exact reverse of the corresponding forward path",
+      "working_forward": [
+        5,
+        0,
+        11,
+        10,
+        9
+      ]
+    }
+  ],
+  "model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP"
+}

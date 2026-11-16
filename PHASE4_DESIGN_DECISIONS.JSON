@@ -1,0 +1,25 @@
+{
+  "phase": 4,
+  "model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "status": "implemented_baseline_and_pilot; not final dissertation conclusion",
+  "policies": ["greedy", "cspf", "milp"],
+  "candidate_budget": 2,
+  "candidate_count_provenance": "Prior Phase 3 candidate inventory: 250/250 primary 60-node sampled requests had exactly two policy-valid plans",
+  "comparison": "online sequential, no lookahead, fixed prior admissions",
+  "common_checker": "phase3.model.ProtectionSimulator.audit and admit",
+  "failure_scenarios": "normal plus every unique single physical-link failure",
+  "capacity": "independent per-direction full-duplex integer Mb/s with configurable fractional headroom",
+  "greedy": "Phase3 first feasible from shortest working-hop sorted policy candidates",
+  "cspf": "shortest working hops among robust feasible policy candidates; normal arc congestion tie-break",
+  "milp": "one incoming request; min worst scenario directed arc utilization with exactly one plan selected, not future-optimal",
+  "milp_solver": "SciPy optimize.milp (HiGHS), optimal status required; labelled greedy fallback otherwise",
+  "supervisor_model_approval": false,
+  "not_in_scope": ["true RFC8227 MSRP", "RPS/OAM messaging", "node fault", "multiple simultaneous faults", "real railway hardware or performance", "preemption or release"],
+  "primary_experiment": {
+    "topology": "config/primary_60_dual.json",
+    "demand_seeds": [2027, 2028, 2029, 2030, 2031],
+    "requests_per_seed": 50,
+    "headroom_percent": 10,
+    "planned_additional_headroom_percent": [0,20]
+  }
+}

@@ -1,0 +1,4 @@
+headroom_percent,policy,seeds,requests_per_seed,mean_admission_ratio,sd_admission_ratio,min_admission_ratio,max_admission_ratio,mean_weighted_ratio,sd_weighted_ratio,mean_selection_ms_per_request,fallbacks_across_seeds
+10,greedy,5,100,0.342,0.07328,0.25,0.45,0.384639,0.079963,52.328851,0
+10,cspf,5,100,0.342,0.07328,0.25,0.45,0.384639,0.079963,63.856393,0
+10,milp,5,100,0.342,0.07328,0.25,0.45,0.384639,0.079963,88.078275,0

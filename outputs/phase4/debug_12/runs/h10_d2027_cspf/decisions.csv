@@ -1,0 +1,11 @@
+request_id,source,destination,category,bandwidth_mbps,service_class,priority_weight,candidate_count,candidates_evaluated,admitted,reason,candidate_id,working_hops,worst_scenario,worst_utilization,solver_status,selection_ms,candidate_generation_ms,objective_or_score
+R0001,1,7,main-to-subring,50,critical,5,2,2,1,OK,P-3784b03781f5,6,normal,0.055556,CSPF_STYLE_FEASIBLE_SHORTEST,1.2353,0.3928,6.0
+R0002,5,6,main-to-subring,50,operational,3,2,2,1,OK,P-6d9de2640679,1,E000_011,0.111111,CSPF_STYLE_FEASIBLE_SHORTEST,1.1229,0.2172,1.0
+R0003,6,2,main-to-subring,50,operational,3,2,2,1,OK,P-8d33e4a8572c,4,E000_011,0.166667,CSPF_STYLE_FEASIBLE_SHORTEST,1.3305,0.3612,4.0
+R0004,4,11,main-to-subring,50,operational,3,2,2,1,OK,P-83fc735c3e3e,5,E000_011,0.222222,CSPF_STYLE_FEASIBLE_SHORTEST,1.3393,0.3699,5.0
+R0005,10,11,within-subring,50,operational,3,2,2,1,OK,P-80d8901fcc6e,1,E000_011,0.222222,CSPF_STYLE_FEASIBLE_SHORTEST,1.2827,0.1285,1.0
+R0006,4,10,main-to-subring,200,non_critical,1,2,2,1,OK,P-28a24f9addf5,6,E000_011,0.444444,CSPF_STYLE_FEASIBLE_SHORTEST,1.4548,0.3599,6.0
+R0007,8,3,main-to-subring,20,critical,5,2,2,1,OK,P-515f81868d1a,5,E000_011,0.466667,CSPF_STYLE_FEASIBLE_SHORTEST,1.7708,0.3714,5.0
+R0008,5,3,main-to-main,100,operational,3,2,2,1,OK,P-8de2bcf91399,2,E000_011,0.466667,CSPF_STYLE_FEASIBLE_SHORTEST,2.0429,0.1478,2.0
+R0009,2,7,main-to-subring,200,operational,3,2,2,1,OK,P-3a291513b848,5,E000_011,0.688889,CSPF_STYLE_FEASIBLE_SHORTEST,2.1118,0.6682,5.0
+R0010,5,9,main-to-subring,100,non_critical,1,2,2,1,OK,P-d637af360570,4,E000_011,0.8,CSPF_STYLE_FEASIBLE_SHORTEST,1.6555,0.2416,4.0

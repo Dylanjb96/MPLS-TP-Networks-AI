@@ -1,0 +1,19 @@
+FILES_SCANNED=9
+ORIGINAL_RUNS=156
+UNIQUE_RUNS=141
+DUPLICATE_EXPORTS_IGNORED=15
+PAIRED_CONDITIONS=47
+ALL_INTEGRITY_CHECKS=PASS
+WARNING=Aggregate CSV cannot verify request prefix equivalence between different offered loads.
+WARNING=Confidence intervals use demand seeds only; topology variability is not sampled.
+WARNING=Observed all-zero paired difference is not a formal equivalence test.
+FILES:
+outputs\phase4\debug_12\phase4_runs.csv
+outputs\phase4\headroom_60\phase4_runs.csv
+outputs\phase4\load_100\phase4_runs.csv
+outputs\phase4\load_100_extended\phase4_runs.csv
+outputs\phase4\load_25\phase4_runs.csv
+outputs\phase4\pilot_60\phase4_runs.csv
+outputs\phase4\scale_100\phase4_runs.csv
+outputs\phase4\scale_100_full\phase4_runs.csv
+outputs\phase4\scale_150_full\phase4_runs.csv
