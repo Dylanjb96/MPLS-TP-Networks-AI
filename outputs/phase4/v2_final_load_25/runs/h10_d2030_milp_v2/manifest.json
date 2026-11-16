@@ -1,0 +1,14 @@
+{
+  "algorithm_version": "V2_PRIMARY_MILP_EXACT_LEXICOGRAPHIC",
+  "model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "notes": "All accepted candidates committed through phase3.model.ProtectionSimulator.admit",
+  "policy": "milp_v2",
+  "request_sha256": "88fc7e5538500b43f77825370d78d08aa2bb1233c004c098bb1eaee053f09fb0",
+  "sha256": {
+    "accepted_protection_plans.json": "67b0558fea6f5a826643a147e33e2e42c883d35d9fcecda68b967455cc64ec4a",
+    "category_results.csv": "5eded7cd01b7141ae7848ab186dff77fcf83c306c909479bfde9e8605d4e4e3a",
+    "decisions.csv": "3d2b27f34dcb254d4cf63560bdb3a2a8d9b973d6aee78794fc01acaaa619cb3f",
+    "requests.csv": "6695f65a039e176a32c9c932505a27ff6f2818a3f35e67d071523c25a54df2be",
+    "summary.json": "114912b5283c955f637c629f3967f091ef0e5d59fe25e89638723f99186dc31d"
+  }
+}
