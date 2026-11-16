@@ -1,0 +1,47 @@
+{
+  "admission_ratio": 0.33,
+  "admitted": 33,
+  "avg_inference_only_ms": "",
+  "avg_selection_ms": 76.438046,
+  "candidate_generation_seconds_shared": 0.471279,
+  "forced_rejections": 67,
+  "headroom_percent": 10,
+  "max_candidates": 2,
+  "model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "no_plan_rejections": 0,
+  "nodes": 60,
+  "normal_capacity_rejections": 28,
+  "output_dir": "outputs\\phase5\\test_60_FINAL\\runs\\seed_31001_random_feasible",
+  "peak_scenario_utilization": 1.0,
+  "policy": "random_feasible",
+  "postfault_capacity_rejections": 39,
+  "protection_model_approved": false,
+  "rejected": 67,
+  "request_sha256": "fb9a6db0a6cee8b594b060fe8fb6274fa03385e1a9c0cadbff6a244ba7e8a140",
+  "requests": 100,
+  "scenario_ledger": {
+    "admitted_services": 33,
+    "headroom_percent": 10,
+    "peak_directed_arc": [
+      20,
+      19
+    ],
+    "peak_reserved_mbps": 900,
+    "peak_scenario": "normal",
+    "peak_utilization": 1.0,
+    "physical_faults": 64,
+    "scenarios_checked": 65,
+    "scope": "scenario-based robust directed-capacity check, not MSRP reservation signalling"
+  },
+  "selection_seconds": 7.643805,
+  "solver_fallbacks": 0,
+  "solver_nonoptimal_statuses": 0,
+  "solver_status_counts": {
+    "FORCED_REJECT": 67,
+    "MASKED_DDQN_ACTION": 33
+  },
+  "state_digest": "f1904ec76adef5e7b02bd0054fd248136e1d704fc37384c99fb7dde41964009c",
+  "topology_seed": 42,
+  "total_reward": 18.2,
+  "weighted_admission_ratio": 0.342105
+}
