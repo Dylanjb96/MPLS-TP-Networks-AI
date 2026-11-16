@@ -1,0 +1,12 @@
+{
+  "comparison": "same fixed protection surrogate as Phase 3 and Phase 4",
+  "files_sha256": {
+    "decisions.csv": "97af358309e30ecbf670305b65a7d0e17ab8a424ee3569f47bad5c773e7591ee",
+    "requests.csv": "f42128d836b7e8f445f3ccebb75933c6687484098cd57627ffbd7047aa0b866e",
+    "summary.json": "6e3cbfde71066300cc85151529a2bca1c2b5bd61dbe2c8d59aea688098f9eba6"
+  },
+  "model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "policy": "milp_v2",
+  "protection_model_approved": false,
+  "request_sha256": "f56a8f6504c34a13d723df0b850f74bfaeaba7dbdbaf158d9d55fb355b202729"
+}

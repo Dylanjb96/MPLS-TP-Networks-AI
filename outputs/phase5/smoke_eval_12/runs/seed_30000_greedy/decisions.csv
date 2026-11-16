@@ -1,0 +1,11 @@
+request_id,source,destination,endpoint_category,service_class,priority_weight,bandwidth_mbps,admitted,reward,action,feasible_actions,candidate_count,candidate_id,working_hops,reason,worst_utilization,solver_status,selection_ms,inference_ms
+R0001,3,0,main-to-main,non_critical,1,100,1,0.2,,,2,P-42e15db912ef,3,OK,0.011111,FIRST_FEASIBLE,1.4377,
+R0002,3,0,main-to-main,non_critical,1,100,1,0.2,,,2,P-42e15db912ef,3,OK,0.022222,FIRST_FEASIBLE,1.3593,
+R0003,5,7,main-to-subring,operational,3,50,1,0.6,,,2,P-4002dcf7f11d,2,OK,0.055556,FIRST_FEASIBLE,1.4068,
+R0004,11,3,main-to-subring,non_critical,1,200,1,0.2,,,2,P-247d038d2fb6,4,OK,0.277778,FIRST_FEASIBLE,1.5473,
+R0005,4,7,main-to-subring,non_critical,1,200,1,0.2,,,2,P-ea845d67ea17,3,OK,0.5,FIRST_FEASIBLE,1.5679,
+R0006,2,8,main-to-subring,non_critical,1,200,1,0.2,,,2,P-703a72b3f567,6,OK,0.722222,FIRST_FEASIBLE,2.3087,
+R0007,5,0,main-to-main,operational,3,50,1,0.6,,,2,P-2d68d7f47892,1,OK,0.722222,FIRST_FEASIBLE,1.5876,
+R0008,9,1,main-to-subring,operational,3,50,1,0.6,,,2,P-790e524db4da,4,OK,0.777778,FIRST_FEASIBLE,1.786,
+R0009,10,5,main-to-subring,operational,3,100,1,0.6,,,2,P-986a27c38074,3,OK,0.888889,FIRST_FEASIBLE,1.7442,
+R0010,6,0,main-to-subring,critical,5,10,1,1.0,,,2,P-2592890ee633,2,OK,0.9,FIRST_FEASIBLE,1.7532,
