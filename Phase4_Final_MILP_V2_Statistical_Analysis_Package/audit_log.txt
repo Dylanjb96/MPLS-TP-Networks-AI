@@ -1,0 +1,16 @@
+FILES_SCANNED=5
+ORIGINAL_RUNS=135
+UNIQUE_RUNS=135
+DUPLICATE_EXPORTS_IGNORED=0
+PAIRED_CONDITIONS=45
+ALL_INTEGRITY_CHECKS=PASS
+WARNING=Aggregate CSV alone cannot independently verify nested request prefixes across different offered loads (checked previously against per-run requests for seeds 2027-2031).
+WARNING=Confidence intervals use demand seeds only; topology variability is not sampled.
+WARNING=Observed all-zero paired difference is not a formal equivalence test.
+PRIMARY_MILP_BASELINE=milp_v2; ORIGINAL_milp_V1_EXCLUDED=TRUE
+FILES:
+/mnt/data/phase4_runs(20261116-083701).csv
+/mnt/data/phase4_runs(20261116-083718).csv
+/mnt/data/phase4_runs(20261116-085052).csv
+/mnt/data/phase4_runs(20261116-085125).csv
+/mnt/data/phase4_runs(20261116-085538).csv
