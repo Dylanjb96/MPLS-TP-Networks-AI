@@ -1,0 +1,50 @@
+{
+  "confirm_initialization_seeds": [
+    7,
+    17,
+    27
+  ],
+  "historical_31000_31029_NOT_used": true,
+  "hyperparameter_screen_replicates": 1,
+  "note": "Repeated validation use can overfit. Keep old Phase5 results unchanged.",
+  "rule": "prospectively tune on validation only; new test seeds 41000+ evaluated once",
+  "training_seeds": [
+    10000,
+    10079
+  ],
+  "validation_seeds": [
+    20000,
+    20009
+  ],
+  "winners": [
+    {
+      "algorithm": "ddqn",
+      "best_config": {
+        "epsilon_decay_steps": 4000,
+        "gamma": 0.99,
+        "learning_rate": 0.0003
+      },
+      "best_config_index": 0,
+      "mean_validation_admission_over_initializations": 0.3456666666666666,
+      "mean_validation_weighted_over_initializations": 0.40109306530533334,
+      "selected_agent_seed": 7,
+      "selected_checkpoint": "outputs\\phase5b\\tuning_v1\\confirm\\ddqn_cfg0_seed7\\best_model.pt",
+      "selection_rule": "validation only: config by average weighted over seeds; checkpoint by best weighted"
+    },
+    {
+      "algorithm": "discrete_sac",
+      "best_config": {
+        "alpha": 0.2,
+        "gamma": 0.99,
+        "learning_rate": 0.0003,
+        "target_tau": 0.01
+      },
+      "best_config_index": 2,
+      "mean_validation_admission_over_initializations": 0.3446666666666667,
+      "mean_validation_weighted_over_initializations": 0.3998073345586667,
+      "selected_agent_seed": 7,
+      "selected_checkpoint": "outputs\\phase5b\\tuning_v1\\confirm\\discrete_sac_cfg2_seed7\\best_model.pt",
+      "selection_rule": "validation only: config by average weighted over seeds; checkpoint by best weighted"
+    }
+  ]
+}

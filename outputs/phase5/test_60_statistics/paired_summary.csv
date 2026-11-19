@@ -1,0 +1,5 @@
+policy,baseline,seeds,delta_admission_mean,delta_admission_sd,delta_admission_lower_95,delta_admission_upper_95,delta_weighted_mean,delta_weighted_sd,delta_weighted_lower_95,delta_weighted_upper_95,delta_selection_ms_mean,delta_selection_ms_sd,delta_selection_ms_lower_95,delta_selection_ms_upper_95,positive_admission_seeds,negative_admission_seeds,zero_admission_seeds
+cspf,greedy,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,12.41686953,3.57200013,11.08306277,13.7506763,0,0,30
+ddqn,greedy,30,-0.01033333,0.01376736,-0.01547415,-0.00519252,-0.00808327,0.01665407,-0.014302,-0.00186453,30.5598307,11.55550616,26.24493379,34.87472761,2,16,12
+milp_v2,greedy,30,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,47.05874313,5.99153536,44.82146706,49.29601921,0,0,30
+random_feasible,greedy,30,-0.00566667,0.01430778,-0.01100928,-0.00032405,-0.005365,0.01505259,-0.01098573,0.00025573,24.95194757,6.13798461,22.65998645,27.24390869,1,10,19

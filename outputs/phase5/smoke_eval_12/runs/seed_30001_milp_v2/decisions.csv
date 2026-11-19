@@ -1,0 +1,11 @@
+request_id,source,destination,endpoint_category,service_class,priority_weight,bandwidth_mbps,admitted,reward,action,feasible_actions,candidate_count,candidate_id,working_hops,reason,worst_utilization,solver_status,selection_ms,inference_ms
+R0001,9,11,within-subring,operational,3,100,1,0.6,,,2,P-c9b3f4471e0c,2,OK,0.111111,OPTIMAL_ONLINE_MINIMAX_LEXICOGRAPHIC_V2,5.5166,
+R0002,2,7,main-to-subring,operational,3,100,1,0.6,,,2,P-3a291513b848,5,OK,0.222222,OPTIMAL_ONLINE_MINIMAX_LEXICOGRAPHIC_V2,7.5673,
+R0003,5,3,main-to-main,operational,3,100,1,0.6,,,2,P-8de2bcf91399,2,OK,0.222222,OPTIMAL_ONLINE_MINIMAX_LEXICOGRAPHIC_V2,6.7419,
+R0004,8,9,within-subring,critical,5,20,1,1.0,,,2,P-bf9211e18180,1,OK,0.222222,OPTIMAL_ONLINE_MINIMAX_LEXICOGRAPHIC_V2,6.4247,
+R0005,0,8,main-to-subring,critical,5,50,1,1.0,,,2,P-274e009eba46,4,OK,0.277778,OPTIMAL_ONLINE_MINIMAX_LEXICOGRAPHIC_V2,8.2695,
+R0006,8,9,within-subring,critical,5,20,1,1.0,,,2,P-bf9211e18180,1,OK,0.277778,OPTIMAL_ONLINE_MINIMAX_LEXICOGRAPHIC_V2,7.8576,
+R0007,6,4,main-to-subring,non_critical,1,200,1,0.2,,,2,P-67f5ba1dd1d0,2,OK,0.5,OPTIMAL_ONLINE_MINIMAX_LEXICOGRAPHIC_V2,8.3482,
+R0008,5,8,main-to-subring,operational,3,100,1,0.6,,,2,P-008b5db3cff9,3,OK,0.611111,OPTIMAL_ONLINE_MINIMAX_LEXICOGRAPHIC_V2,7.7681,
+R0009,7,11,within-subring,critical,5,20,1,1.0,,,2,P-782f823e45af,4,OK,0.633333,OPTIMAL_ONLINE_MINIMAX_LEXICOGRAPHIC_V2,8.8506,
+R0010,2,10,main-to-subring,operational,3,200,1,0.6,,,2,P-3fcd484fce80,4,OK,0.855556,OPTIMAL_ONLINE_MINIMAX_LEXICOGRAPHIC_V2,11.4137,

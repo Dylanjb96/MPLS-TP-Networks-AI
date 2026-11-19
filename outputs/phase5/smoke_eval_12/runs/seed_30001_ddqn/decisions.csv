@@ -1,0 +1,11 @@
+request_id,source,destination,endpoint_category,service_class,priority_weight,bandwidth_mbps,admitted,reward,action,feasible_actions,candidate_count,candidate_id,working_hops,reason,worst_utilization,solver_status,selection_ms,inference_ms
+R0001,9,11,within-subring,operational,3,100,1,0.6,1,2,2,P-1f428a6634c2,6,OK,0.111111,MASKED_DDQN_ACTION,3.6369,
+R0002,2,7,main-to-subring,operational,3,100,1,0.6,1,2,2,P-7e5890c16adc,7,OK,0.222222,MASKED_DDQN_ACTION,3.9201,
+R0003,5,3,main-to-main,operational,3,100,1,0.6,1,2,2,P-c3342950aa52,4,OK,0.222222,MASKED_DDQN_ACTION,3.6091,
+R0004,8,9,within-subring,critical,5,20,1,1.0,1,2,2,P-870516ce099c,7,OK,0.244444,MASKED_DDQN_ACTION,3.6721,
+R0005,0,8,main-to-subring,critical,5,50,1,1.0,1,2,2,P-3e9cef17ce0d,4,OK,0.3,MASKED_DDQN_ACTION,5.6052,
+R0006,8,9,within-subring,critical,5,20,1,1.0,1,2,2,P-870516ce099c,7,OK,0.322222,MASKED_DDQN_ACTION,4.891,
+R0007,6,4,main-to-subring,non_critical,1,200,1,0.2,1,2,2,P-edb99c38a0fb,10,OK,0.544444,MASKED_DDQN_ACTION,4.8806,
+R0008,5,8,main-to-subring,operational,3,100,1,0.6,1,2,2,P-249a7a4bfae9,5,OK,0.655556,MASKED_DDQN_ACTION,5.5458,
+R0009,7,11,within-subring,critical,5,20,1,1.0,0,2,2,P-e3d0beabd640,4,OK,0.677778,MASKED_DDQN_ACTION,4.739,
+R0010,2,10,main-to-subring,operational,3,200,1,0.6,1,2,2,P-9a8e09986a79,8,OK,0.855556,MASKED_DDQN_ACTION,4.811,

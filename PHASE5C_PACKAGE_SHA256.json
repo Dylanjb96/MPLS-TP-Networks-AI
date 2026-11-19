@@ -1,0 +1,23 @@
+{
+  "files_sha256": {
+    "PHASE5C_DEVELOPMENT_VERIFICATION.md": "ab63c8852c8c19af06f305e165137354863e584a84d285bb0e558e137b7fac25",
+    "PHASE5C_RESEARCH_PROTOCOL.md": "95a86d5651d2386b16eb6fa4127317b350827cbefc687f8dc4bbe71bd71c3454",
+    "README_PHASE5C_START_TO_FINISH.md": "8508a74aaf39a0e17153f533a7772c8cb0e7760dbe88864a6b7bb7e05c8bf86c",
+    "docs/Phase5C_Start_to_Finish_Guide.docx": "78b543b21210e7b69982be53d8677741d31f9534155636548e1438e03a745c72",
+    "docs/Phase5C_Start_to_Finish_Guide.pdf": "c471c5c5d4c48f913e2a9ab981fc5e4030af27c2b95ee217a37e075b6f9813de",
+    "phase5c/__init__.py": "64eac5a4aaa9d3b803cab356d15a32bdbb31606275173fc7bb92b744d870c803",
+    "phase5c/cli.py": "b04a83973e4f30bb472cbca8e63cb9068f78369a8062b3bf1cf0ec98fc7bd4be",
+    "phase5c/common.py": "afc3f93797ae9bdcf52b0a07b99dc00c087e5684f5894d55b52110d81aa66229",
+    "phase5c/dataset.py": "9b84fe772daab90a84948fa3c31a7cd460eb0c6581e4305311e38772ccb86454",
+    "phase5c/offline_agents.py": "ebc37b7d9774a063136effae32f4e71bc450aca6d66de53d1ebcfe809cb2d8a7",
+    "phase5c/plots.py": "d5449e7e633e2188b72695810dd52cec17b5e0472bfd01fa6deb939feff475c5",
+    "phase5c/ppo.py": "eff9f6c7227c14530a9cd4175e67ef16b9f2d58869aadc5172dbffa2278baac7",
+    "phase5c/selection.py": "a043d00223fe7f904c8995b66019f6391e165a4b3b8656514f4dd85f5e353430",
+    "phase5c/workflow.py": "de646a7349a4d5e08ed3bf94d32efb5aa5965290c77d3e8b5d2a9cdde6f73185",
+    "requirements_phase5c.txt": "89b99778c79871a30c677acba1ca30e1567d752a8212b0c2cb61b4dfa15e3be7",
+    "run_phase5c.py": "2b40be34c28621068b6ef0a699030fd831e9dc043164a542e7fe0baf8ebcb573",
+    "tests/test_phase5c.py": "b7626726d136bd7c32b95eb7431d5ebd90fdcde45abe46cee6c98748b2c77d13"
+  },
+  "package_role": "ADD_ON_NO_REPLACEMENT_OF_PRIOR_PHASES",
+  "version": "PHASE5C_DISCRETE_RL_V1"
+}

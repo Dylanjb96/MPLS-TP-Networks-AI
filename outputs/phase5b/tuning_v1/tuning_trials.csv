@@ -1,0 +1,13 @@
+stage,algorithm,config_index,agent_seed,hyperparameters_json,best_validation_weighted,best_validation_admission,best_episode,completed_episodes,gradient_steps,checkpoint
+screen,ddqn,0,7,"{""epsilon_decay_steps"": 4000, ""gamma"": 0.99, ""learning_rate"": 0.0003}",0.405281771225,0.345,20,80,1969,outputs\phase5b\tuning_v1\screen\ddqn_cfg0_seed7\best_model.pt
+screen,ddqn,1,7,"{""epsilon_decay_steps"": 8000, ""gamma"": 0.99, ""learning_rate"": 0.0001}",0.397862411489,0.341,40,80,1969,outputs\phase5b\tuning_v1\screen\ddqn_cfg1_seed7\best_model.pt
+screen,ddqn,2,7,"{""epsilon_decay_steps"": 8000, ""gamma"": 0.95, ""learning_rate"": 0.0003}",0.39860804117,0.341,20,80,1969,outputs\phase5b\tuning_v1\screen\ddqn_cfg2_seed7\best_model.pt
+confirm,ddqn,0,7,"{""epsilon_decay_steps"": 4000, ""gamma"": 0.99, ""learning_rate"": 0.0003}",0.405281771225,0.345,20,100,2469,outputs\phase5b\tuning_v1\confirm\ddqn_cfg0_seed7\best_model.pt
+confirm,ddqn,0,17,"{""epsilon_decay_steps"": 4000, ""gamma"": 0.99, ""learning_rate"": 0.0003}",0.402068737194,0.348,50,130,3219,outputs\phase5b\tuning_v1\confirm\ddqn_cfg0_seed17\best_model.pt
+confirm,ddqn,0,27,"{""epsilon_decay_steps"": 4000, ""gamma"": 0.99, ""learning_rate"": 0.0003}",0.395928687497,0.344,130,160,3969,outputs\phase5b\tuning_v1\confirm\ddqn_cfg0_seed27\best_model.pt
+screen,discrete_sac,0,7,"{""alpha"": 0.05, ""gamma"": 0.99, ""learning_rate"": 0.0003, ""target_tau"": 0.01}",0.400914547836,0.345,30,80,1969,outputs\phase5b\tuning_v1\screen\discrete_sac_cfg0_seed7\best_model.pt
+screen,discrete_sac,1,7,"{""alpha"": 0.1, ""gamma"": 0.99, ""learning_rate"": 0.0003, ""target_tau"": 0.01}",0.399896356994,0.344,60,80,1969,outputs\phase5b\tuning_v1\screen\discrete_sac_cfg1_seed7\best_model.pt
+screen,discrete_sac,2,7,"{""alpha"": 0.2, ""gamma"": 0.99, ""learning_rate"": 0.0003, ""target_tau"": 0.01}",0.400935308409,0.345,70,80,1969,outputs\phase5b\tuning_v1\screen\discrete_sac_cfg2_seed7\best_model.pt
+confirm,discrete_sac,2,7,"{""alpha"": 0.2, ""gamma"": 0.99, ""learning_rate"": 0.0003, ""target_tau"": 0.01}",0.400935308409,0.345,70,150,3719,outputs\phase5b\tuning_v1\confirm\discrete_sac_cfg2_seed7\best_model.pt
+confirm,discrete_sac,2,17,"{""alpha"": 0.2, ""gamma"": 0.99, ""learning_rate"": 0.0003, ""target_tau"": 0.01}",0.397562032213,0.346,30,110,2719,outputs\phase5b\tuning_v1\confirm\discrete_sac_cfg2_seed17\best_model.pt
+confirm,discrete_sac,2,27,"{""alpha"": 0.2, ""gamma"": 0.99, ""learning_rate"": 0.0003, ""target_tau"": 0.01}",0.400924663054,0.343,80,160,3969,outputs\phase5b\tuning_v1\confirm\discrete_sac_cfg2_seed27\best_model.pt
