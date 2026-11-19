@@ -1,0 +1,74 @@
+{
+  "algorithm": "bcq",
+  "best_gradient_step": 2,
+  "best_validation_score": [
+    1.0,
+    1.0
+  ],
+  "completed_gradient_steps": 4,
+  "config": {
+    "algorithm": "bcq",
+    "awac_lambda": 1.0,
+    "batch": 64,
+    "behavior_threshold": 0.3,
+    "conservative_alpha": 1.0,
+    "entropy_coef": 0.01,
+    "expectile": 0.7,
+    "gae_lambda": 0.95,
+    "gamma": 0.99,
+    "hidden": 64,
+    "lr": 0.0003,
+    "max_weight": 20.0,
+    "ppo_clip": 0.2,
+    "ppo_epochs": 4,
+    "seed": 7,
+    "tau": 0.01
+  },
+  "headroom": 10,
+  "max_candidates": 2,
+  "offline_dataset_behavior_counts": {
+    "greedy": 8,
+    "random_feasible": 8
+  },
+  "offline_dataset_manifest_sha256": "e0f78eeba883c612e6d26d03321461a6564ea801179b7dbb7b3fb5d81df5fe16",
+  "offline_dataset_npz_sha256": "74140dc4297aee344fa3842bf76f1ee629f85f814e453c10e94bc987ecc5a855",
+  "protection_model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "protection_model_approved": false,
+  "python_version": "3.11.9",
+  "requests_per_seed": 4,
+  "source_sha256": {
+    "phase3/model.py": "6efee32468cc9ad5fdd1e4930729c93444913c4a2e730ca66cd177c665b0643d",
+    "phase4/cli.py": "e790b8afef8a50ef6ca8e2c7bcdbacaf4cddc956ad919bf1e6ae0cb192c83f63",
+    "phase4/policies.py": "72fa2ed5bfd33bdb831d6a45f0796d038d7ea046c1395399a066397ead92bad3",
+    "phase5/agent.py": "80e87b276dd062c7a71eab6e40917bda55e0ce7fe44e99f1bb5fabf3f848e2a1",
+    "phase5/environment.py": "11107ec9e2a06b5b507dde8ce3fab4dfccf25ec540801f2b12b4aec0301686e2",
+    "phase5/experiment.py": "b171d0ef4717c0afad4da6bc8d2f31ddbdef914d8dff095b9e78566f53731ae8",
+    "phase5/statistics.py": "ee1fcfe83091ab7045d56ff2aea8f569754532a4656f217e5f6647f3e3d235bc"
+  },
+  "topology": {
+    "gateway_mode": "dual",
+    "length_km": 2.0,
+    "main_capacity_mbps": 10000,
+    "main_nodes": 6,
+    "nodes": 12,
+    "seed": 42,
+    "sub_capacity_mbps": 1000,
+    "subring_count": 1
+  },
+  "torch_version": "2.7.1+cu118",
+  "training_regime": "offline",
+  "training_seeds": [
+    10000,
+    10001
+  ],
+  "val_request_sha256": {
+    "20000": "619615d5f171f5189020e84384eada0c84094634b008beedf5a70ad24fcf1f78",
+    "20001": "6004ee63a3498f6d31fbfc257adba8d362e39a9b4102a009790866c293bb213b"
+  },
+  "validation_seeds": [
+    20000,
+    20001
+  ],
+  "version": "PHASE5C_DISCRETE_RL_V1",
+  "wall_seconds": 1.282
+}

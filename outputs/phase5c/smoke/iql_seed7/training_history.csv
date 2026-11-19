@@ -1,0 +1,3 @@
+gradient_step,loss,validation_weighted,validation_admission,best_checkpoint
+2,0.96734929,1.0,1.0,1
+4,0.94384968,1.0,1.0,0

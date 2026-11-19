@@ -1,0 +1,71 @@
+{
+  "behavior_counts": {
+    "greedy": 8,
+    "random_feasible": 8
+  },
+  "behaviors": [
+    "greedy",
+    "random_feasible"
+  ],
+  "dataset_role": "TRAINING_ONLY",
+  "feasible_candidate_histogram": {
+    "0": 0,
+    "1": 0,
+    "2": 16
+  },
+  "feature_names": [
+    "bandwidth_400",
+    "priority_5",
+    "source_fraction",
+    "destination_fraction",
+    "cat_within_subring",
+    "cat_main_to_main",
+    "cat_main_to_subring",
+    "cat_subring_to_subring",
+    "request_progress",
+    "admission_ratio_so_far",
+    "admitted_fraction_of_horizon",
+    "current_peak_scenario_utilization",
+    "headroom_fraction",
+    "candidate_count_fraction",
+    "feasible_candidate_fraction",
+    "candidate_rank",
+    "working_hops_normalized",
+    "mean_fault_hops_normalized",
+    "max_fault_hops_normalized",
+    "fraction_changed_fault_paths",
+    "prospective_peak_scenario_utilization",
+    "increase_in_peak_utilization",
+    "prospective_working_arc_peak",
+    "working_edge_fraction",
+    "forced_reject_flag",
+    "capacity_feasible_flag"
+  ],
+  "feature_version": "PHASE5_STATE_CANDIDATE_FEATURES_V1",
+  "headroom": 10,
+  "max_candidates": 2,
+  "npz_sha256": "74140dc4297aee344fa3842bf76f1ee629f85f814e453c10e94bc987ecc5a855",
+  "phase5c_version": "PHASE5C_DISCRETE_RL_V1",
+  "protection_model_approved": false,
+  "requests_per_seed": 4,
+  "rows": 16,
+  "seeds": [
+    10000,
+    10001
+  ],
+  "source_model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "stream_sha256": {
+    "10000": "37484da551245484badeddedddb697e47afb8971348b5bfb2da554b2f5a5639e",
+    "10001": "557ede813a2639b98a21ecdd8a679fa6fd4d0ccef2bee4a0570dad442e877179"
+  },
+  "topology": {
+    "gateway_mode": "dual",
+    "length_km": 2.0,
+    "main_capacity_mbps": 10000,
+    "main_nodes": 6,
+    "nodes": 12,
+    "seed": 42,
+    "sub_capacity_mbps": 1000,
+    "subring_count": 1
+  }
+}

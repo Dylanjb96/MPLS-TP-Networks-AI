@@ -1,0 +1,3 @@
+episode,train_seed,training_admission,training_weighted,gradient_steps,loss,validation_weighted,validation_admission,best_checkpoint
+1,10000,1.0,1.0,4,0.11162912845611572,1.0,1.0,1
+2,10001,1.0,1.0,8,0.6459482908248901,1.0,1.0,0
