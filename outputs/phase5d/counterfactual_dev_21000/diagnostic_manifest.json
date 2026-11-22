@@ -1,0 +1,71 @@
+{
+  "additional_source_sha256": {
+    "phase5b/sac.py": "40f4195eaf19f82941c453081d2a793b656ac3ecebc0d24b89a87c4f233512bf",
+    "phase5c/common.py": "afc3f93797ae9bdcf52b0a07b99dc00c087e5684f5894d55b52110d81aa66229",
+    "phase5c/offline_agents.py": "ebc37b7d9774a063136effae32f4e71bc450aca6d66de53d1ebcfe809cb2d8a7",
+    "phase5c/ppo.py": "eff9f6c7227c14530a9cd4175e67ef16b9f2d58869aadc5172dbffa2278baac7",
+    "phase5c/workflow.py": "de646a7349a4d5e08ed3bf94d32efb5aa5965290c77d3e8b5d2a9cdde6f73185",
+    "phase5d/analysis.py": "08c405876b342a79fcb091d933b8b682610916273e4b6a493f9c13d57cceaf2b",
+    "railway_tp/requests.py": "2a1eb7b2948a4ccc88755c627a3c00d83b2ffb399a2c4120b37259ee1d618f8a",
+    "railway_tp/topology.py": "0b76313c4674faaf049a5049b9877f991909f22f2c0dc4f10911ee3527d1f011"
+  },
+  "analysis_role": "DEVELOPMENT_ONLY",
+  "candidate_generation_excluded_from_inference": true,
+  "future_requests_used_for_retrospective_rollout": true,
+  "headroom_percent": 10,
+  "horizon": 50,
+  "max_branches_per_seed": 4,
+  "max_candidates": 2,
+  "model_sha256": {},
+  "never_expose_future_arrivals_to_online_policy": true,
+  "note": "The analysis is descriptive. No weights are trained or updated.",
+  "phase3_through_phase5_source_sha256": {
+    "phase3/model.py": "6efee32468cc9ad5fdd1e4930729c93444913c4a2e730ca66cd177c665b0643d",
+    "phase4/cli.py": "e790b8afef8a50ef6ca8e2c7bcdbacaf4cddc956ad919bf1e6ae0cb192c83f63",
+    "phase4/policies.py": "72fa2ed5bfd33bdb831d6a45f0796d038d7ea046c1395399a066397ead92bad3",
+    "phase5/agent.py": "80e87b276dd062c7a71eab6e40917bda55e0ce7fe44e99f1bb5fabf3f848e2a1",
+    "phase5/environment.py": "11107ec9e2a06b5b507dde8ce3fab4dfccf25ec540801f2b12b4aec0301686e2",
+    "phase5/experiment.py": "b171d0ef4717c0afad4da6bc8d2f31ddbdef914d8dff095b9e78566f53731ae8",
+    "phase5/statistics.py": "ee1fcfe83091ab7045d56ff2aea8f569754532a4656f217e5f6647f3e3d235bc"
+  },
+  "protection_model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "protection_model_approved": false,
+  "reject_policy": "FORCED_ONLY_NO_VOLUNTARY_REJECTION",
+  "request_sha256_by_seed": {
+    "21000": "7a9c10730b3d2aaa242db30b19130cb573bb5e4ce3120e32068c1b37efadbb64",
+    "21001": "b77c9e5932338c9da12afd51e6a8b0f9aeeef8a5aae38e695d82d910a775f462",
+    "21002": "1e794f10eb8bf9c68345bcace0f025c202e6b4d12dd9a5f0c195200f43e45d84",
+    "21003": "ee574b781f8e531b684bbe5fb2113b44b6f4aac1f06a6cfa61d1ad9e68a88217",
+    "21004": "5feac1a1b76c7baf48123f54a5ae9fb81aa83df2416af1d78fd01886a878bff5",
+    "21005": "3786b72458e87b5967ad0bded62bf55de5e13380fc69fec38296f6533360894e",
+    "21006": "c950bcdc341592688533e0ff77cbab7ccf0ec623ea6909585d3d6b88785c0b85",
+    "21007": "1be54a81f81d7c277e09e945e07c12664d3f266bb6e6944c7304e83687caf6ce",
+    "21008": "680680be03c51218d8eb9ec353c51e0ab5dff9e3bc4826bce9bfb1432449cc87",
+    "21009": "0bc110d0c443e6c9b168e2fcbc7dbd8f26947bb1a70fe273ab55e9a6f0389672"
+  },
+  "requests_per_seed": 100,
+  "seeds": [
+    21000,
+    21001,
+    21002,
+    21003,
+    21004,
+    21005,
+    21006,
+    21007,
+    21008,
+    21009
+  ],
+  "selection": "deterministic evenly spaced positions over greedy two-feasible states",
+  "topology_config": {
+    "gateway_mode": "dual",
+    "length_km": 2.0,
+    "main_capacity_mbps": 10000,
+    "main_nodes": 12,
+    "nodes": 60,
+    "seed": 42,
+    "sub_capacity_mbps": 1000,
+    "subring_count": 4
+  },
+  "version": "PHASE5D_FROZEN_POLICY_DIAGNOSTICS_V1"
+}

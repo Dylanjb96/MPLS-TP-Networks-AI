@@ -1,0 +1,74 @@
+{
+  "additional_source_sha256": {
+    "phase5b/sac.py": "40f4195eaf19f82941c453081d2a793b656ac3ecebc0d24b89a87c4f233512bf",
+    "phase5c/common.py": "afc3f93797ae9bdcf52b0a07b99dc00c087e5684f5894d55b52110d81aa66229",
+    "phase5c/offline_agents.py": "ebc37b7d9774a063136effae32f4e71bc450aca6d66de53d1ebcfe809cb2d8a7",
+    "phase5c/ppo.py": "eff9f6c7227c14530a9cd4175e67ef16b9f2d58869aadc5172dbffa2278baac7",
+    "phase5c/workflow.py": "de646a7349a4d5e08ed3bf94d32efb5aa5965290c77d3e8b5d2a9cdde6f73185",
+    "phase5d/analysis.py": "08c405876b342a79fcb091d933b8b682610916273e4b6a493f9c13d57cceaf2b",
+    "railway_tp/requests.py": "2a1eb7b2948a4ccc88755c627a3c00d83b2ffb399a2c4120b37259ee1d618f8a",
+    "railway_tp/topology.py": "0b76313c4674faaf049a5049b9877f991909f22f2c0dc4f10911ee3527d1f011"
+  },
+  "analysis_role": "DEVELOPMENT_ONLY",
+  "candidate_generation_excluded_from_inference": true,
+  "headroom_percent": 10,
+  "max_candidates": 2,
+  "model_sha256": {
+    "awac": "a82f24f6825582163e16505cf030e0cff251532ffa291c340fc60da424b8b830",
+    "bcq": "a5c1acc69eed0e13ea77fc7acbd5601bce30690cdfa11e65dd7999233948240a",
+    "cql": "b259800ac4d2c18e54d57b3672e808e6b4b40ad2df47e8beac9db390d06c2848",
+    "discrete_sac": "76c8be62ad42657473c08a58786a962a84f532dec30612776b3ab766b7ee4647",
+    "iql": "afae6b4523215bfe373f316e7da1e4d27e31e88a8349c3b26f4827e7ffe78048",
+    "original_ddqn": "83e3b892033f377fc184f4b5d42a84971ec3830d39b08a64a7bc81d73a188acc",
+    "ppo": "c1ded69a2089823a4ce39e219f8686135dde7fadf739e2341ff6608a6f392d84"
+  },
+  "note": "The analysis is descriptive. No weights are trained or updated.",
+  "phase3_through_phase5_source_sha256": {
+    "phase3/model.py": "6efee32468cc9ad5fdd1e4930729c93444913c4a2e730ca66cd177c665b0643d",
+    "phase4/cli.py": "e790b8afef8a50ef6ca8e2c7bcdbacaf4cddc956ad919bf1e6ae0cb192c83f63",
+    "phase4/policies.py": "72fa2ed5bfd33bdb831d6a45f0796d038d7ea046c1395399a066397ead92bad3",
+    "phase5/agent.py": "80e87b276dd062c7a71eab6e40917bda55e0ce7fe44e99f1bb5fabf3f848e2a1",
+    "phase5/environment.py": "11107ec9e2a06b5b507dde8ce3fab4dfccf25ec540801f2b12b4aec0301686e2",
+    "phase5/experiment.py": "b171d0ef4717c0afad4da6bc8d2f31ddbdef914d8dff095b9e78566f53731ae8",
+    "phase5/statistics.py": "ee1fcfe83091ab7045d56ff2aea8f569754532a4656f217e5f6647f3e3d235bc"
+  },
+  "protection_model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "protection_model_approved": false,
+  "reject_policy": "FORCED_ONLY_NO_VOLUNTARY_REJECTION",
+  "request_sha256_by_seed": {
+    "20000": "690bc4958f98b4703aa7ab72e7aa01dc6f690f99dd5b5e88f16fc881a90bdf85",
+    "20001": "6f1a8d0eb4e1de900d2a36898c3c1112655a7a0c14a4b28d4fa27ac2ee6c3c1c",
+    "20002": "f55717f58f9df905335af289c3862640001f1bdb61ed24cbec9c4b29492a190f",
+    "20003": "dd1d70a9b09df9a794b7919a0219a9340d3311dbccd27b9746722c1f51b8ade1",
+    "20004": "fe4db705573b91f78ebb4b543f33d8d90c8bb76756f19f7a8550a13d991b8572",
+    "20005": "102f9d817b687b1ec83f34210207432a4f6645223f4d6ea176e926034696428d",
+    "20006": "7e983fa568ba9f2964efdedbcc8be5a4dc121370c840f86c6aa6aaee74c1748c",
+    "20007": "467105df61ed3d7b03a5d1d44c2c411d31fe5f31f18c292aa13b5fe049d9adbc",
+    "20008": "e774bce01221e32e92bb5088408878a71a1a87a2f20057dad6fc87d9ad622e61",
+    "20009": "e428a8743351e8b0b6461e9162281651d89872dd41c63226ee80844135e5cc93"
+  },
+  "requests_per_seed": 100,
+  "seeds": [
+    20000,
+    20001,
+    20002,
+    20003,
+    20004,
+    20005,
+    20006,
+    20007,
+    20008,
+    20009
+  ],
+  "topology_config": {
+    "gateway_mode": "dual",
+    "length_km": 2.0,
+    "main_capacity_mbps": 10000,
+    "main_nodes": 12,
+    "nodes": 60,
+    "seed": 42,
+    "sub_capacity_mbps": 1000,
+    "subring_count": 4
+  },
+  "version": "PHASE5D_FROZEN_POLICY_DIAGNOSTICS_V1"
+}

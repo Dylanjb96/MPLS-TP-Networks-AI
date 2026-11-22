@@ -1,0 +1,24 @@
+{
+  "admission_count_delta_milp_minus_greedy": -4,
+  "choice_divergence_count": 9,
+  "first_choice_divergence_index": 8,
+  "first_outcome_divergence_index": 19,
+  "greedy": {
+    "admitted": 41,
+    "state_digest": "762d8e2e94cde003135e8c00c4dedfb2161201f25c0f51e86997103d2e84f4e7",
+    "weighted_admission_ratio": 0.4560810810810811
+  },
+  "milp_solver_status_counts": {
+    "INFEASIBLE": 63,
+    "OPTIMAL_ONLINE_MINIMAX_LEXICOGRAPHIC_V2": 37
+  },
+  "milp_v2": {
+    "admitted": 37,
+    "state_digest": "e2707cae6d86f316409d0042c2bc293f64de4db162f171d34e56cb318540aff0",
+    "weighted_admission_ratio": 0.40202702702702703
+  },
+  "not_a_new_heldout_test": true,
+  "request_sha256": "70f336992de36e0bd0fcf2fcc851d5e9f80fae385ad0bb7aaf69d7f2d1aba208",
+  "role": "RETROSPECTIVE_ALREADY_INSPECTED_NOT_FOR_TUNING",
+  "seed": 41027
+}
