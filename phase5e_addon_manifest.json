@@ -1,0 +1,21 @@
+{
+  "files_sha256": {
+    "PHASE5E_DEVELOPMENT_VERIFICATION.md": "2d714c5e7c6afe83ab2948b7f1241952321c78892c274a453ac168aa061a8ada",
+    "PHASE5E_RESEARCH_PROTOCOL.md": "7854ca8ad0dfaa7061265dc49734d9ed2edb5aef330e3c66343e64b192c91382",
+    "PHASE5E_START_TO_FINISH_GUIDE.md": "8801dd2fe1ebcb84c52f19b684b4da682e4c91bf615f82c3607ed8b7aab03da0",
+    "phase5e/__init__.py": "14aed34f90b32b9103e59d9095c01408fe89835b4012683776b9f489cf38ae41",
+    "phase5e/agent.py": "71a9c4429146794fed3a3db767d46cf2a3ac7966ba2e28357b1907dbbc69b335",
+    "phase5e/cli.py": "bc3247ed2620fe180cc27c86eb48abb4d981d7c4d7b84e58e4526a47f45fcd41",
+    "phase5e/policy.py": "c8a831f1142457efc1c04044cb82e2c071bb33fe7face5bcdd32c66356fb364e",
+    "phase5e/workflow.py": "88a7bdddddfe3bf37f8a9b1b75e34fe9a14f2668ee4a39b50541f7c8bde5ef37",
+    "requirements_phase5e.txt": "76b52eff773f564eb40edeee36991c9c33f2e6c80eca35cce7c0833b88046257",
+    "run_phase5e.py": "a486982070112c9aadd3b1e2e4bed62d3175e06d03720e956ebaff1519f87653",
+    "tests/test_phase5e.py": "b845e4d851d8fa7344c7650d7fcacd2ffb42c03e5d878b55e728b6065ae5963e"
+  },
+  "full_training_and_heldout_executed": false,
+  "generated_date": "2026-11-22",
+  "installation_note": "Extract to the root of an existing MPLS-AI project; this zip contains no earlier phase files or model weights.",
+  "protection_model_approved": false,
+  "source_root": "previous user Phase5D source zip + matching Phase5D diagnostic add-on",
+  "version": "PHASE5E_GREEDY_GUIDED_RESIDUAL_PPO_V1"
+}
