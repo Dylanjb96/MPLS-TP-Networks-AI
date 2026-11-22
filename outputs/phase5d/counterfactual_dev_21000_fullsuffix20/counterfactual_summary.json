@@ -1,0 +1,8 @@
+{
+  "average_alternative_minus_greedy_reward": -0.005,
+  "branch_points": 200,
+  "negative_alternative": 3,
+  "positive_alternative": 0,
+  "tie": 197,
+  "warning": "Realized known-future matched suffix on development streams only; NOT an online observable advantage, not evidence of general improvement."
+}
