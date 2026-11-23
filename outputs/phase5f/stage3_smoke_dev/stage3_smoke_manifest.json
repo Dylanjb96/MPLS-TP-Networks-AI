@@ -1,0 +1,83 @@
+{
+  "agent_seed": 7,
+  "bc_coef": 0.01,
+  "checkpoint_sha256": "2bbfd431aa46aa815a171f2cb5b6b0c2133539fc3175fd56401f47b7921d94de",
+  "created_after_stage2": true,
+  "episodes": 4,
+  "final_data_accessed": false,
+  "gate_threshold": 0.1,
+  "headroom": 10,
+  "k": 6,
+  "learning_rate": 0.0003,
+  "load": 2.5,
+  "max_working_paths": 40,
+  "modes": [
+    "static",
+    "dynamic"
+  ],
+  "msrp_compliant": false,
+  "no_future_oracle": true,
+  "nodes": 60,
+  "note": "Engineering smoke only. No final multi-seed training, model selection, inferential claims or held-out testing.",
+  "protection_model": "END_TO_END_LINK_DISJOINT_PAIR_SINGLE_FAULT_SURROGATE_NOT_MSRP",
+  "protection_model_approved": false,
+  "reserved_heldout_stream_seeds": [
+    73000,
+    73002
+  ],
+  "reserved_heldout_topology_seeds": [
+    401,
+    420
+  ],
+  "role": "DEVELOPMENT_ONLY_SMOKE_NOT_FOR_FINAL_EVALUATION",
+  "runtime_seconds": 4.138,
+  "software": {
+    "networkx": "3.5",
+    "numpy": "2.2.6",
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9",
+    "python_executable": "C:\\Program Files\\Python311\\python.exe",
+    "python_implementation": "CPython",
+    "torch": "2.7.1+cu118"
+  },
+  "source_sha256": {
+    "phase5f/protection.py": "9596786265edcb1662be1ed5cb936822f0bb18b26ed389e41b8c93c7b839f97c",
+    "phase5f/traffic.py": "6146ec1122605125b78b80b39c5572124dc81d1dc1766818f84b8c46ca262adb",
+    "phase5f_stage2/candidates.py": "b18b83a140c258f99b3f12e67e7703eba8989702b8f14b45fb8149fa3a315663",
+    "phase5f_stage2/topology.py": "694be6e412e82e0c8d73ecea9e5a30aedbbb8dada47b1d494401520dee655d08",
+    "phase5f_stage3/__init__.py": "c89a5e189c82357dbc83cedf33c261ac5501d09e336b474583bf17eb9917ddf3",
+    "phase5f_stage3/agent.py": "49a086a100300e3c9d0dbfeb28eab123600c13e0f6327c7549c11ecab5646f1b",
+    "phase5f_stage3/features.py": "6e9c6da199fb9dc0306d2d75e86360f929e7220b8b01b78cfa9457acd5435f9f",
+    "phase5f_stage3/workflow.py": "325678714f61401a8acecebad3c923d8348641275052a8b711bebaefc4702a45"
+  },
+  "synthetic_not_irish_rail": true,
+  "train_stream_seeds": [
+    71000,
+    71001
+  ],
+  "train_topology_seeds": [
+    201,
+    202
+  ],
+  "training_actions": 473,
+  "validation_cohorts": {
+    "60/301/72000/2.5/dynamic/6": {
+      "candidates_sha256": "c9e4aaa0eac4944f2477f4bba540bf577744fbdb58dce1bf921e434748569541",
+      "network_sha256": "72345334358067e72a0cb22a322109f3547d98961f9661a6ab9c76d7dad69d41",
+      "requests_sha256": "eac1800cf89a1578a7eda05fa6ecca326d81207a209c666ffb082f81ab07aba8"
+    },
+    "60/301/72000/2.5/static/6": {
+      "candidates_sha256": "c9e4aaa0eac4944f2477f4bba540bf577744fbdb58dce1bf921e434748569541",
+      "network_sha256": "72345334358067e72a0cb22a322109f3547d98961f9661a6ab9c76d7dad69d41",
+      "requests_sha256": "c9223ba22a80e50a501f5d4afd3bc1bf8c3c41233f1bb965fb5d41a6b969ca3d"
+    }
+  },
+  "validation_rows": 6,
+  "validation_stream_seeds": [
+    72000
+  ],
+  "validation_topology_seeds": [
+    301
+  ],
+  "version": "PHASE5F_STAGE3_CANDIDATE_AWARE_PPO_DEV_V1"
+}
