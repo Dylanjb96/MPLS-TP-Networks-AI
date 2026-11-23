@@ -1,0 +1,52 @@
+{
+  "headroom": 10,
+  "k_values": [
+    2,
+    6
+  ],
+  "max_working_paths": 40,
+  "network_hashes": {
+    "500/101": "043e92e6c1fe27980d5a252440722285ca0365f768a9b951b70ee3e21a1df0d4"
+  },
+  "note": "Not IEEE/MPLS-TP MSRP; no restoration times; excludes future oracle and held-out seeds.",
+  "policies": [
+    "greedy",
+    "footprint"
+  ],
+  "protection_model": "END_TO_END_LINK_DISJOINT_PAIR_SINGLE_FAULT_SURROGATE_NOT_MSRP",
+  "protection_model_approved": false,
+  "real_irish_rail_topology": false,
+  "requests_per_node": 1.6,
+  "sizes": [
+    500
+  ],
+  "source_hashes": {
+    "__init__.py": "a1879c0b22bd04b2660309e55c37b32414a73f8f81fda28b3658b5f55420eb6a",
+    "probe.py": "ddc09677d8f6130b808a2eb09dd3272bb065ad74ef5cc4ef1b108540fcaa5731",
+    "protection.py": "9596786265edcb1662be1ed5cb936822f0bb18b26ed389e41b8c93c7b839f97c",
+    "topology.py": "7f71c06e3ac2baabde5764cdaf9a5da2b594da428353e013c4bc49a8d4994f3e",
+    "traffic.py": "6146ec1122605125b78b80b39c5572124dc81d1dc1766818f84b8c46ca262adb"
+  },
+  "status": "DEVELOPMENT_ONLY_NOT_A_FINAL_EXPERIMENT",
+  "stream_seeds": [
+    70000
+  ],
+  "streams": {
+    "500/101/70000": {
+      "common_arrivals_sha256": "80116c159873706e94e9085c130b6fdf07b7338c6226ca32e8f904b327f29f4b",
+      "dynamic_sha256": "7f4b65da8ccce7f181d9223b6b8fa4480fc3dcbe2ab92d347a728a1f261b02a5",
+      "static_sha256": "39910c529f46b1ec45e6f159da1abdd188ef34add30af9e6209e69be98c815c2"
+    }
+  },
+  "synthetic_research_model": true,
+  "topology_seeds": [
+    101
+  ],
+  "total_cell_runs": 8,
+  "total_requests_inventoried": 800,
+  "traffic_modes": [
+    "static",
+    "dynamic"
+  ],
+  "version": "PHASE5F_SYNTHETIC_NATIONAL_STAGE1_V1"
+}
