@@ -1,0 +1,3 @@
+episode,config,agent_seed,topology_seed,stream_seed,nodes,load,mode,k,requests,admitted,weighted_admission,ordinary_admission,discretionary,overrides,optimization_actions,ppo_loss,feasibility_violations
+1,D_full_hybrid,7,201,71000,60,1.6,static,6,96,88,0.9164179104477612,0.9166666666666666,85,76,85,0.13009002758190036,0
+2,D_full_hybrid,7,201,71000,60,1.6,static,6,96,89,0.9492537313432836,0.9270833333333334,82,74,82,0.11792223621159792,0
