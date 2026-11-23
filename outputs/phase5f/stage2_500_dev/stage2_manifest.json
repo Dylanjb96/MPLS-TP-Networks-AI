@@ -1,0 +1,98 @@
+{
+  "cohorts": {
+    "500/101/70000/1.6": {
+      "candidate_generation_seconds": 14.716693,
+      "common_arrivals": "80116c159873706e94e9085c130b6fdf07b7338c6226ca32e8f904b327f29f4b",
+      "dynamic_requests": "7f4b65da8ccce7f181d9223b6b8fa4480fc3dcbe2ab92d347a728a1f261b02a5",
+      "ordered_candidate_sha256": "4756b457ad1d8277af514edfbc8bf26dbab914b4100600a7763e41d43515a7e4",
+      "request_count": 800,
+      "static_requests": "39910c529f46b1ec45e6f159da1abdd188ef34add30af9e6209e69be98c815c2"
+    },
+    "500/101/70000/2.5": {
+      "candidate_generation_seconds": 24.070411,
+      "common_arrivals": "f61bf00db25f6e84e02d2066b1be6424e7c526a0e6d43865ac6601ee90d27b45",
+      "dynamic_requests": "d7c19087c4b9a9012b11835008f2b79b046214bf2c483e5a84981a6f4778077b",
+      "ordered_candidate_sha256": "90e26992b85ac04ee02b02a703e30be4096138747e0d4851f02612a41089659c",
+      "request_count": 1250,
+      "static_requests": "22500724abb6f9785f5bb44cc2cbef4e07787d928b165234051ca3bb52e2f3cc"
+    },
+    "500/101/70000/4.0": {
+      "candidate_generation_seconds": 39.56251,
+      "common_arrivals": "099d0f1b7b224b67e5185162bf0d48c2eb37373d991b645923900605aa30ed8f",
+      "dynamic_requests": "5115f811952c97b1e2115877b14757d7ad088b2956c753ccc5968c00977a29d1",
+      "ordered_candidate_sha256": "1619fbc918920130b0a587bcdd5a89004a254c175ea754e3e8030655913b410e",
+      "request_count": 2000,
+      "static_requests": "4b91224c48dfd83975c27b6eaaba594e2e424ed8de98542a9ad9f84c13a1904f"
+    }
+  },
+  "inputs": {
+    "headroom": 10,
+    "k_values": [
+      2,
+      6
+    ],
+    "loads": [
+      1.6,
+      2.5,
+      4.0
+    ],
+    "max_working_paths": 40,
+    "modes": [
+      "static",
+      "dynamic"
+    ],
+    "policies": [
+      "greedy",
+      "footprint"
+    ],
+    "sizes": [
+      500
+    ],
+    "stream_seeds": [
+      70000
+    ],
+    "topology_seeds": [
+      101
+    ]
+  },
+  "inventoried_requests": 4050,
+  "msrp_compliant": false,
+  "networks": {
+    "500/101": {
+      "bridge_count": 0,
+      "degree_range": [
+        2,
+        10
+      ],
+      "edges": 615,
+      "full_hash": "538a511c351a3dc74256f52cc3c208d041b8dd33f28b1852ef357eae5c71039d",
+      "nodes": 500,
+      "structural_hash": "e2ac981e555afc613c21e6423f477ea3fc0e3a60fe1576a22b69e7305fb5ce30"
+    }
+  },
+  "protection_model": "END_TO_END_LINK_DISJOINT_PAIR_SINGLE_FAULT_SURROGATE_NOT_MSRP",
+  "protection_model_approved": false,
+  "role": "DEVELOPMENT_ONLY_NOT_HELDOUT",
+  "rows": 24,
+  "software": {
+    "networkx": "3.5",
+    "numpy": "2.2.6",
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9",
+    "python_executable": "C:\\Program Files\\Python311\\python.exe",
+    "python_implementation": "CPython",
+    "torch": "2.7.1+cu118"
+  },
+  "source_sha256": {
+    "phase5f/protection.py": "9596786265edcb1662be1ed5cb936822f0bb18b26ed389e41b8c93c7b839f97c",
+    "phase5f/traffic.py": "6146ec1122605125b78b80b39c5572124dc81d1dc1766818f84b8c46ca262adb",
+    "phase5f_stage2/__init__.py": "09036ddd5c340ea77f93d6fb7b55835cb1bd42529a2311b92bd33fe9bafd397f",
+    "phase5f_stage2/candidates.py": "b18b83a140c258f99b3f12e67e7703eba8989702b8f14b45fb8149fa3a315663",
+    "phase5f_stage2/probe.py": "1e8994c3658c7490e2179f2867fa72b69d5f7d27b4af5e8832c2a5d500044b4b",
+    "phase5f_stage2/topology.py": "694be6e412e82e0c8d73ecea9e5a30aedbbb8dada47b1d494401520dee655d08"
+  },
+  "synthetic_not_actual_irish_rail": true,
+  "version": "PHASE5F_STAGE2_SYNTHETIC_VALIDATION_V1",
+  "wall_clock_seconds": 120.376,
+  "warning": "Not MSRP compliance; observed feasibility counts are trajectory dependent; separate from Phase 5F Stage1."
+}
