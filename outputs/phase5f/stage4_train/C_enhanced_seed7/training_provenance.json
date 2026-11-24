@@ -1,0 +1,187 @@
+{
+  "agent_seed": 7,
+  "best_episode": 12,
+  "best_mean_weighted_validation": 0.8801904714309335,
+  "cache_hits": 120,
+  "cache_misses": 0,
+  "checkpoint_sha256": "b56147a8b91e8ef3b80de1863b23afd4ba43f7999a934b43f44926b186a64a24",
+  "completed_episodes": 72,
+  "config": "C_enhanced",
+  "config_factors": {
+    "enhanced": true,
+    "guidance": false,
+    "name": "C_enhanced"
+  },
+  "final_test_seeds_accessed": false,
+  "heldout_stream_seeds_reserved": "73000..73002 (never evaluated in Stage 4)",
+  "heldout_topology_seeds_reserved": "401..420 (never evaluated in Stage 4)",
+  "intended_max_episodes": 96,
+  "msrp_compliant": false,
+  "no_future_oracle": true,
+  "protection_model": "END_TO_END_LINK_DISJOINT_PAIR_SINGLE_FAULT_SURROGATE_NOT_MSRP",
+  "protection_model_approved": false,
+  "provenance": "no heldout used",
+  "role": "DEVELOPMENT_TRAINING_VALIDATION_ONLY",
+  "selection_note": "Best individual checkpoint by mean validation weighted admission; ties prefer earlier episode. Group configuration selection separate.",
+  "settings": {
+    "agent_seed": 7,
+    "batch_size": 64,
+    "bc_coef": 0.01,
+    "config": "C_enhanced",
+    "effective_bc_coef": 0.0,
+    "effective_gate_threshold": 0.0,
+    "entropy_coef": 0.01,
+    "episodes": 96,
+    "eval_gate_threshold": 0.1,
+    "gamma": 1.0,
+    "headroom": 10,
+    "hidden": 64,
+    "k": 6,
+    "lr": 0.0003,
+    "max_working_paths": 40,
+    "model_selection_cell": {
+      "k": 6,
+      "load": 4.0,
+      "mode": "dynamic",
+      "nodes": 500
+    },
+    "model_selection_metric": "mean per-validation-cohort priority-weighted admission",
+    "patience": 5,
+    "ppo_epochs": 2,
+    "train_loads": [
+      1.6,
+      2.5,
+      4.0
+    ],
+    "train_modes": [
+      "static",
+      "dynamic"
+    ],
+    "train_sizes": [
+      60,
+      150,
+      250,
+      500
+    ],
+    "train_streams": [
+      71000,
+      71001,
+      71002,
+      71003,
+      71004,
+      71005,
+      71006,
+      71007
+    ],
+    "train_topologies": [
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220
+    ],
+    "val_load": 4.0,
+    "val_mode": "dynamic",
+    "val_size": 500,
+    "val_streams": [
+      72000,
+      72001
+    ],
+    "val_topologies": [
+      301,
+      302,
+      303,
+      304
+    ],
+    "validate_every": 12
+  },
+  "software": {
+    "networkx": "3.5",
+    "numpy": "2.2.6",
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9",
+    "python_executable": "C:\\Program Files\\Python311\\python.exe",
+    "python_implementation": "CPython",
+    "torch": "2.7.1+cu118"
+  },
+  "source_sha256": {
+    "phase5f/protection.py": "9596786265edcb1662be1ed5cb936822f0bb18b26ed389e41b8c93c7b839f97c",
+    "phase5f/traffic.py": "6146ec1122605125b78b80b39c5572124dc81d1dc1766818f84b8c46ca262adb",
+    "phase5f_stage2/candidates.py": "b18b83a140c258f99b3f12e67e7703eba8989702b8f14b45fb8149fa3a315663",
+    "phase5f_stage2/topology.py": "694be6e412e82e0c8d73ecea9e5a30aedbbb8dada47b1d494401520dee655d08",
+    "phase5f_stage3/__init__.py": "c89a5e189c82357dbc83cedf33c261ac5501d09e336b474583bf17eb9917ddf3",
+    "phase5f_stage3/agent.py": "49a086a100300e3c9d0dbfeb28eab123600c13e0f6327c7549c11ecab5646f1b",
+    "phase5f_stage3/features.py": "6e9c6da199fb9dc0306d2d75e86360f929e7220b8b01b78cfa9457acd5435f9f",
+    "phase5f_stage3/workflow.py": "325678714f61401a8acecebad3c923d8348641275052a8b711bebaefc4702a45",
+    "phase5f_stage4/__init__.py": "57a97e48a86e0c9e0eb70a000a1a1d531f8f0bf076ca8afe8e149ad02a1b889f",
+    "phase5f_stage4/ablation.py": "3a3a88717c941ddba168e2e5a3a048a87f95c86ec32d87a0b181c4dc1b03fb57",
+    "phase5f_stage4/selection.py": "8c55e7eb088959fb8b5e4214403aba855096e9f2e7c61640a3058f0bd893301a",
+    "phase5f_stage4/workflow.py": "6bae17d10c4ca9dafdf0d8bc877403f768c3b88fbbef5fdba62410b87e67ccdb",
+    "run_phase5f_stage4.py": "786cccb44ee470d1a077e37395e7813af3a06374b2c54fb62ec15de0637a77bc"
+  },
+  "stopped_early": true,
+  "synthetic_not_actual_irish_rail": true,
+  "train_rows": 72,
+  "training_actions": 29446,
+  "validation_cohort_hashes": {
+    "500/301/72000/4.0/dynamic/6": {
+      "candidates_sha256": "e123f1828b65bd6e177ab30f00fc186b54adf685d004ce20fff11366c9c24cbf",
+      "network_sha256": "258c58614dcc59733b54539922266129c8ca4e5fe5a8a45f586035c13587dcad",
+      "request_sha256": "eb55c72e6a0639cff744c5735f8d1ba93e1ab06ac909e810c030b53c5068d2b3"
+    },
+    "500/301/72001/4.0/dynamic/6": {
+      "candidates_sha256": "2c7378c44f9d97193770daa2fd9e4f205d606a44afe0563e0152bab7680d37c0",
+      "network_sha256": "258c58614dcc59733b54539922266129c8ca4e5fe5a8a45f586035c13587dcad",
+      "request_sha256": "936bc7644311fd1845a83a789073643c83f0b0d614e6bf0fb8c714f61d01c88d"
+    },
+    "500/302/72000/4.0/dynamic/6": {
+      "candidates_sha256": "f979f47ef00a38b487d75e49b22b5468a4bbb111b5443ede7438d669a98d6009",
+      "network_sha256": "5cdc2b4bece72798a0fda9dcb4b18627a4d4b3a5135c6e2d5eddc4ccec1ee7ee",
+      "request_sha256": "eb55c72e6a0639cff744c5735f8d1ba93e1ab06ac909e810c030b53c5068d2b3"
+    },
+    "500/302/72001/4.0/dynamic/6": {
+      "candidates_sha256": "7aaec069156736b5aaad0d105bb86fce62eb67929242f68c271086c5ff869b37",
+      "network_sha256": "5cdc2b4bece72798a0fda9dcb4b18627a4d4b3a5135c6e2d5eddc4ccec1ee7ee",
+      "request_sha256": "936bc7644311fd1845a83a789073643c83f0b0d614e6bf0fb8c714f61d01c88d"
+    },
+    "500/303/72000/4.0/dynamic/6": {
+      "candidates_sha256": "f32d17e8d012aa51df8308b483b9e7f5462ad982f4d06e3188d9489b0c950573",
+      "network_sha256": "1edd0dfa25f23c5a33f00b8b5d3d925b0c8497488248c9e1123c947cdddd388a",
+      "request_sha256": "eb55c72e6a0639cff744c5735f8d1ba93e1ab06ac909e810c030b53c5068d2b3"
+    },
+    "500/303/72001/4.0/dynamic/6": {
+      "candidates_sha256": "d84e3b8dd496f9a111a796572789b4cd101f794924543859bdf41ae478c9dc0d",
+      "network_sha256": "1edd0dfa25f23c5a33f00b8b5d3d925b0c8497488248c9e1123c947cdddd388a",
+      "request_sha256": "936bc7644311fd1845a83a789073643c83f0b0d614e6bf0fb8c714f61d01c88d"
+    },
+    "500/304/72000/4.0/dynamic/6": {
+      "candidates_sha256": "ea8f3592613ecfaeeed9b46c5c5a5aabb3443e17d42823639a65c7f236c8a362",
+      "network_sha256": "15c6f762502600107ebbc46c296f99ac1ca9c028b84efbface21f933333e93ea",
+      "request_sha256": "eb55c72e6a0639cff744c5735f8d1ba93e1ab06ac909e810c030b53c5068d2b3"
+    },
+    "500/304/72001/4.0/dynamic/6": {
+      "candidates_sha256": "6bf59d99b3ef8fdd635f0338fda4c551454f035d5abbedc1a706ca3ffdcd5780",
+      "network_sha256": "15c6f762502600107ebbc46c296f99ac1ca9c028b84efbface21f933333e93ea",
+      "request_sha256": "936bc7644311fd1845a83a789073643c83f0b0d614e6bf0fb8c714f61d01c88d"
+    }
+  },
+  "validation_evaluations": 6,
+  "validation_rows": 144,
+  "version": "PHASE5F_STAGE4_CANDIDATE_PPO_TRAINING_V1",
+  "wall_s_this_invocation": 939.791
+}
