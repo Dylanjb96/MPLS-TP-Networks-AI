@@ -1,0 +1,159 @@
+{
+  "plan": {
+    "actual_irish_rail_network": false,
+    "baseline_rule": "first feasible greedy; min footprint; seeded uniform feasible",
+    "cells": [
+      {
+        "k": 6,
+        "load": 4.0,
+        "nodes": 500,
+        "traffic": "dynamic"
+      },
+      {
+        "k": 2,
+        "load": 4.0,
+        "nodes": 60,
+        "traffic": "static"
+      },
+      {
+        "k": 2,
+        "load": 4.0,
+        "nodes": 60,
+        "traffic": "dynamic"
+      },
+      {
+        "k": 6,
+        "load": 4.0,
+        "nodes": 60,
+        "traffic": "static"
+      },
+      {
+        "k": 6,
+        "load": 4.0,
+        "nodes": 60,
+        "traffic": "dynamic"
+      },
+      {
+        "k": 2,
+        "load": 4.0,
+        "nodes": 500,
+        "traffic": "static"
+      },
+      {
+        "k": 2,
+        "load": 4.0,
+        "nodes": 500,
+        "traffic": "dynamic"
+      },
+      {
+        "k": 6,
+        "load": 4.0,
+        "nodes": 500,
+        "traffic": "static"
+      }
+    ],
+    "checkpoint_training_permitted": false,
+    "cluster_bootstrap_reps": 10000,
+    "cluster_bootstrap_seed": 5192026,
+    "deterministic_neural_inference": true,
+    "factorial": "2 sizes x 2 candidate limits x 2 traffic modes at load 4.0; seven effects Holm adjusted",
+    "frozen_runtime_environment": {
+      "networkx": "3.5",
+      "numpy": "2.2.6",
+      "os": "Windows-10-10.0.26300-SP0",
+      "python": "3.11.9",
+      "python_executable": "C:\\Program Files\\Python311\\python.exe",
+      "python_implementation": "CPython",
+      "torch": "2.7.1+cu118"
+    },
+    "guidance_gate_C": 0.0,
+    "guidance_gate_D": 0.1,
+    "headroom_percent": 10,
+    "max_working_paths": 40,
+    "msrp_compliant": false,
+    "nominated_D_sha256": "e55b7b551b09bffe036d5bb75a471d87bb75568b48fa64aac483f947454e8e44",
+    "policies": [
+      "greedy",
+      "footprint",
+      "random_feasible",
+      "C_enhanced",
+      "D_full_hybrid"
+    ],
+    "primary_cell": {
+      "k": 6,
+      "load": 4.0,
+      "nodes": 500,
+      "traffic": "dynamic"
+    },
+    "primary_contrast": "C_enhanced - greedy mean topology-clustered paired weighted admission (two-sided t 95% CI)",
+    "protection_model": "END_TO_END_LINK_DISJOINT_PAIR_SINGLE_FAULT_SURROGATE_NOT_MSRP",
+    "protection_model_approved": false,
+    "protocol": "PHASE5F_STAGE5_PREREGISTERED_HELDOUT_V1",
+    "role": "HELDOUT_EVALUATION_ONCE_ONLY_NO_TRAINING",
+    "secondary_family": [
+      "C_enhanced - footprint",
+      "D_full_hybrid - greedy",
+      "C_enhanced - D_full_hybrid"
+    ],
+    "secondary_multiplicity": "Holm three contrasts",
+    "selected_C_sha256": "e33f7837022671f21673f90b9000f2fdbb9abe0b7c2ae951f6f081e2925586c9",
+    "selection_manifest_sha256": "9002c9b5d83c63de5e0bdb162c9e7564fb7500cc40b303c51fdf6365086227e1",
+    "simulator_not_railway_restoration_time": true,
+    "stage4_source_sha256": {
+      "phase5f/protection.py": "9596786265edcb1662be1ed5cb936822f0bb18b26ed389e41b8c93c7b839f97c",
+      "phase5f/traffic.py": "6146ec1122605125b78b80b39c5572124dc81d1dc1766818f84b8c46ca262adb",
+      "phase5f_stage2/candidates.py": "b18b83a140c258f99b3f12e67e7703eba8989702b8f14b45fb8149fa3a315663",
+      "phase5f_stage2/topology.py": "694be6e412e82e0c8d73ecea9e5a30aedbbb8dada47b1d494401520dee655d08",
+      "phase5f_stage3/__init__.py": "c89a5e189c82357dbc83cedf33c261ac5501d09e336b474583bf17eb9917ddf3",
+      "phase5f_stage3/agent.py": "49a086a100300e3c9d0dbfeb28eab123600c13e0f6327c7549c11ecab5646f1b",
+      "phase5f_stage3/features.py": "6e9c6da199fb9dc0306d2d75e86360f929e7220b8b01b78cfa9457acd5435f9f",
+      "phase5f_stage3/workflow.py": "325678714f61401a8acecebad3c923d8348641275052a8b711bebaefc4702a45",
+      "phase5f_stage4/__init__.py": "57a97e48a86e0c9e0eb70a000a1a1d531f8f0bf076ca8afe8e149ad02a1b889f",
+      "phase5f_stage4/ablation.py": "3a3a88717c941ddba168e2e5a3a048a87f95c86ec32d87a0b181c4dc1b03fb57",
+      "phase5f_stage4/selection.py": "8c55e7eb088959fb8b5e4214403aba855096e9f2e7c61640a3058f0bd893301a",
+      "phase5f_stage4/workflow.py": "6bae17d10c4ca9dafdf0d8bc877403f768c3b88fbbef5fdba62410b87e67ccdb",
+      "run_phase5f_stage4.py": "786cccb44ee470d1a077e37395e7813af3a06374b2c54fb62ec15de0637a77bc"
+    },
+    "stage5_source_sha256": {
+      "phase5f_stage5/__init__.py": "b7f80eefa6b6d69d3841b7a9a19d592c2aabdf98a50223de54793b46377f3658",
+      "phase5f_stage5/freeze.py": "6e4f98bec58b3e34049530dfb04faff6fded220bdf0063654fa1947ac3f4124b",
+      "phase5f_stage5/oracle.py": "ff96e9812a2a1de226d901684ec9676d4773692a2b28475c69f39653850df6de",
+      "phase5f_stage5/statistics.py": "68695e6ab42808a7820fe55eb98b379f7d8696d5c99948ec5767ac61e9e2d699",
+      "phase5f_stage5/workflow.py": "f0d8edd5922e0a7e2d629895a1d5b765eb8185dc0b205de23a8714bb0bc36d25",
+      "run_phase5f_stage5.py": "eeef9d0364864998a096a18529c52816731d6eb77c5705d4eca426ce83729886"
+    },
+    "status": "LOCKED_BEFORE_ANY_FINAL_TOPOLOGY_REQUEST_GENERATION",
+    "stream_seeds": [
+      73000,
+      73001,
+      73002
+    ],
+    "streams_per_cluster": 3,
+    "topology_cluster_count": 20,
+    "topology_seeds": [
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420
+    ],
+    "validation_based_selection_permitted": false,
+    "version": "PHASE5F_STAGE5_LOCKED_HELDOUT_V1"
+  },
+  "plan_sha256": "743b6e0357860518d48cb137f285a3221d785c40eba1b90cd80039d217646ea4"
+}

@@ -1,0 +1,28 @@
+{
+  "candidates_sha256": "c9e4aaa0eac4944f2477f4bba540bf577744fbdb58dce1bf921e434748569541",
+  "checkpoint_C_sha256": "e33f7837022671f21673f90b9000f2fdbb9abe0b7c2ae951f6f081e2925586c9",
+  "checkpoint_D_sha256": "e55b7b551b09bffe036d5bb75a471d87bb75568b48fa64aac483f947454e8e44",
+  "frozen_selection_sha256": "9002c9b5d83c63de5e0bdb162c9e7564fb7500cc40b303c51fdf6365086227e1",
+  "generation_seconds": 0.4065544999998565,
+  "heldout_data_accessed": false,
+  "k": 6,
+  "mode": "dynamic",
+  "network_sha256": "72345334358067e72a0cb22a322109f3547d98961f9661a6ab9c76d7dad69d41",
+  "nodes": 60,
+  "offered_load": 2.5,
+  "requests": 150,
+  "requests_sha256": "eac1800cf89a1578a7eda05fa6ecca326d81207a209c666ffb082f81ab07aba8",
+  "role": "DEVELOPMENT_CHECK_VALIDATION_SEEDS_ONLY",
+  "software": {
+    "networkx": "3.5",
+    "numpy": "2.2.6",
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9",
+    "python_executable": "C:\\Program Files\\Python311\\python.exe",
+    "python_implementation": "CPython",
+    "torch": "2.7.1+cu118"
+  },
+  "stream_seed": 72000,
+  "topology_seed": 301,
+  "version": "PHASE5F_STAGE5_LOCKED_HELDOUT_V1"
+}
