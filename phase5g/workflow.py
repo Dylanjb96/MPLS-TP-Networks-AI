@@ -114,7 +114,11 @@ def simulate_minimax(g,demands,inventory,*,k=6,trace=True):
         peak_scenario_utilization=led.peak_utilization(),feasibility_violations=0),valid
 
 
-def simulate_gnn(g,demands,inventory,model,*,k=6,stochastic=False,seed=7,trace=True):
+def simulate_gnn(g,demands,inventory,model,*,k=6,stochastic=False,seed=7,trace=True,mode='dynamic'):
+    # Traffic mode is a cohort setting, not inferable from an individual expiry.
+    # Many legitimate dynamic services expire after the simulated arrival horizon.
+    if mode not in ('static','dynamic'):
+        raise ValueError('mode must be static or dynamic')
     led=ScenarioLedger(g,10)
     accepted=0;weighted=0;departures=0;discretionary=0;overrides=0;records=[];samples=[]
     weights=np.zeros(len(demands),dtype=np.float64)
@@ -125,7 +129,7 @@ def simulate_gnn(g,demands,inventory,model,*,k=6,stochastic=False,seed=7,trace=T
         discretionary+=len(feasible)>1
         pick=feasible[0] if feasible else None
         if len(feasible)>1:
-            obs=graph_observation(g,led,d,plans,feasible,k=k,dynamic=d.expiry<=len(demands))
+            obs=graph_observation(g,led,d,plans,feasible,k=k,dynamic=(mode=='dynamic'))
             pred=model.decide(obs,deterministic=not stochastic,greedy_idx=feasible[0])
             pick=pred['action']
             if stochastic:
@@ -221,7 +225,7 @@ def gnn_smoke(out,*,episodes=2,agent_seed=7,load=1.6,mode='dynamic'):
         topo=601+(ep%2);stream=75000+(ep%2)
         g,d,inv=make_cohort(nodes=60,topology_seed=topo,stream_seed=stream,
                             family='hierarchical',load=load,mode=mode,role='train')
-        summary,_,observations=simulate_gnn(g,d,inv,model,stochastic=True,seed=agent_seed+ep)
+        summary,_,observations=simulate_gnn(g,d,inv,model,stochastic=True,seed=agent_seed+ep,mode=mode)
         update=ppo_update(model,opt,observations,epochs=2,seed=agent_seed+ep)
         total+=update['samples']
         history.append(dict(episode=ep+1,topology_seed=topo,stream_seed=stream,
@@ -233,7 +237,7 @@ def gnn_smoke(out,*,episodes=2,agent_seed=7,load=1.6,mode='dynamic'):
     validation=[]
     for p in ('greedy','footprint','scenario_minimax','GNN_PPO'):
         if p=='scenario_minimax':summary,trace=simulate_minimax(g,d,inv)
-        elif p=='GNN_PPO':summary,trace,_=simulate_gnn(g,d,inv,model)
+        elif p=='GNN_PPO':summary,trace,_=simulate_gnn(g,d,inv,model,mode=mode)
         else:summary,_,trace=run_episode(g,d,inv,policy=p,headroom=10,k=6,
                                             mode=mode,trace=True,seed=76000)
         verdict=verify_trace(g,d,inv,trace,6,headroom=10)

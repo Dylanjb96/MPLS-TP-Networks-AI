@@ -211,3 +211,33 @@ def test_gnn_smoke_test_outputs_and_oracle(tmp_path):
     assert {r['policy'] for r in v}=={'greedy','footprint','scenario_minimax','GNN_PPO'}
     assert json.loads((out/'gnn_smoke_manifest.json').read_text())['role']=='DEVELOPMENT_ONLY_NO_FINAL_SEEDS'
     assert (out/'gnn_engineering_smoke.pt').is_file()
+
+
+def test_gnn_traffic_mode_not_guessed_from_expiry(monkeypatch):
+    """A dynamic service may expire after all arrivals; it is still dynamic."""
+    import phase5g.workflow as wf
+    original=wf.graph_observation
+    seen=[]
+
+    def capture_mode(*args, **kwargs):
+        seen.append(kwargs['dynamic'])
+        return original(*args, **kwargs)
+
+    monkeypatch.setattr(wf,'graph_observation',capture_mode)
+    torch.set_num_threads(1)
+    torch.manual_seed(9)
+    model=GraphCandidateActorCritic(16)
+
+    g,d,inv=make_cohort(nodes=60,topology_seed=701,stream_seed=76000,
+        family='hierarchical',load=1.6,mode='dynamic',role='validation')
+    assert any(x.expiry>len(d) for x in d)
+    simulate_gnn(g,d,inv,model,mode='dynamic')
+    assert seen and all(seen)
+
+    seen.clear()
+    g,d,inv=make_cohort(nodes=60,topology_seed=701,stream_seed=76000,
+        family='hierarchical',load=1.6,mode='static',role='validation')
+    simulate_gnn(g,d,inv,model,mode='static')
+    assert seen and not any(seen)
+    with pytest.raises(ValueError):
+        simulate_gnn(g,d,inv,model,mode='other')
