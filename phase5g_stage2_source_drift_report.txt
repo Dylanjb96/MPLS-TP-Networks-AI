@@ -1,0 +1,139 @@
+PHASE5G_STAGE2_READ_ONLY_SOURCE_DRIFT_AUDIT_V1
+Note: this is an examination of provenance; it does NOT authorize model selection.
+Run provenance present: 6 /6
+
+=== TRAINING SNAPSHOT MATRIX ===
+SOURCE: phase5g_stage2/__init__.py
+   8c31570c5588b32a3b22d0bcd23df60d417b778028ba2a197dd2de1f57bfea68 : mlp_seed7,mlp_seed17,mlp_seed27
+   aaa0c17a961624123af9a49ba280da4a4afe4472d043541e6c909d07fc22d58f : gnn_seed7,gnn_seed17,gnn_seed27
+  Current source SHA256: aaa0c17a961624123af9a49ba280da4a4afe4472d043541e6c909d07fc22d58f
+  Original package SHA256: 8c31570c5588b32a3b22d0bcd23df60d417b778028ba2a197dd2de1f57bfea68
+  Original/current AST-equivalent: False
+  ORIGINAL versus CURRENT unified diff lines: 11
+--- original package/phase5g_stage2/__init__.py
++++ current project/phase5g_stage2/__init__.py
+@@ -1,5 +1,5 @@
+-"""Phase 5G Stage 2: matched-budget, development-only GNN/MLP PPO training.
++#Phase 5G Stage 2: matched-budget, development-only GNN/MLP PPO training.
+ 
+-This module intentionally offers no Phase 5G held-out evaluation command.
+-"""
++#This module intentionally offers no Phase 5G held-out evaluation command.
++
+ VERSION = 'PHASE5G_STAGE2_MATCHED_PPO_DEV_V1'
+
+
+SOURCE: phase5g_stage2/workflow.py
+   5c6ca89a1459c6403bccda5aaa0535797a8559e3290895936d943f6e41cd4533 : mlp_seed17,mlp_seed27,gnn_seed7,gnn_seed17,gnn_seed27
+   d3d2568e0a556104765db2651c849f909af01652517484a3f725851a0ed3690e : mlp_seed7
+  Current source SHA256: 5c6ca89a1459c6403bccda5aaa0535797a8559e3290895936d943f6e41cd4533
+  Original package SHA256: d3d2568e0a556104765db2651c849f909af01652517484a3f725851a0ed3690e
+  Original/current AST-equivalent: False
+  ORIGINAL versus CURRENT unified diff lines: 77
+--- original package/phase5g_stage2/workflow.py
++++ current project/phase5g_stage2/workflow.py
+@@ -1,11 +1,10 @@
+-"""Development-only matched GNN vs MLP PPO with resumable, provenance-locked runs.
+-
+-Neither Phase 5F Stage 5 nor reserved Phase 5G final seeds are generated or read.
+-Both arms share protected candidates, full episodes, schedules, reward definition,
+-PPO objective, update-sample cap, optimizer, gradient clipping and validation.
+-They differ in whether graph message passing is added to the same 17+8 features.
+-"""
++#Development-only matched GNN vs MLP PPO with resumable, provenance-locked runs.
++
++#Neither Phase 5F Stage 5 nor reserved Phase 5G final seeds are generated or read.
++#Both arms share protected candidates, full episodes, schedules, reward definition,
++#PPO objective, update-sample cap, optimizer, gradient clipping and validation.
++#They differ in whether graph message passing is added to the same 17+8 features.
+ from __future__ import annotations
+ from dataclasses import dataclass, asdict
+ from pathlib import Path
+ from collections import Counter
+@@ -191,13 +190,13 @@
+     return seq
+ 
+ 
+ class CohortCache:
+-    """Safe gzip-JSON protected-candidate cache; separate, source-locked cohort content.
+-
+-    Same candidate inventory is reused by both neural arms. No unsafe pickle.
+-    For a cache hit generator work for candidates is entirely avoided.
+-    """
++    #Safe gzip-JSON protected-candidate cache; separate, source-locked cohort content.
++
++    #Same candidate inventory is reused by both neural arms. No unsafe pickle.
++    #For a cache hit generator work for candidates is entirely avoided.
++    
+     def __init__(self,root):
+         self.root=Path(root);self.hits=0;self.misses=0
+         gen=('phase5f/protection.py','phase5f/traffic.py',
+              'phase5f_stage2/candidates.py','phase5f_stage2/topology.py',
+@@ -288,13 +287,13 @@
+     return logits.squeeze(0),value.squeeze(0)
+ 
+ 
+ def matched_ppo_update(model,optimizer,samples,*,architecture,seed,epochs=2,batch_size=8):
+-    """Identical clipped PPO, entropy, value loss and grad clip for both arms.
+-
+-    Uses unbiased uniform sub-sampling from the *complete* current episode,
+-    with full-trajectory undiscounted reward-to-go already recorded.
+-    """
++    #Identical clipped PPO, entropy, value loss and grad clip for both arms.
++
++    #Uses unbiased uniform sub-sampling from the *complete* current episode,
++    #with full-trajectory undiscounted reward-to-go already recorded.
++    
+     if not samples:return dict(samples=0,loss=0.0,updates=0)
+     ob=[x['observation'] for x in samples]
+     actions=torch.tensor([x['action'] for x in samples],dtype=torch.long)
+     old=torch.tensor([x['old_logp'] for x in samples],dtype=torch.float32)
+@@ -587,13 +586,13 @@
+                 interactions=state['total_interactions'])
+ 
+ 
+ def select_models(runs_root,out):
+-    """Select best architecture by three-seed mean; select best seed within each.
+-
+-    The selector never reads model-evaluation data beyond validation scores.
+-    It requires a complete six-run factorial with identical training conditions.
+-    """
++    #Select best architecture by three-seed mean; select best seed within each.
++
++    #The selector never reads model-evaluation data beyond validation scores.
++    #It requires a complete six-run factorial with identical training conditions.
++    
+     root=Path(runs_root);out=Path(out)
+     if out.exists():raise FileExistsError('Refusing to overwrite model selection: '+str(out))
+     rows=[];shared=None
+     for arch in ARCHITECTURES:
+
+
+=== GIT SOURCE HISTORY (read only) ===
+phase5g_stage2/__init__.py : 2 distinct committed blob versions; history commits scanned 2
+   aaa0c17a961624123af9a49ba280da4a4afe4472d043541e6c909d07fc22d58f commit c7b6c993b2c4 training_runs=gnn_seed7,gnn_seed17,gnn_seed27
+   8c31570c5588b32a3b22d0bcd23df60d417b778028ba2a197dd2de1f57bfea68 commit 3209d96c106a training_runs=mlp_seed7,mlp_seed17,mlp_seed27
+  Trained fingerprint 8c31570c5588b32a recovered from: original package, Git 3209d96c106a
+  Trained fingerprint aaa0c17a96162412 recovered from: current, Git c7b6c993b2c4
+
+phase5g_stage2/workflow.py : 2 distinct committed blob versions; history commits scanned 2
+   5c6ca89a1459c6403bccda5aaa0535797a8559e3290895936d943f6e41cd4533 commit c7b6c993b2c4 training_runs=mlp_seed17,mlp_seed27,gnn_seed7,gnn_seed17,gnn_seed27
+   d3d2568e0a556104765db2651c849f909af01652517484a3f725851a0ed3690e commit 3209d96c106a training_runs=mlp_seed7
+  Trained fingerprint 5c6ca89a1459c640 recovered from: current, Git c7b6c993b2c4
+  Trained fingerprint d3d2568e0a556104 recovered from: original package, Git 3209d96c106a
+
+=== NON-CHANGED SOURCE FINGERPRINTS, PROGRAM AND FROZEN MODEL ===
+Other tracked source files identical across six runs: True
+Shared non-architecture schedule and hyperparameter plan: True
+Frozen C checkpoint fingerprints identical: True
+
+=== RESEARCH INTEGRITY CONCLUSION ===
+Unique two-file source snapshots used for training: 3
+  snapshot 1 : mlp_seed7
+  snapshot 2 : mlp_seed17, mlp_seed27
+  snapshot 3 : gnn_seed7, gnn_seed17, gnn_seed27
+STOP: six runs used different source snapshots. Do not rewrite provenance,
+copy old sources over current, rerun final held-out, or call this selection confirmed.
+Review the original-vs-current and Git-history diffs for behavioral impact.
+Evidence archive contains ONLY code snapshots, source diffs and six provenance JSON files.
+No checkpoints, final evaluation files or training histories are copied.
