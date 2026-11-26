@@ -1,0 +1,22 @@
+{
+  "admission_ratio": 0.25,
+  "admitted": 25,
+  "avg_model_only_ms": "",
+  "avg_selection_ms": 39.1029819999676,
+  "candidate_generation_seconds_shared": 0.3365660999988904,
+  "demand_seed": 23006,
+  "discretionary": 25,
+  "greedy_steps": 100,
+  "no_future_request_oracle": true,
+  "overrides": 0,
+  "peak_scenario_utilization": 1.0,
+  "policy": "greedy",
+  "protection_model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "protection_model_approved": false,
+  "rejected": 75,
+  "request_sha256": "a5cba1beeb4799c965861b5e4fcd19f6dacf74cea992e268eb039c46fc587dc5",
+  "requests": 100,
+  "state_digest": "5e588aaed8123b7f7d30053cf9989b522358d43a31202c3e2862d8371b317914",
+  "total_reward": 15.799999999999997,
+  "weighted_admission_ratio": 0.2801418439716312
+}

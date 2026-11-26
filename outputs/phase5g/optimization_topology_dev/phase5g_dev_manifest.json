@@ -1,0 +1,76 @@
+{
+  "cohorts": {
+    "60/hierarchical/501/74000/2.5/dynamic/base/6": {
+      "candidates_sha256": "fc2cd3c61bc95658e512f83e9cce03f10d5fbeda775017f2f6db760dc0a3e6ca",
+      "count": 150,
+      "edges": 74,
+      "network_sha256": "2375458469eb0be0166560d4f20bc824fb38a53b176f4faa819b758504587dbb",
+      "requests_sha256": "6d758cd2e8eb894003f98bb52862a5f00213444672f78458a40b65477e047361"
+    },
+    "60/hierarchical/502/74000/2.5/dynamic/base/6": {
+      "candidates_sha256": "36375e1fa89f024c005885fd851b387b1871d80c523a77d6e788d99d3e2aed65",
+      "count": 150,
+      "edges": 74,
+      "network_sha256": "0f7766ba3d96bb8ac64eb3c03ca220e6b20b0af82f635909955d5853e09a65a5",
+      "requests_sha256": "6d758cd2e8eb894003f98bb52862a5f00213444672f78458a40b65477e047361"
+    },
+    "60/ladder/501/74000/2.5/dynamic/base/6": {
+      "candidates_sha256": "febd19243170b61569c7823b13a0a6dfb8016a109a6b4d90a872b90e7a387b8d",
+      "count": 150,
+      "edges": 71,
+      "network_sha256": "978f2fe01441ff08d8c64285c3e9ad2cd97637eb0df6baa8404b3ec70540d29f",
+      "requests_sha256": "5d16099a3132699cef2eb02b0b361e0df811ee80bd8c262cfb889adf22ffe3a0"
+    },
+    "60/ladder/502/74000/2.5/dynamic/base/6": {
+      "candidates_sha256": "a66c488d32d7962d11df6119c241300ce7cd2bd9588221c8e6cb6a8adf36922f",
+      "count": 150,
+      "edges": 71,
+      "network_sha256": "8389399ce03ee6bde20e70aa2c29c4f8795fb2c2017537736e9e2ee0d689d905",
+      "requests_sha256": "57c59d49e44a9bd7882a6d307d3b81e6898bee3cceb2efec2a0700187d67a695"
+    }
+  },
+  "elapsed_seconds": 4.168,
+  "forbidden_stage5_seeds_used": false,
+  "msrp_compliant": false,
+  "policy_runs": 16,
+  "prior_phase5f_heldout_results_not_accessed_by_code": true,
+  "real_irish_rail_topology": false,
+  "role": "PHASE5G_DEVELOPMENT_ONLY_NOT_CONFIRMATORY",
+  "selected_C_sha256": "e33f7837022671f21673f90b9000f2fdbb9abe0b7c2ae951f6f081e2925586c9",
+  "settings": {
+    "k": 6,
+    "load": 2.5,
+    "mode": "dynamic",
+    "policies": [
+      "greedy",
+      "footprint",
+      "scenario_minimax",
+      "C_frozen"
+    ],
+    "sizes": [
+      60
+    ],
+    "stress": "base"
+  },
+  "source_sha256": {
+    "phase5g/__init__.py": "813cdcf2cb33e13ef700c1d074369475736c7c38f850710256b863151a574bb7",
+    "phase5g/gnn.py": "63468d0b842c99b94a85d76d5188bd382511007cb815b5ca4dc786abb77d9f22",
+    "phase5g/optimization.py": "3fe0beec2d887988a5bd65fa9f81df91cf83a0dac794027953a9f297c4365a53",
+    "phase5g/protocol.py": "2f336c5451c13253a7aba8b07dc88779420e9f07d5c9650720ebd085e5900df3",
+    "phase5g/topology.py": "a1cb6d4305a101d212829d57a10f711b65022142ede1b2166a0bafd26bea21a3",
+    "phase5g/workflow.py": "4d593bea78a3ccd49008fb571e594725832e57eb7bffbba8a0453931e01b585c",
+    "run_phase5g.py": "16d54f0bffe6c46bd3c0071698635c3599335d745609ac37a8fa0c23229fb802"
+  },
+  "stream_seeds": [
+    74000
+  ],
+  "topology_families": [
+    "hierarchical",
+    "ladder"
+  ],
+  "topology_seeds": [
+    501,
+    502
+  ],
+  "version": "PHASE5G_DEVELOPMENT_FOUNDATION_V1"
+}

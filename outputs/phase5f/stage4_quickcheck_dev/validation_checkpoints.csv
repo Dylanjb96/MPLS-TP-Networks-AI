@@ -1,0 +1,3 @@
+episode,config,agent_seed,validation_weighted_hybrid,validation_weighted_greedy,validation_weighted_footprint,hybrid_minus_greedy_pp,hybrid_minus_footprint_pp,hybrid_overrides,hybrid_discretionary,best_so_far,improved
+1,D_full_hybrid,7,0.9785932721712538,0.9877675840978594,0.9877675840978594,-0.9174311926605561,-0.9174311926605561,23,90,0.9785932721712538,1
+2,D_full_hybrid,7,0.9785932721712538,0.9877675840978594,0.9877675840978594,-0.9174311926605561,-0.9174311926605561,22,90,0.9785932721712538,0

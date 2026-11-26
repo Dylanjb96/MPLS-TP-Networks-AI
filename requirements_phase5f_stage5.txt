@@ -1,0 +1,2 @@
+# Only new analysis dependency for Stage 5; keep your existing Stage 1-4 versions.
+scipy>=1.12,<2

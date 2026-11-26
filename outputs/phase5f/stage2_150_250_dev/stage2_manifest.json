@@ -1,0 +1,117 @@
+{
+  "cohorts": {
+    "150/101/70000/1.6": {
+      "candidate_generation_seconds": 1.607173,
+      "common_arrivals": "f4ecefc1ed512c10130104df7122a097ee62876946eec50744caf4d56effc3e5",
+      "dynamic_requests": "7158d7be1a5e5fccfd74e8f6e50fae122e663bcff0378d58ab74d7ad759ef4bd",
+      "ordered_candidate_sha256": "cc92d5e575a653a68396a3e462a62ba7dc8e78ea7da7384b7d1c38b3344baad2",
+      "request_count": 240,
+      "static_requests": "d2d7b25672602a83cc76d010a62e31320ee6957dbcefef094c3015f4c7faf807"
+    },
+    "150/101/70000/2.5": {
+      "candidate_generation_seconds": 2.363714,
+      "common_arrivals": "39b4512b0a83651d74e0a21e60b111b7accf474981aa74f60b4791514e3ef0bb",
+      "dynamic_requests": "c6c415266b5568c83ed6f71abbc56428c3a1c550c73bcc2cb1157c548bc1868a",
+      "ordered_candidate_sha256": "0a2dd404f1b7f03608b19299ff242d6d412acd1cb5a31fe11451bc7bbade2fc2",
+      "request_count": 375,
+      "static_requests": "d4913629fd876275315f2d7459e066b6abcb4d7e9c60e2119116e9dbeb907f92"
+    },
+    "250/101/70000/1.6": {
+      "candidate_generation_seconds": 3.841379,
+      "common_arrivals": "7384739ee238bd3655c5ed0048aef2536561208806685a81f2b4780995b38ad7",
+      "dynamic_requests": "bdeee0a6b55ed162f6ed31004d10d893d8f2fefafd3bb3bcd315cadadcf8e11c",
+      "ordered_candidate_sha256": "036c62c45addfe47a6b10117dee5d50cff83ddf08ca43937bb888133a8b6159f",
+      "request_count": 400,
+      "static_requests": "08c43941111859b04db747156f9ddec261d6074e7d51f3565318639bcd6fe497"
+    },
+    "250/101/70000/2.5": {
+      "candidate_generation_seconds": 6.505003,
+      "common_arrivals": "54af81f52c97fa1a952c6ea96936604578b27645b3690d048ed0a73d4c946639",
+      "dynamic_requests": "502a60aced603ce3518ea9baec0821cb920575e23d1ff5b06158c2eba5a2c1c5",
+      "ordered_candidate_sha256": "28778b06c480226c28a7784440a8e034ed3f8200c5511e6875eca939546ab821",
+      "request_count": 625,
+      "static_requests": "8d3a205221f296b5680ab1ff57c2b37696201c21cd88752d958b5056735283c5"
+    }
+  },
+  "inputs": {
+    "headroom": 10,
+    "k_values": [
+      2,
+      6
+    ],
+    "loads": [
+      1.6,
+      2.5
+    ],
+    "max_working_paths": 40,
+    "modes": [
+      "static",
+      "dynamic"
+    ],
+    "policies": [
+      "greedy",
+      "footprint"
+    ],
+    "sizes": [
+      150,
+      250
+    ],
+    "stream_seeds": [
+      70000
+    ],
+    "topology_seeds": [
+      101
+    ]
+  },
+  "inventoried_requests": 1640,
+  "msrp_compliant": false,
+  "networks": {
+    "150/101": {
+      "bridge_count": 0,
+      "degree_range": [
+        2,
+        10
+      ],
+      "edges": 187,
+      "full_hash": "e53aeecbb35d0d44570c59fd00ddab96fb80e04d54514784d51460ce906b9688",
+      "nodes": 150,
+      "structural_hash": "e23ab8ea4d55089bbf3ddbccfe2fbc7cc856aac368f05c2159ebdfcb8c7d8bc4"
+    },
+    "250/101": {
+      "bridge_count": 0,
+      "degree_range": [
+        2,
+        11
+      ],
+      "edges": 310,
+      "full_hash": "9cab789b57522c2dd91e2754481a17a2a1958bc4f7807ba83ce9319536073916",
+      "nodes": 250,
+      "structural_hash": "1d467d413b63daeeac00cd8c2c49ece7471cf140a53a35b7e875a746b3d35331"
+    }
+  },
+  "protection_model": "END_TO_END_LINK_DISJOINT_PAIR_SINGLE_FAULT_SURROGATE_NOT_MSRP",
+  "protection_model_approved": false,
+  "role": "DEVELOPMENT_ONLY_NOT_HELDOUT",
+  "rows": 32,
+  "software": {
+    "networkx": "3.5",
+    "numpy": "2.2.6",
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9",
+    "python_executable": "C:\\Program Files\\Python311\\python.exe",
+    "python_implementation": "CPython",
+    "torch": "2.7.1+cu118"
+  },
+  "source_sha256": {
+    "phase5f/protection.py": "9596786265edcb1662be1ed5cb936822f0bb18b26ed389e41b8c93c7b839f97c",
+    "phase5f/traffic.py": "6146ec1122605125b78b80b39c5572124dc81d1dc1766818f84b8c46ca262adb",
+    "phase5f_stage2/__init__.py": "09036ddd5c340ea77f93d6fb7b55835cb1bd42529a2311b92bd33fe9bafd397f",
+    "phase5f_stage2/candidates.py": "b18b83a140c258f99b3f12e67e7703eba8989702b8f14b45fb8149fa3a315663",
+    "phase5f_stage2/probe.py": "1e8994c3658c7490e2179f2867fa72b69d5f7d27b4af5e8832c2a5d500044b4b",
+    "phase5f_stage2/topology.py": "694be6e412e82e0c8d73ecea9e5a30aedbbb8dada47b1d494401520dee655d08"
+  },
+  "synthetic_not_actual_irish_rail": true,
+  "version": "PHASE5F_STAGE2_SYNTHETIC_VALIDATION_V1",
+  "wall_clock_seconds": 24.256,
+  "warning": "Not MSRP compliance; observed feasibility counts are trajectory dependent; separate from Phase 5F Stage1."
+}

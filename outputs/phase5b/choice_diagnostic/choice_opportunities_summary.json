@@ -1,0 +1,9 @@
+{
+  "exactly_one_feasible": 1,
+  "interpretation": "Counts are under greedy reservation trajectory; other policies may see different legal sets.",
+  "model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "no_feasible": 652,
+  "requests": 1000,
+  "seeds": 10,
+  "two_or_more_feasible": 347
+}

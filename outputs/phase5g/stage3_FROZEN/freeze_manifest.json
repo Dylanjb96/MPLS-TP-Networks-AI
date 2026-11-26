@@ -1,0 +1,112 @@
+{
+  "files_sha256": {
+    "freeze_sources/PHASE5G_STAGE3_PROTOCOL_LOCK.md": "6edad86fb2f49328784c5e80ef60d967413f6bf4f30f64debf57ad3381ce1d43",
+    "freeze_sources/run_phase5g_stage3.py": "173fea77bd8e8b94a391be190197ef03194a52bc5de749671bcb061d3941b5f5",
+    "models/C_frozen.pt": "e33f7837022671f21673f90b9000f2fdbb9abe0b7c2ae951f6f081e2925586c9",
+    "models/D_prior_archive.pt": "e55b7b551b09bffe036d5bb75a471d87bb75568b48fa64aac483f947454e8e44",
+    "models/gnn_PPO.pt": "7db8b92ab9bc1648a9224eea727efe035848543fe514c7d7c14be3ee584658c9",
+    "models/mlp_PPO.pt": "942c8edd516ad28b4012733bfd8504af01fde50f47444be7d15c8e02995e3363",
+    "stage2_provenance/gnn_seed17.json": "01d707d9e38654cfaad3f55e9e430e28775355b532052b761f315a77232c5801",
+    "stage2_provenance/gnn_seed27.json": "cd0b4d63f4e869a575fe636e6e1cc3a467b38296ff978f65d7b4386ebd02dacc",
+    "stage2_provenance/gnn_seed7.json": "8af24c5346737cffc4c7840e8a3c4fa4a077137de73961d070377455811dab25",
+    "stage2_provenance/mlp_seed17.json": "32784dc26d2c36e663ff2ded7b25e9f981c676d9a37e5057d94c1e9eb3b82085",
+    "stage2_provenance/mlp_seed27.json": "f5ab6efa950cba9e9e56072d81e79acb328bc5eedf52d9d86000f54c66768dde",
+    "stage2_provenance/mlp_seed7.json": "7a1b9f72d7787c91dc1dc983e279a21b5283e6e1afb4407c83aade50cf46a333",
+    "stage2_selection/selection_architectures.csv": "de11d11b339a1b7e0e7b52bc1b94780878b0c7a015c63b26a02ffe3da917a6d5",
+    "stage2_selection/selection_manifest.json": "9d3d8b54d2831a00e0f751599d0e805853084f396ecabef4b14037f35219bbdd",
+    "stage2_selection/selection_trials.csv": "1bc4f1d85b7196131344167117975c5b70217b2a664bb748a8869c101ef562b3",
+    "stage2_selection/source_equivalence_report.json": "596d49e990d4466bef37c22c2bf6819be3597f0c9a0ac8895ed010fbfc0d1a36",
+    "traces/gnn_selected_validation_trace.csv.gz": "cce04b9d0727ab9a51a338c6f9bf84eeb3b878ba40df559a2b3e1a7c048b8e1b",
+    "traces/mlp_selected_validation_trace.csv.gz": "57fb568a6a0fbc2abbca4fc94d117ff6e5722315d96246e9791d2ca0352268cc"
+  },
+  "final_stream_seeds": [
+    77000,
+    77001,
+    77002
+  ],
+  "final_topology_seeds": [
+    801,
+    802,
+    803,
+    804,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819,
+    820
+  ],
+  "heldout_accessed_by_stage3": false,
+  "locked_cell_count": 8,
+  "locked_matched_cohorts": 480,
+  "locked_policy_runs": 2880,
+  "msrp_compliant": false,
+  "network_families": [
+    "hierarchical",
+    "ladder"
+  ],
+  "old_C_sha256": "e33f7837022671f21673f90b9000f2fdbb9abe0b7c2ae951f6f081e2925586c9",
+  "older_D_archived_not_tested_sha256": "e55b7b551b09bffe036d5bb75a471d87bb75568b48fa64aac483f947454e8e44",
+  "policies": [
+    "gnn_PPO",
+    "mlp_PPO",
+    "C_frozen",
+    "scenario_minimax",
+    "footprint",
+    "greedy"
+  ],
+  "protection_model_approved": false,
+  "protocol_sha256": "6edad86fb2f49328784c5e80ef60d967413f6bf4f30f64debf57ad3381ce1d43",
+  "real_railway_topology": false,
+  "role": "FROZEN_PRE_HELDOUT_NO_EVALUATION",
+  "selected": {
+    "gnn": {
+      "agent_seed": 27,
+      "episode": 48,
+      "parameters": 15778,
+      "sha256": "7db8b92ab9bc1648a9224eea727efe035848543fe514c7d7c14be3ee584658c9",
+      "source_run": "gnn_seed27"
+    },
+    "mlp": {
+      "agent_seed": 17,
+      "episode": 24,
+      "parameters": 15758,
+      "sha256": "942c8edd516ad28b4012733bfd8504af01fde50f47444be7d15c8e02995e3363",
+      "source_run": "mlp_seed17"
+    }
+  },
+  "source_sha256": {
+    "phase5f/protection.py": "9596786265edcb1662be1ed5cb936822f0bb18b26ed389e41b8c93c7b839f97c",
+    "phase5f/traffic.py": "6146ec1122605125b78b80b39c5572124dc81d1dc1766818f84b8c46ca262adb",
+    "phase5f_stage2/candidates.py": "b18b83a140c258f99b3f12e67e7703eba8989702b8f14b45fb8149fa3a315663",
+    "phase5f_stage2/topology.py": "694be6e412e82e0c8d73ecea9e5a30aedbbb8dada47b1d494401520dee655d08",
+    "phase5f_stage3/agent.py": "49a086a100300e3c9d0dbfeb28eab123600c13e0f6327c7549c11ecab5646f1b",
+    "phase5f_stage3/features.py": "6e9c6da199fb9dc0306d2d75e86360f929e7220b8b01b78cfa9457acd5435f9f",
+    "phase5f_stage3/workflow.py": "325678714f61401a8acecebad3c923d8348641275052a8b711bebaefc4702a45",
+    "phase5g/__init__.py": "53c8136659c4b3583de7cf7a5ac2c557f05d0c6d7c7ab0cfeb5a11d40be8c131",
+    "phase5g/gnn.py": "63468d0b842c99b94a85d76d5188bd382511007cb815b5ca4dc786abb77d9f22",
+    "phase5g/protocol.py": "2f336c5451c13253a7aba8b07dc88779420e9f07d5c9650720ebd085e5900df3",
+    "phase5g/topology.py": "a1cb6d4305a101d212829d57a10f711b65022142ede1b2166a0bafd26bea21a3",
+    "phase5g/workflow.py": "924e67bbc1cb0e1902401f4e3e2164c5fca219ca8383722bab7c7e4180d07435",
+    "phase5g_stage2/__init__.py": "aaa0c17a961624123af9a49ba280da4a4afe4472d043541e6c909d07fc22d58f",
+    "phase5g_stage2/workflow.py": "5c6ca89a1459c6403bccda5aaa0535797a8559e3290895936d943f6e41cd4533",
+    "run_phase5g_stage2.py": "3383f844d41ff353af8132f7d95677772652e37d47bd6d1153ba0b3f319ca2cb"
+  },
+  "stage3_network_generation": false,
+  "stress_arms": [
+    "base",
+    "bandwidth_150",
+    "short_hold"
+  ],
+  "version": "PHASE5G_STAGE3_FROZEN_CONFIRMATORY_PLAN_V1"
+}

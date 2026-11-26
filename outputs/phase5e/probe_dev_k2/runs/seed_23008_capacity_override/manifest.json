@@ -1,0 +1,10 @@
+{
+  "files_sha256": {
+    "decisions.csv": "f8baa19acb9d429c28c08378acbbb934b81e24b4f6d7481c14293779df815f01",
+    "requests.csv": "67b7cf849125d058d2ef37913312ca2bf80eada1d9896ee9e1c540da4b666644",
+    "summary.json": "0f7b4bdf7121213f904b7f681a24ea302056c0b6622ca4e047e183d93f9a006d"
+  },
+  "policy": "capacity_override",
+  "request_sha256": "d220c3342867e0e96c606fd510d4299c5be4a6e2364a553d00fd205b9aff23ba",
+  "version": "PHASE5E_GREEDY_GUIDED_RESIDUAL_PPO_V1"
+}

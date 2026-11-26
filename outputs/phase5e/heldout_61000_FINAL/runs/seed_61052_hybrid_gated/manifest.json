@@ -1,0 +1,10 @@
+{
+  "files_sha256": {
+    "decisions.csv": "033649200819a82f06732f223cfb2cf4f1e00625cc7020dd35ed47b5d7cfee2a",
+    "requests.csv": "d66b247931195451c242d8346e9ea680dcb7e0366ee2ea1e90cacf1866143bf2",
+    "summary.json": "2eee9945f9d2961529a9c3d1acb7c352b130ee9f3b11ae5b594a69dd31291ee3"
+  },
+  "policy": "hybrid_gated",
+  "request_sha256": "8a0842c9e7c7bde821dd63753adfc9c45b8c58b11d9b8a949f27781fa6ee810d",
+  "version": "PHASE5E_GREEDY_GUIDED_RESIDUAL_PPO_V1"
+}

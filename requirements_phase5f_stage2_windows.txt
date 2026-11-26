@@ -1,0 +1,8 @@
+# User's observed Windows environment, 2026-11-23. Reproducibility reference ONLY.
+# Install only in a fresh reproducibility environment if needed; do not change
+# the functioning 199-test project merely to satisfy this file.
+networkx==3.5
+numpy==2.2.6
+pytest>=7,<10
+# Python 3.11.9 (external interpreter; not pip-installable)
+# PyTorch 2.7.1+cu118 already present on user's PC. No Torch needed for Stage 2.

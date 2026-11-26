@@ -1,0 +1,4 @@
+nodes,network_1,network_2,edge_jaccard,different_edges,same_structure
+60,60/101,60/102,0.17829457364341086,106,False
+60,60/101,60/103,0.192,101,False
+60,60/102,60/103,0.14615384615384616,111,False

@@ -1,0 +1,8 @@
+# Install with: python -m pip install -r requirements_phase5c.txt
+# Existing Phase3, Phase4, Phase5 and Phase5B packages must already be installed.
+numpy>=1.24
+torch>=2.2
+scipy>=1.11
+networkx>=3.0
+matplotlib>=3.7
+pytest>=7.0

@@ -1,0 +1,9 @@
+demand_seed,policy,baseline,delta_admitted,delta_admission_ratio,delta_weighted_ratio,delta_avg_selection_ms
+30000,cspf,greedy,0,0.0,0.0,2.06676
+30000,milp_v2,greedy,0,0.0,0.0,6.80692
+30000,random_feasible,greedy,0,0.0,0.0,2.87919
+30000,ddqn,greedy,0,0.0,0.0,2.87687
+30001,cspf,greedy,0,0.0,0.0,0.77361
+30001,milp_v2,greedy,0,0.0,0.0,5.92941
+30001,random_feasible,greedy,0,0.0,0.0,1.67921
+30001,ddqn,greedy,0,0.0,0.0,2.58467

@@ -1,0 +1,5 @@
+policy,requests,admitted,weighted_admission,discretionary,overrides,decision_records,oracle_sha256
+greedy,96,96,1.0,96,0,96,0d8032f9ca888375aef6a0df369cd584e778dc61facc39059f8924ee82328d64
+footprint,96,96,1.0,95,82,96,befecb4735e87bcd22ba00e60c8762547eb00fd11299213fdb76ff8bf7d4d4ef
+scenario_minimax,96,96,1.0,96,39,96,c3d7454d0344409323a03e8a421b4abcc8bd70732a08f6dfdc3333bec49bd85e
+GNN_PPO,96,96,1.0,96,77,96,48efac6b8f61f05c5e1c4c5d5e211f75003162749fabc56a994b49ba79c5511d

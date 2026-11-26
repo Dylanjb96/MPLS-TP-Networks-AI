@@ -1,0 +1,74 @@
+{
+  "candidate_inventory": {
+    "2": 1000
+  },
+  "headroom": 10,
+  "k": 4,
+  "k_above_two_actually_used": false,
+  "probe_summary": {
+    "capacity_override": {
+      "losses": 0,
+      "mean_weighted_difference": 0.0,
+      "ties": 10,
+      "wins": 0
+    },
+    "random_override": {
+      "losses": 2,
+      "mean_weighted_difference": -0.0033273546725533453,
+      "ties": 8,
+      "wins": 0
+    }
+  },
+  "protection_model": "RING_SEGMENT_SCENARIO_SURROGATE_V1_NOT_MSRP",
+  "protection_model_approved": false,
+  "request_sha256": {
+    "23000": "76f787d1f6d48cab6d5f6c6cdbaa5d1c90eb9ae44c6da67ae4a15ecf85773d76",
+    "23001": "3d123f1f7663e23a99d35bd6e2a68df0649c1ea3f08dc0c20f631d97c0c7f01e",
+    "23002": "41f31aefa1652825dffb1a5e11c72fcbcb57aac362fc04df244c30b744402b29",
+    "23003": "0387aeb515709fc5857f1e848942e6e83d20bdfd05fe7e2d204e663fa04cbe64",
+    "23004": "bf5065b58d4b7c7336c350d94b9b0cd23f7270eb0bab4dd1fad429940a8b993d",
+    "23005": "4ba806f035ca58bc0e64bfa88ed4ef619ae3830f547987a3707a76d77cc58a99",
+    "23006": "a5cba1beeb4799c965861b5e4fcd19f6dacf74cea992e268eb039c46fc587dc5",
+    "23007": "4a4a9b919bf241ccd24960d7a8a949054a133694142d2f961ba98b67d5454e21",
+    "23008": "d220c3342867e0e96c606fd510d4299c5be4a6e2364a553d00fd205b9aff23ba",
+    "23009": "06e90b554d8209bbfde0340e4fffd7f059ab0609d23a9ff5cd4680468855609a"
+  },
+  "requests": 100,
+  "role": "DEVELOPMENT_ONLY_NO_MODEL_SELECTION",
+  "seeds": [
+    23000,
+    23001,
+    23002,
+    23003,
+    23004,
+    23005,
+    23006,
+    23007,
+    23008,
+    23009
+  ],
+  "source_sha256": {
+    "phase3/model.py": "6efee32468cc9ad5fdd1e4930729c93444913c4a2e730ca66cd177c665b0643d",
+    "phase4/policies.py": "72fa2ed5bfd33bdb831d6a45f0796d038d7ea046c1395399a066397ead92bad3",
+    "phase5/agent.py": "80e87b276dd062c7a71eab6e40917bda55e0ce7fe44e99f1bb5fabf3f848e2a1",
+    "phase5/environment.py": "11107ec9e2a06b5b507dde8ce3fab4dfccf25ec540801f2b12b4aec0301686e2",
+    "phase5/experiment.py": "b171d0ef4717c0afad4da6bc8d2f31ddbdef914d8dff095b9e78566f53731ae8",
+    "phase5c/ppo.py": "eff9f6c7227c14530a9cd4175e67ef16b9f2d58869aadc5172dbffa2278baac7",
+    "phase5e/agent.py": "71a9c4429146794fed3a3db767d46cf2a3ac7966ba2e28357b1907dbbc69b335",
+    "phase5e/policy.py": "c8a831f1142457efc1c04044cb82e2c071bb33fe7face5bcdd32c66356fb364e",
+    "phase5e/workflow.py": "88a7bdddddfe3bf37f8a9b1b75e34fe9a14f2668ee4a39b50541f7c8bde5ef37",
+    "railway_tp/requests.py": "2a1eb7b2948a4ccc88755c627a3c00d83b2ffb399a2c4120b37259ee1d618f8a",
+    "railway_tp/topology.py": "0b76313c4674faaf049a5049b9877f991909f22f2c0dc4f10911ee3527d1f011"
+  },
+  "topology": {
+    "gateway_mode": "dual",
+    "length_km": 2.0,
+    "main_capacity_mbps": 10000,
+    "main_nodes": 12,
+    "nodes": 60,
+    "seed": 42,
+    "sub_capacity_mbps": 1000,
+    "subring_count": 4
+  },
+  "version": "PHASE5E_GREEDY_GUIDED_RESIDUAL_PPO_V1"
+}

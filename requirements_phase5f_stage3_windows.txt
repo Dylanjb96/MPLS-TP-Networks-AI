@@ -1,0 +1,7 @@
+# Reference versions observed on the user's functioning Windows environment.
+# DO NOT automatically install this file over a functioning project.
+# Python 3.11.9; the CUDA torch wheel is preinstalled and should be retained.
+networkx==3.5
+numpy==2.2.6
+# PyTorch 2.7.1+cu118 is already installed. The code defaults to CPU for Stage 3 smoke.
+# Any compatible existing pytest version is sufficient.

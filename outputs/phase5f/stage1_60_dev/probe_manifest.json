@@ -1,0 +1,99 @@
+{
+  "headroom": 10,
+  "k_values": [
+    2,
+    6
+  ],
+  "max_working_paths": 40,
+  "network_hashes": {
+    "60/101": "266dca3cba6bdda76d24f6054cecd09e6a83e3caf4816258cef77a3912cd9304",
+    "60/102": "266dca3cba6bdda76d24f6054cecd09e6a83e3caf4816258cef77a3912cd9304",
+    "60/103": "266dca3cba6bdda76d24f6054cecd09e6a83e3caf4816258cef77a3912cd9304"
+  },
+  "note": "Not IEEE/MPLS-TP MSRP; no restoration times; excludes future oracle and held-out seeds.",
+  "policies": [
+    "greedy",
+    "random_feasible",
+    "footprint"
+  ],
+  "protection_model": "END_TO_END_LINK_DISJOINT_PAIR_SINGLE_FAULT_SURROGATE_NOT_MSRP",
+  "protection_model_approved": false,
+  "real_irish_rail_topology": false,
+  "requests_per_node": 1.6,
+  "sizes": [
+    60
+  ],
+  "source_hashes": {
+    "__init__.py": "a1879c0b22bd04b2660309e55c37b32414a73f8f81fda28b3658b5f55420eb6a",
+    "probe.py": "ddc09677d8f6130b808a2eb09dd3272bb065ad74ef5cc4ef1b108540fcaa5731",
+    "protection.py": "9596786265edcb1662be1ed5cb936822f0bb18b26ed389e41b8c93c7b839f97c",
+    "topology.py": "7f71c06e3ac2baabde5764cdaf9a5da2b594da428353e013c4bc49a8d4994f3e",
+    "traffic.py": "6146ec1122605125b78b80b39c5572124dc81d1dc1766818f84b8c46ca262adb"
+  },
+  "status": "DEVELOPMENT_ONLY_NOT_A_FINAL_EXPERIMENT",
+  "stream_seeds": [
+    70000,
+    70001,
+    70002
+  ],
+  "streams": {
+    "60/101/70000": {
+      "common_arrivals_sha256": "dcc9f309c165290850e4b6ac98db9da3180602357a7721bc48161fcba7c0500e",
+      "dynamic_sha256": "4bf204c64fade5fc1c85aef976f5c5dc09b5e29834c4ccaf3b70e0ab3efe346f",
+      "static_sha256": "2a4bb4b994c03beffc1c68919bbc91079686281f2ba3f0ff1016f4dfa85e9284"
+    },
+    "60/101/70001": {
+      "common_arrivals_sha256": "8fcbefcbe5bb9d19b4c656689c7b1b1a4f7d80ceca4312896ecfe1aaea378943",
+      "dynamic_sha256": "2e9207fb97cb6fb10101daa7295ba9693e2978975313c8a1528a1b3187f896cc",
+      "static_sha256": "2cf1c23a54f1228f3479887e7acffd957da3ff4efbe573a8027e2471ed3d114d"
+    },
+    "60/101/70002": {
+      "common_arrivals_sha256": "cbed0863dfd07d2c78f3f621f78ccec7c7ac390c55504d5e3491222bc7786320",
+      "dynamic_sha256": "397070f392e3150a674b562899e27ebc5d6e4c27fcb324d1510ed5b68debf57f",
+      "static_sha256": "7c921281acea3e39f34cfb3308aa1986b878742af3e29cab9237ef480841bc12"
+    },
+    "60/102/70000": {
+      "common_arrivals_sha256": "dcc9f309c165290850e4b6ac98db9da3180602357a7721bc48161fcba7c0500e",
+      "dynamic_sha256": "4bf204c64fade5fc1c85aef976f5c5dc09b5e29834c4ccaf3b70e0ab3efe346f",
+      "static_sha256": "2a4bb4b994c03beffc1c68919bbc91079686281f2ba3f0ff1016f4dfa85e9284"
+    },
+    "60/102/70001": {
+      "common_arrivals_sha256": "8fcbefcbe5bb9d19b4c656689c7b1b1a4f7d80ceca4312896ecfe1aaea378943",
+      "dynamic_sha256": "2e9207fb97cb6fb10101daa7295ba9693e2978975313c8a1528a1b3187f896cc",
+      "static_sha256": "2cf1c23a54f1228f3479887e7acffd957da3ff4efbe573a8027e2471ed3d114d"
+    },
+    "60/102/70002": {
+      "common_arrivals_sha256": "cbed0863dfd07d2c78f3f621f78ccec7c7ac390c55504d5e3491222bc7786320",
+      "dynamic_sha256": "397070f392e3150a674b562899e27ebc5d6e4c27fcb324d1510ed5b68debf57f",
+      "static_sha256": "7c921281acea3e39f34cfb3308aa1986b878742af3e29cab9237ef480841bc12"
+    },
+    "60/103/70000": {
+      "common_arrivals_sha256": "dcc9f309c165290850e4b6ac98db9da3180602357a7721bc48161fcba7c0500e",
+      "dynamic_sha256": "4bf204c64fade5fc1c85aef976f5c5dc09b5e29834c4ccaf3b70e0ab3efe346f",
+      "static_sha256": "2a4bb4b994c03beffc1c68919bbc91079686281f2ba3f0ff1016f4dfa85e9284"
+    },
+    "60/103/70001": {
+      "common_arrivals_sha256": "8fcbefcbe5bb9d19b4c656689c7b1b1a4f7d80ceca4312896ecfe1aaea378943",
+      "dynamic_sha256": "2e9207fb97cb6fb10101daa7295ba9693e2978975313c8a1528a1b3187f896cc",
+      "static_sha256": "2cf1c23a54f1228f3479887e7acffd957da3ff4efbe573a8027e2471ed3d114d"
+    },
+    "60/103/70002": {
+      "common_arrivals_sha256": "cbed0863dfd07d2c78f3f621f78ccec7c7ac390c55504d5e3491222bc7786320",
+      "dynamic_sha256": "397070f392e3150a674b562899e27ebc5d6e4c27fcb324d1510ed5b68debf57f",
+      "static_sha256": "7c921281acea3e39f34cfb3308aa1986b878742af3e29cab9237ef480841bc12"
+    }
+  },
+  "synthetic_research_model": true,
+  "topology_seeds": [
+    101,
+    102,
+    103
+  ],
+  "total_cell_runs": 108,
+  "total_requests_inventoried": 864,
+  "traffic_modes": [
+    "static",
+    "dynamic"
+  ],
+  "version": "PHASE5F_SYNTHETIC_NATIONAL_STAGE1_V1"
+}

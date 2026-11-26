@@ -1,0 +1,69 @@
+PHASE5G_STAGE2_SELECTION_DIAGNOSIS_READ_ONLY
+PROJECT: C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI
+RUNS: C:\Users\Dylan B\Desktop\MPLS AI\MPLS-AI\outputs\phase5g\stage2_train
+FROZEN_MANIFEST: outputs\phase5f\stage4_selection_FINAL\selection_manifest.json
+
+RUN: mlp_seed7
+  OK architecture: provenance='mlp', expected='mlp'
+  OK agent_seed: provenance=7, expected=7
+  OK episodes: provenance=48, expected=48
+  OK frozen_C_sha256: saved=e33f7837022671f2, expected=e33f7837022671f2
+  FAIL source_sha256: 2 of 15 files mismatch/missing
+    phase5g_stage2/__init__.py: current=aaa0c17a96162412, trained=8c31570c5588b32a, newline_only=no
+    phase5g_stage2/workflow.py: current=5c6ca89a1459c640, trained=d3d2568e0a556104, newline_only=no
+  OK best_checkpoint: checkpoints/best_episode_0012.pt
+  OK best_trace: checkpoints/best_decisions_episode_0012.csv.gz
+
+RUN: mlp_seed17
+  OK architecture: provenance='mlp', expected='mlp'
+  OK agent_seed: provenance=17, expected=17
+  OK episodes: provenance=48, expected=48
+  OK frozen_C_sha256: saved=e33f7837022671f2, expected=e33f7837022671f2
+  FAIL source_sha256: 1 of 15 files mismatch/missing
+    phase5g_stage2/__init__.py: current=aaa0c17a96162412, trained=8c31570c5588b32a, newline_only=no
+  OK best_checkpoint: checkpoints/best_episode_0024.pt
+  OK best_trace: checkpoints/best_decisions_episode_0024.csv.gz
+
+RUN: mlp_seed27
+  OK architecture: provenance='mlp', expected='mlp'
+  OK agent_seed: provenance=27, expected=27
+  OK episodes: provenance=48, expected=48
+  OK frozen_C_sha256: saved=e33f7837022671f2, expected=e33f7837022671f2
+  FAIL source_sha256: 1 of 15 files mismatch/missing
+    phase5g_stage2/__init__.py: current=aaa0c17a96162412, trained=8c31570c5588b32a, newline_only=no
+  OK best_checkpoint: checkpoints/best_episode_0036.pt
+  OK best_trace: checkpoints/best_decisions_episode_0036.csv.gz
+
+RUN: gnn_seed7
+  OK architecture: provenance='gnn', expected='gnn'
+  OK agent_seed: provenance=7, expected=7
+  OK episodes: provenance=48, expected=48
+  OK frozen_C_sha256: saved=e33f7837022671f2, expected=e33f7837022671f2
+  OK source_sha256: 0 of 15 files mismatch/missing
+  OK best_checkpoint: checkpoints/best_episode_0036.pt
+  OK best_trace: checkpoints/best_decisions_episode_0036.csv.gz
+
+RUN: gnn_seed17
+  OK architecture: provenance='gnn', expected='gnn'
+  OK agent_seed: provenance=17, expected=17
+  OK episodes: provenance=48, expected=48
+  OK frozen_C_sha256: saved=e33f7837022671f2, expected=e33f7837022671f2
+  OK source_sha256: 0 of 15 files mismatch/missing
+  OK best_checkpoint: checkpoints/best_episode_0012.pt
+  OK best_trace: checkpoints/best_decisions_episode_0012.csv.gz
+
+RUN: gnn_seed27
+  OK architecture: provenance='gnn', expected='gnn'
+  OK agent_seed: provenance=27, expected=27
+  OK episodes: provenance=48, expected=48
+  OK frozen_C_sha256: saved=e33f7837022671f2, expected=e33f7837022671f2
+  OK source_sha256: 0 of 15 files mismatch/missing
+  OK best_checkpoint: checkpoints/best_episode_0048.pt
+  OK best_trace: checkpoints/best_decisions_episode_0048.csv.gz
+
+SIX_RUN_PROTOCOL_CONSISTENCY: OK
+SIX_RUN_SOURCE_PROVENANCE_CONSISTENCY: DIFFERENT mlp_seed17, mlp_seed27, gnn_seed7, gnn_seed17, gnn_seed27
+SIX_RUN_FROZEN_C_CONSISTENCY: OK
+
+DIAGNOSTIC_ISSUES_COUNT: 9
+NO TRAINING OR RESULT FILES MODIFIED
