@@ -1,7 +1,7 @@
-"""Stage 5 frozen evidence: validates exact Stage 4 selection and both checkpoints.
+#Stage 5 frozen evidence: validates exact Stage 4 selection and both checkpoints.
 
-The validation process never constructs or accesses a reserved held-out graph.
-"""
+#The validation process never constructs or accesses a reserved held-out graph.
+
 from __future__ import annotations
 from pathlib import Path
 import hashlib,json

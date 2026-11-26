@@ -1,10 +1,10 @@
-"""Second-implementation single-fault capacity checker for *recorded* decisions.
+#Second-implementation single-fault capacity checker for *recorded* decisions.
 
-Independent of ScenarioLedger._partition/_indices; symmetric directions are
-identical by Stage 1 contract, so the oracle uses one column per physical link.
-On a fault to any working edge, it swaps the entire working path to backup.
-This is still a comparative single-link-failure surrogate, NOT an MSRP oracle.
-"""
+#Independent of ScenarioLedger._partition/_indices; symmetric directions are
+#identical by Stage 1 contract, so the oracle uses one column per physical link.
+#On a fault to any working edge, it swaps the entire working path to backup.
+#This is still a comparative single-link-failure surrogate, NOT an MSRP oracle.
+
 from __future__ import annotations
 from dataclasses import dataclass
 import hashlib,json
@@ -34,7 +34,7 @@ class SingleFaultOracle:
     def _ids(self,path):return np.array([self.idx[undirected(u,v)] for u,v in zip(path,path[1:])],dtype=np.int64)
 
     def _delta(self,p,bw,sign):
-        """Direct scenario semantics: all scenarios use working unless its link fails."""
+        #Direct scenario semantics: all scenarios use working unless its link fails.
         wi=self._ids(p.working);bi=self._ids(p.backup)
         self.loads[:,wi]+=sign*bw
         for failed in wi:

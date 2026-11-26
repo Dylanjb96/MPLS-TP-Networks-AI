@@ -1,9 +1,9 @@
-"""Preregistered once-only Stage 5 held-out execution; never trains or selects.
+#Preregistered once-only Stage 5 held-out execution; never trains or selects.
 
-All configuration/seed choices are immutable; there is no --seed/--load/--model
-option on the final command. Each entire matched cohort is atomically saved,
-so a machine interruption can be resumed without rerunning completed cohorts.
-"""
+#All configuration/seed choices are immutable; there is no --seed/--load/--model
+#option on the final command. Each entire matched cohort is atomically saved,
+#so a machine interruption can be resumed without rerunning completed cohorts.
+
 from __future__ import annotations
 from pathlib import Path
 import csv,gzip,hashlib,json,os,platform,time
@@ -96,10 +96,10 @@ def _cohort_filename(n,k,mode,t,s):
 
 def _evaluate_cell(graph,demands,inventory,*,n,k,mode,topo,stream,
                    candidates_sha,gen_seconds,models,keep_trace=False):
-    """Evaluate *every* frozen policy against the exact same precomputed graph,
-    request stream and candidate prefix. The separate numerical oracle also
-    checks all admitted choices and forced rejections across time.
-    """
+    #Evaluate *every* frozen policy against the exact same precomputed graph,
+    #request stream and candidate prefix. The separate numerical oracle also
+    #checks all admitted choices and forced rejections across time.
+    
     gsha=fingerprint(graph);rsha=stream_digest(demands)
     rows=[];traces={};oracles={}
     for policy in POLICIES:

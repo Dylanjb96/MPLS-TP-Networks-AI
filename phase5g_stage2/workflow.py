@@ -1,10 +1,9 @@
-"""Development-only matched GNN vs MLP PPO with resumable, provenance-locked runs.
+#Development-only matched GNN vs MLP PPO with resumable, provenance-locked runs.
 
-Neither Phase 5F Stage 5 nor reserved Phase 5G final seeds are generated or read.
-Both arms share protected candidates, full episodes, schedules, reward definition,
-PPO objective, update-sample cap, optimizer, gradient clipping and validation.
-They differ in whether graph message passing is added to the same 17+8 features.
-"""
+#Neither Phase 5F Stage 5 nor reserved Phase 5G final seeds are generated or read.
+#Both arms share protected candidates, full episodes, schedules, reward definition,
+#PPO objective, update-sample cap, optimizer, gradient clipping and validation.
+#They differ in whether graph message passing is added to the same 17+8 features.
 from __future__ import annotations
 from dataclasses import dataclass, asdict
 from pathlib import Path
@@ -192,11 +191,11 @@ def schedule(plan):
 
 
 class CohortCache:
-    """Safe gzip-JSON protected-candidate cache; separate, source-locked cohort content.
+    #Safe gzip-JSON protected-candidate cache; separate, source-locked cohort content.
 
-    Same candidate inventory is reused by both neural arms. No unsafe pickle.
-    For a cache hit generator work for candidates is entirely avoided.
-    """
+    #Same candidate inventory is reused by both neural arms. No unsafe pickle.
+    #For a cache hit generator work for candidates is entirely avoided.
+    
     def __init__(self,root):
         self.root=Path(root);self.hits=0;self.misses=0
         gen=('phase5f/protection.py','phase5f/traffic.py',
@@ -289,11 +288,11 @@ def forward_one(model,observation,architecture):
 
 
 def matched_ppo_update(model,optimizer,samples,*,architecture,seed,epochs=2,batch_size=8):
-    """Identical clipped PPO, entropy, value loss and grad clip for both arms.
+    #Identical clipped PPO, entropy, value loss and grad clip for both arms.
 
-    Uses unbiased uniform sub-sampling from the *complete* current episode,
-    with full-trajectory undiscounted reward-to-go already recorded.
-    """
+    #Uses unbiased uniform sub-sampling from the *complete* current episode,
+    #with full-trajectory undiscounted reward-to-go already recorded.
+    
     if not samples:return dict(samples=0,loss=0.0,updates=0)
     ob=[x['observation'] for x in samples]
     actions=torch.tensor([x['action'] for x in samples],dtype=torch.long)
@@ -588,11 +587,11 @@ def run_training(out,plan,*,cache_root='outputs/phase5g/stage2_cohort_cache',res
 
 
 def select_models(runs_root,out):
-    """Select best architecture by three-seed mean; select best seed within each.
+    #Select best architecture by three-seed mean; select best seed within each.
 
-    The selector never reads model-evaluation data beyond validation scores.
-    It requires a complete six-run factorial with identical training conditions.
-    """
+    #The selector never reads model-evaluation data beyond validation scores.
+    #It requires a complete six-run factorial with identical training conditions.
+    
     root=Path(runs_root);out=Path(out)
     if out.exists():raise FileExistsError('Refusing to overwrite model selection: '+str(out))
     rows=[];shared=None

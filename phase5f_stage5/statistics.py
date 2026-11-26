@@ -1,9 +1,9 @@
-"""Precommitted topology-clustered paired inference; no test-data selection.
+#Precommitted topology-clustered paired inference; no test-data selection.
 
-Units are independent *network-topology seeds* (n=20), not the 60 streams and
-certainly not the 2,000 LSP arrivals per stream. All estimates in percentage
-points. Primary is C_enhanced minus greedy in 500/K6/dynamic/load4.
-"""
+#Units are independent *network-topology seeds* (n=20), not the 60 streams and
+#certainly not the 2,000 LSP arrivals per stream. All estimates in percentage
+#points. Primary is C_enhanced minus greedy in 500/K6/dynamic/load4.
+
 from __future__ import annotations
 from collections import defaultdict
 import numpy as np
@@ -108,11 +108,11 @@ def holm(rows):
 
 
 def factorial(rows):
-    """Effects of A-size, B-candidates, C-dynamics on C-vs-greedy gain.
+    #Effects of A-size, B-candidates, C-dynamics on C-vs-greedy gain.
 
-    Effect convention: positive means higher C-minus-greedy delta when that
-    factor is at (+) level. Other factors are averaged with equal weight.
-    """
+    #Effect convention: positive means higher C-minus-greedy delta when that
+    #factor is at (+) level. Other factors are averaged with equal weight.
+    
     raw={cell:cluster_contrasts(rows,cell,'C_enhanced','greedy') for cell in CELLS}
     # Encoding: A=500 vs60, B=K6 vs K2, C=dynamic vs static.
     factors={cell:(1 if cell[0]==500 else -1,
