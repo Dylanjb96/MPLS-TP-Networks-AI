@@ -1,0 +1,40 @@
+{
+  "final_seeds_used": false,
+  "role": "PHASE5G_STAGE4_STAGE2_VALIDATION_REPLAY_ONLY",
+  "selected_models": [
+    {
+      "admitted": 1659,
+      "oracle_sha256": "e5a7b42859ed640acbe9d1f1f99bb04552df78d5de740f4e1e57cad5139bf052",
+      "policy": "gnn_PPO",
+      "requests": 2000,
+      "source_sha256": {
+        "phase5g_stage4/__init__.py": "62304a3fb9c735273fadb80f6627f1915767cfc2f61d853146169d4c4cc6ee25",
+        "phase5g_stage4/evaluation.py": "a6aadaa142d983b6c887590014603250716cb039efaa3d464fba7a687456d2b9",
+        "phase5g_stage4/protocol.py": "8505ca17e53d4b1828c97077f9c7ef6783f316f8044a161452e60cfdca1fb5c2",
+        "phase5g_stage4/statistics.py": "f03af94351082448303729c3ac63004db952c24fbb4be354b0caf57201068c3a",
+        "run_phase5g_stage4.py": "548030f8255da46a99683a84f975b542c07c4c9a9711a3a2af37ee087cfef9dc"
+      },
+      "stream_seed": 76000,
+      "topology_seed": 701,
+      "validation_trace_reproduced": true,
+      "weighted_admission": 0.890370160260956
+    },
+    {
+      "admitted": 1580,
+      "oracle_sha256": "523614ed3237a50fbe91777d35ed9eee29409ff5ef040d219cfedadd53cdf4ee",
+      "policy": "mlp_PPO",
+      "requests": 2000,
+      "source_sha256": {
+        "phase5g_stage4/__init__.py": "62304a3fb9c735273fadb80f6627f1915767cfc2f61d853146169d4c4cc6ee25",
+        "phase5g_stage4/evaluation.py": "a6aadaa142d983b6c887590014603250716cb039efaa3d464fba7a687456d2b9",
+        "phase5g_stage4/protocol.py": "8505ca17e53d4b1828c97077f9c7ef6783f316f8044a161452e60cfdca1fb5c2",
+        "phase5g_stage4/statistics.py": "f03af94351082448303729c3ac63004db952c24fbb4be354b0caf57201068c3a",
+        "run_phase5g_stage4.py": "548030f8255da46a99683a84f975b542c07c4c9a9711a3a2af37ee087cfef9dc"
+      },
+      "stream_seed": 76000,
+      "topology_seed": 701,
+      "validation_trace_reproduced": true,
+      "weighted_admission": 0.847397532264927
+    }
+  ]
+}
