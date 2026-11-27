@@ -1,0 +1,491 @@
+{
+  "role": "INDEPENDENT_REPLAY_FINAL_RESULTS_AUDIT_NO_RETUNING",
+  "scope": "one preregistered topology801 stream77000 in each of 8 cells",
+  "sample_cohorts": 8,
+  "sample_policy_runs": 48,
+  "sample_decisions": 96000,
+  "all_correct": true,
+  "results": [
+    {
+      "cell": "H_BASE",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "gnn_PPO",
+      "accepted": 1725,
+      "oracle_sha256": "f9d040a7de55bf02b86829823a95156812bfaad45d691d3382ab1365b813c781",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_BASE",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "mlp_PPO",
+      "accepted": 1704,
+      "oracle_sha256": "559dfcde09efd8a2c0067329ac5023912a412d2a097c80b923af0c4bc311878d",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_BASE",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "C_frozen",
+      "accepted": 1699,
+      "oracle_sha256": "03785493780d177d4025e7f1fe98421bd91d381f1b8beb1ea89c2f88af571276",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_BASE",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "scenario_minimax",
+      "accepted": 1760,
+      "oracle_sha256": "32bf3b085ca6f91f85c909f85befa06e3ec050144476a051dbd0083418076033",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_BASE",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "footprint",
+      "accepted": 1702,
+      "oracle_sha256": "cbfd3e5eb1fcf794740460aa657ca7e4b978d4f78eddad3a55f2342e860895dc",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_BASE",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "greedy",
+      "accepted": 1704,
+      "oracle_sha256": "559dfcde09efd8a2c0067329ac5023912a412d2a097c80b923af0c4bc311878d",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_BW",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "gnn_PPO",
+      "accepted": 1512,
+      "oracle_sha256": "b7911a641d06543c6ec235586b52db531706d9b5b9b15e74187c2a5fa93b3045",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_BW",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "mlp_PPO",
+      "accepted": 1454,
+      "oracle_sha256": "90801e9c095f6b996d9921dff280a6b1489228834c4a324638d5cda165c8ae7e",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_BW",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "C_frozen",
+      "accepted": 1513,
+      "oracle_sha256": "028b5f48139998bfb988c38c2992a2bae556d634f90cd02143d98202dff2be2e",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_BW",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "scenario_minimax",
+      "accepted": 1544,
+      "oracle_sha256": "a7d61afd347ec786c5ffc69645c753bace2f30fc40514916ca89fcff8f0781af",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_BW",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "footprint",
+      "accepted": 1496,
+      "oracle_sha256": "0a60cbdb63c0c0107184dede9a419f796c2bb1255f8c52eab4486643c0eaea23",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_BW",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "greedy",
+      "accepted": 1454,
+      "oracle_sha256": "90801e9c095f6b996d9921dff280a6b1489228834c4a324638d5cda165c8ae7e",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_HOLD",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "gnn_PPO",
+      "accepted": 1874,
+      "oracle_sha256": "d4b9a714d43036d6ddd44636b9241ba2ee606ee5fb9a7cd40e0838279930283f",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_HOLD",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "mlp_PPO",
+      "accepted": 1836,
+      "oracle_sha256": "c968d502e73c3aa91b0e78eb625ad1c3b2faa9806edae3a5676d107786ce323e",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_HOLD",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "C_frozen",
+      "accepted": 1848,
+      "oracle_sha256": "5d2a48e63afaa7c782463d3d0ebfe9cb5265fee54dc8589b6c6291b241bf6cbc",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_HOLD",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "scenario_minimax",
+      "accepted": 1894,
+      "oracle_sha256": "46604f85f0431bfae9cccf593e5e0822958d42bd3f7e97cf0139a1b0ce5acd26",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_HOLD",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "footprint",
+      "accepted": 1853,
+      "oracle_sha256": "4a4cf05473d6bbcd615c6ed4a1d7768038caca6201c53d4f7828a45046f6d95a",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_HOLD",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "greedy",
+      "accepted": 1836,
+      "oracle_sha256": "c968d502e73c3aa91b0e78eb625ad1c3b2faa9806edae3a5676d107786ce323e",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_K2",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "gnn_PPO",
+      "accepted": 1653,
+      "oracle_sha256": "5f3cb803bcf7d0cb8327c3b7f42d854ce71c6d6603acbbf85d702808d7e674db",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_K2",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "mlp_PPO",
+      "accepted": 1603,
+      "oracle_sha256": "82d1acf47da6fac3bd10b43a3a9b901fc284025fbb5592d63d09807fafd6b4f3",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_K2",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "C_frozen",
+      "accepted": 1592,
+      "oracle_sha256": "9439456c3a26678fcaa2d37f111480cdbcd5ed3a6ae1412936303270251452f4",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_K2",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "scenario_minimax",
+      "accepted": 1668,
+      "oracle_sha256": "2dac10fa0271e17be57a64d33675eeb8a53f8502b96e3e3ae95fecf7ee1f4ee0",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_K2",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "footprint",
+      "accepted": 1609,
+      "oracle_sha256": "ba84ddbc2f125d4fb7dc75b964009644666fd3baa54285c7bf724047bc67c751",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "H_K2",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "greedy",
+      "accepted": 1603,
+      "oracle_sha256": "82d1acf47da6fac3bd10b43a3a9b901fc284025fbb5592d63d09807fafd6b4f3",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_BASE",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "gnn_PPO",
+      "accepted": 1647,
+      "oracle_sha256": "5b13b1421120eaaba8537d4a695570ffeb15ee4f26068eeada705b1236216df3",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_BASE",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "mlp_PPO",
+      "accepted": 1709,
+      "oracle_sha256": "9cc2b7f1eaaa879dc83853eb46d7c62cd467d8534632f37f83ab1784730ca335",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_BASE",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "C_frozen",
+      "accepted": 1697,
+      "oracle_sha256": "b74badcb8c39bfedb1b206507a7e81284ecaec1601b4f04fbf5c1b3892c917c5",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_BASE",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "scenario_minimax",
+      "accepted": 1715,
+      "oracle_sha256": "e2da76d455a7bad828d1d4ce639a674a907e78dd4dcbabd7ad6e4117b858b819",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_BASE",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "footprint",
+      "accepted": 1668,
+      "oracle_sha256": "b6399daccf111e09eff19245c3eb8b177e67d8d6d535272ee940642dfb458068",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_BASE",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "greedy",
+      "accepted": 1709,
+      "oracle_sha256": "9cc2b7f1eaaa879dc83853eb46d7c62cd467d8534632f37f83ab1784730ca335",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_BW",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "gnn_PPO",
+      "accepted": 1455,
+      "oracle_sha256": "ccdea6044ca4f06f85e811452e21accfa53c570b2707b630d5e79406dd88158d",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_BW",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "mlp_PPO",
+      "accepted": 1501,
+      "oracle_sha256": "9fa658bd77e24ec5f4809b0f57bd61d234d2d357d32bc31ff2c5be8d36d3714c",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_BW",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "C_frozen",
+      "accepted": 1473,
+      "oracle_sha256": "d95132151ba069c9eb7cc0f6f73b09ccb027b4b19f063e2887b8084be8f2cfe7",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_BW",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "scenario_minimax",
+      "accepted": 1503,
+      "oracle_sha256": "f0a2f34b656e8fa8c09750fd901e15d7cdaebb342a54903eff505b586f1cca84",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_BW",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "footprint",
+      "accepted": 1467,
+      "oracle_sha256": "5b7df4161cfa99dcb6f69ee9e9936855461371d7eaebe426c76b0e02ff3542f6",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_BW",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "greedy",
+      "accepted": 1502,
+      "oracle_sha256": "61be178e56617f1414b14b91921e5e8a070223f08e4ae71e28e866595a292b9d",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_HOLD",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "gnn_PPO",
+      "accepted": 1803,
+      "oracle_sha256": "97b141587ed93cd78ec6b272eea8d06d5a8253046709b34b9aa9c54f6d02dca4",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_HOLD",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "mlp_PPO",
+      "accepted": 1857,
+      "oracle_sha256": "049239beeea8b9c8ad925eddb7ffc6514fc3bc21abfa1700ef300c6ed48f6a3f",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_HOLD",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "C_frozen",
+      "accepted": 1852,
+      "oracle_sha256": "499db552f0d50d6e0981a9bf454b9dd70341a1b5f24785bff63f45787967d20d",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_HOLD",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "scenario_minimax",
+      "accepted": 1871,
+      "oracle_sha256": "20717bd4ea57cd6430c56121326694f0619d5dcb2dee6b323b87e2d056f081c6",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_HOLD",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "footprint",
+      "accepted": 1839,
+      "oracle_sha256": "91e8ad1ef54815df39372ca2f0b8627d6fd18ff051b87977840b6980c3acc6ea",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_HOLD",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "greedy",
+      "accepted": 1857,
+      "oracle_sha256": "049239beeea8b9c8ad925eddb7ffc6514fc3bc21abfa1700ef300c6ed48f6a3f",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_K2",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "gnn_PPO",
+      "accepted": 1635,
+      "oracle_sha256": "d9bb0bbc1cb508eb6d1459e3588e3bcbc00ce6ccdff34d640a5ee238f9d7f2e1",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_K2",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "mlp_PPO",
+      "accepted": 1704,
+      "oracle_sha256": "0bf96c9bb9b141e6fe37b7f3f7128f2e26543911460179e1451c15b84dbb2993",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_K2",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "C_frozen",
+      "accepted": 1660,
+      "oracle_sha256": "a2ec72411909579d9137690ac26278edc52533109dde50c095fd12eab45194a3",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_K2",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "scenario_minimax",
+      "accepted": 1702,
+      "oracle_sha256": "b2cbc31951afd891ef4aeb75b1e30b8d55e0a8bbbb80b930f51bbfa8412c4820",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_K2",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "footprint",
+      "accepted": 1661,
+      "oracle_sha256": "802ab3d5ead2c7120623d13f5400507a7caeb769abf156b7ac9ee61acf64f4b6",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    },
+    {
+      "cell": "L_K2",
+      "topology_seed": 801,
+      "stream_seed": 77000,
+      "policy": "greedy",
+      "accepted": 1704,
+      "oracle_sha256": "0bf96c9bb9b141e6fe37b7f3f7128f2e26543911460179e1451c15b84dbb2993",
+      "status": "REPRODUCED_INDEPENDENT_ORACLE",
+      "requests": 2000
+    }
+  ],
+  "caveat": "Independent protection oracle replay on 8/480 final cohorts (48/2880 policy runs); remaining cohort checks are data-integrity/trace reconstructions."
+}
