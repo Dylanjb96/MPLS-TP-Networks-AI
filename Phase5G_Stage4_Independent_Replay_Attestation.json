@@ -1,0 +1,60 @@
+{
+  "bruteforce_scenario_peak_on_60_nodes": {
+    "cells": 8,
+    "complete_running_max_checked": 48,
+    "failures": 0,
+    "matches": 48,
+    "policies_per_cell": 6
+  },
+  "full_500_node_development_replay": {
+    "all_six_2000_action_traces_match": true,
+    "all_six_independent_oracle_state_hashes_and_metrics_match": true,
+    "cohort": "hierarchical 500 topology 501 stream 74000",
+    "independent_protection_oracle_accepted": {
+      "C_frozen": true,
+      "footprint": true,
+      "gnn_PPO": true,
+      "greedy": true,
+      "mlp_PPO": true,
+      "scenario_minimax": true
+    },
+    "policy_replay_match": {
+      "C_frozen": true,
+      "footprint": true,
+      "gnn_PPO": true,
+      "greedy": true,
+      "mlp_PPO": true,
+      "scenario_minimax": true
+    },
+    "regenerated_inputs": {
+      "candidates_sha256": "5c80538b94e846a9a942bc129d9418d515fa54364b0a582ea7d4d29dc924bb3b",
+      "network_sha256": "767c7d78a53ede399c319fad1b45308ecc026b856b2688fae4be7bcd45ec74cf",
+      "request_sha256": "dad260fce3450bf6d913f55f82ec7e7bd5be1909d99df490e5abf9da6d7ada19"
+    }
+  },
+  "full_validation_replay": {
+    "all_4000_actions_match": true,
+    "cohort": "hierarchical 500 topology 701 stream 76000 (pre-existing Stage2 validation)",
+    "neural_models": {
+      "gnn_PPO": {
+        "2000_actions_replayed": 2000,
+        "2000_actions_saved": 2000,
+        "admitted": 1659,
+        "mismatch_count": 0,
+        "oracle_state_sha256": "e5a7b42859ed640acbe9d1f1f99bb04552df78d5de740f4e1e57cad5139bf052",
+        "per_request_fields_checked": 10,
+        "weighted_admission": 0.890370160260956
+      },
+      "mlp_PPO": {
+        "2000_actions_replayed": 2000,
+        "2000_actions_saved": 2000,
+        "admitted": 1580,
+        "mismatch_count": 0,
+        "oracle_state_sha256": "523614ed3237a50fbe91777d35ed9eee29409ff5ef040d219cfedadd53cdf4ee",
+        "per_request_fields_checked": 10,
+        "weighted_admission": 0.847397532264927
+      }
+    }
+  },
+  "heldout_networks_generated": false
+}
