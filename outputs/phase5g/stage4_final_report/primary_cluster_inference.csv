@@ -1,0 +1,3 @@
+family,cell,first,second,n_topologies,streams_per_topology,effect_pp,sd_pp,ci95_low_pp,ci95_high_pp,p_two_sided,zero_variance_nonzero,positive,negative,ties,p_holm_adjusted,holm_significant
+co_primary,H_BASE,gnn_PPO,mlp_PPO,20,3,2.0453658200861553,0.45890232759271193,1.8305929196331374,2.260138720539173,3.386043254404036e-14,False,20,0,0,6.772086508808072e-14,True
+co_primary,H_BASE,gnn_PPO,scenario_minimax,20,3,-0.3141323695795604,0.6036250518996423,-0.5966375899445586,-0.03162714921456228,0.031153222354662457,False,5,15,0,0.031153222354662457,True
